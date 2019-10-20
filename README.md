@@ -1,2 +1,2 @@
-# Rubbish_bin
-Automatic rubbish bin
+# Recycling bin
+Automatic recycling bin
