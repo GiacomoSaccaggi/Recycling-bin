@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<title>ML e statistic</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147261423-1"></script>
+
+
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147261423-1');
+</script>
+	
+<link rel="stylesheet" media="screen and (min-width:481px)" href="https://giacomosaccaggi.github.io/cv.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://giacomosaccaggi.github.io/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="https://giacomosaccaggi.github.io/css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://giacomosaccaggi.github.io/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+
+
+.accordion {
+    background-color: #FFFFFF; /*#eee;*/
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    
+    border: 1px solid #eee; /*#006500;*/
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: hsl(120, 100%, 99%); /*#ccc*/
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+     overflow: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+ ul {
+ list-style-type: none;
+ }
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  
+  margin-top: -1px; /* Prevent double borders */
+  overflow: hidden;
+  white-space:pre;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  /*display: block;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;*/
+}
+
+#myInput li a:hover:not(.header) {
+  background-color: #eee
+}
+
+
+
+
+
+</style>
+<style> 
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  }
+ .container h3{
+ color: #ff4411; font-size: 48px; font-family: 'Signika', sans-serif; padding-bottom: 10px;  }
+
+.row h3{
+  color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px;
+}
+  </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="https://giacomosaccaggi.github.io">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                    <li>
+                        <a href="https://giacomosaccaggi.github.io/all.html">All projects</a>
+                    </li>
+                    <li>
+                        <a href="https://giacomosaccaggi.github.io/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('https://www.wallpaperbetter.com/wallpaper/603/453/228/beautiful-wheat-fields-at-evening-clouds-1080P-wallpaper.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading" >
+                        <h2>Progetto di tesi</h2>
+                        <hr class="small">
+                        <h5>Working in progress</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+            
+        <br>
+        <p>
+        Il riciclo è un processo di conversione che trasforma i rifiuti in nuovi materiali, oggetti o sostanze del tutto differenti dai rifiuti d’origine.
+        <br>
+        La raccolta differenziata è il processo mediante il quale i rifiuti vengono separati in diversi elementi. Questa procedura è essenziale affinchè le aziende che si occupano di riciclo possano operare nel settore. 
+        <br>
+        Un'economia circolare è un sistema economico volto a eliminare gli sprechi e l'uso continuo delle risorse. I sistemi circolari impiegano il riutilizzo, la condivisione, la riparazione, il rinnovo, la rigenerazione e il riciclaggio per creare un sistema a circuito chiuso, riducendo al minimo l'uso di input di risorse e la creazione di rifiuti, inquinamento ed emissioni di carbonio. L'economia circolare mira a mantenere i prodotti, le attrezzature e le infrastrutture in uso più a lungo rispetto invece alla classica economia lineare che si basa sull'utilizzo di risorse sempre nuove e l'eliminazione di quelle vecchie.
+        <br>
+        L'obbiettivo di questo lavoro non vuole essere quello di proporre un metodo di risoluzione definitivo di tutti i problemi relativi alla raccolta differenziata bensì quello di proporre alcune idee di come la statistica possa essere d'aiuto nel riuscire a migliorare lo sfruttamento delle risorse.
+        A livello statistico questo si declina in un problema di classificazione; durante il lavoro si andranno a sfruttare sia dati strutturati che dati non strutturati sfruttando algoritmi di Deep Learning per riuscire a classificare in modo accurato i differenti tipi di rifiuti.
+        <br>
+        Per affrontare questo problema si è deciso di strutturare il lavoro come segue:
+        <br><br>
+        <ul>
+            <li>Introduzione</li>
+            <li>Reperimento dei dati</li>
+            <ul>
+                <li>Struttura del lavoro</li>
+                <li>Come differenziare</li>
+                <li>Web Scraping</li>
+                <ul>
+                    <li>Funzionamento</li>
+                    <li>Implementazione</li>
+                </ul>
+                <li>Bot Telegram</li>
+                <ul>
+                    <li>Funzionamento</li>
+                    <li>Implementazione</li>
+                </ul>
+                <li>Cestino</li>
+                <ul>
+                    <li>Meccanica</li>
+                    <li>Robotica</li>
+                    <li>Softwaristica</li>
+                </ul>
+            </ul>
+            <li>Addestramento modelli</li>
+            <ul>
+                <li>Descrizione tipologie di dati</li>
+                <li>Dati strutturati</li>
+                <ul>
+                    <li>Spiegazione teorica dei modelli utlizzati</li>
+                    <li>Applicazione dei modelli</li>
+                </ul>
+                <li>Dati non strutturati</li>
+                <ul>
+                    <li>Spiegazione teorica dei modelli utlizzati</li>
+                    <li>Applicazione dei modelli</li>
+                </ul>
+            </ul>
+            <li>Verifica test, confronto dei modelli</li>
+            <ul>
+                <li>Confronto dei modelli</li>
+                <li>Ensemble earning</li>
+                <ul>
+                    <li>Spiegazione teorica dei modelli utlizzati</li>
+                    <li>Applicazione dei modelli</li>
+                </ul>
+                <li>Esempi pratici di applicazioni</li>
+                <ul>
+                    <li>Bot di telegram</li>
+                    <li>Cestino</li>
+                </ul>
+            </ul>
+            <li>Conclusioni</li>
+        </ul>
+        </p>
+
+
+
+        <p>Per adesso sono nella fase di "Reperimento dei dati", come fonti per prendere i dati sto usando:
+        <br><br>
+        Webscraping 41 000 foto 
+        <br><br>
+        O creato 3 bot su Telegram per ricevere foto che adesso sponsorizzereró tra amici e conoscenti e pubblicità online. Non so stabilire quante foto mi invieranno ma conto di arrivare minimo al migliaio
+        <br>
+        Per la plastica:<br>
+        <a href="https://t.me/Plastica_inviafoto_bot">https://t.me/Plastica_inviafoto_bot</a>
+        <br><br>
+        Per la carta:<br>
+        <a href="https://t.me/Carta_inviafoto_bot">https://t.me/Carta_inviafoto_bot</a>
+        <br><br>
+        Per il vetro:<br>
+        <a href="https://t.me/Vetro_inviafoto_bot">https://t.me/Vetro_inviafoto_bot</a>
+        <br><br>
+        E infine sono riuscito ad creare il cestino "robot" e il software di registrazione dei dati e conto di riuscire a registrare intorno ai 3000 oggetti (1000 di carta 1000 di vetro e 1000 di plastica) ho ancora un problema sul motore che fa girare il macchinario ma conto di risolverò e comunque non influisce ne con la parte di riconoscimento ne con la parte di registrazione dei dati 
+        <br><br>
+        Quindi in definitiva conto di avere intorno alle 45 000 foto dei differenti tipi di rifiuti e 3000 dati strutturati per fare ensemble learning tra i due tipi di modelli.</p>
+
+<br><br><center>
+      <button class="button" onClick="window.open('LATEX/TESI_SACCAGGI_GIACOMO.pdf');">APRI TESI (Working in progress)</button></center><br><br>
+
+   <!-- Footer -->
+    <footer>
+       <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/SaccaggiGiacomo">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/giacomo-saccaggi-782439163/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/GiacomoSaccaggi/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; GiacomoSaccaggi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
