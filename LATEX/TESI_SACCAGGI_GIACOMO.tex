@@ -290,11 +290,11 @@ Funzione al completo descritta nell'Appendice A.1.1 .
 \subsection{Funzionamento}
 
 Telegram è una applicazione di messaggistica gratuita creata e ideata a Berlino da Pavel Durov e Nikolai Durov.
-La prima particolarità di Telegram è quella di basarai su un protocollo di comunicazione completamento open source, sviluppato per ridurre al minimo la quantità di byte inviati per ogni messaggio. Questa soluzione permette di avere una maggiore velocità anche in condizioni di scarsa recezione.
+La prima particolarità di Telegram è quella di basarsi su un protocollo di comunicazione completamento open source, sviluppato per ridurre al minimo la quantità di byte inviati per ogni messaggio. Questa soluzione permette di avere una maggiore velocità anche in condizioni di scarsa recezione.
 La seconda qualità di Telegram riguarda l'elevato livello di sicurezza, infatti, grazie all'utilizzo di algoritmi di criptazione interni alle chat aumenta notevolmente il livello di privacy.
 
 
-Secondo la definizione classica data al termine Bot (abbreviazione di robot), è una chat con la quale è possibile inviare input ad un server tramite comandi precedentemente programmati e ricevere output di direttamente nella chat e/o sul server. I chatbot stanno diventando sempre più importanti in un mondo nel quale si cerca di automatizzare il più possibile ogni tipo di processo si pensi ad esempio a “TOBI” chatbot di Vodafone con il quale è possibile chattare sull’app o sul sito della società di telecomunicazioni per aiutare il cliente a risolvere eventuali problemi 
+Secondo la definizione classica data al termine Bot (abbreviazione di robot), è una chat con la quale è possibile inviare input ad un server tramite comandi precedentemente programmati e ricevere output di direttamente nella chat e/o sul server. I chatbot stanno diventando sempre più importanti in un mondo nel quale si cerca di automatizzare il più possibile ogni tipo di processo e anche le grandi aziende si stanno spingendo verso quella direzione si pensi ad esempio a “TOBI” chatbot di Vodafone con il quale è possibile chattare sull’app o sul sito della società di telecomunicazioni per aiutare il cliente a risolvere eventuali problemi.
 
 
 
@@ -302,7 +302,15 @@ Secondo la definizione classica data al termine Bot (abbreviazione di robot), è 
 
 \subsection{Implementazione}
 
+Il Bot implementato in questa sezione ha come funzione quella di ricevere immagini per categoria di rifiuto, salvarle e restituire a colui che ha inviato l'immagine un messaggio di ringraziamento. 
 
+\begin{figure}[H]
+	\center
+	\includegraphics[width=150px]{bot_telegram.jpg}
+	\caption{Funzionamento Bot di Telegram}
+\end{figure}
+
+Per il funzionamento del Bot si è deciso di utilizzare un server collegato ad un rete locale piuttosto che un VPS (Virtual Private Server).
 
 
 \section{Il cestino}
