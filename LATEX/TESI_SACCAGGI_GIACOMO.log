@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  2 NOV 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  26 NOV 2019 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,11 +413,11 @@ Overfull \hbox (0.91077pt too wide) in paragraph at lines 275--276
  []
 
 [11]
-<bot_telegram.jpg, id=345, 177.66376pt x 385.44pt>
+<bot_telegram.jpg, id=345, 184.89075pt x 130.086pt>
 File: bot_telegram.jpg Graphic file (type jpg)
 <use bot_telegram.jpg>
 Package pdftex.def Info: bot_telegram.jpg  used on input line 309.
-(pdftex.def)             Requested size: 150.56305pt x 326.65512pt.
+(pdftex.def)             Requested size: 390.0pt x 274.41928pt.
  [12] [13pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.1}) has been already used, duplicate ignored
 
@@ -570,7 +570,7 @@ t/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb>
-Output written on TESI_SACCAGGI_GIACOMO.pdf (28 pages, 548636 bytes).
+Output written on TESI_SACCAGGI_GIACOMO.pdf (28 pages, 542112 bytes).
 PDF statistics:
  632 PDF objects out of 1000 (max. 8388607)
  583 compressed objects within 6 object streams
