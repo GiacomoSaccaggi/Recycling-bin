@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  4 DEC 2019 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  4 DEC 2019 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,40 +359,40 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `TESI_SACCAGGI_GIACOMO.toc'.
 
  [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
 
 
 (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
  [1
 
 ]
 <separate-wastesystems-eu.png, id=244, 523.20468pt x 342.5297pt>
 File: separate-wastesystems-eu.png Graphic file (type png)
 <use separate-wastesystems-eu.png>
-Package pdftex.def Info: separate-wastesystems-eu.png  used on input line 140.
+Package pdftex.def Info: separate-wastesystems-eu.png  used on input line 137.
 (pdftex.def)             Requested size: 301.1261pt x 197.14119pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.146 
+l.143 
        <./separate-wastesystems-eu.png>]
 <economiacircolare.jpg, id=255, 1003.75pt x 941.5175pt>
 File: economiacircolare.jpg Graphic file (type jpg)
 <use economiacircolare.jpg>
-Package pdftex.def Info: economiacircolare.jpg  used on input line 150.
+Package pdftex.def Info: economiacircolare.jpg  used on input line 147.
 (pdftex.def)             Requested size: 301.1261pt x 282.45743pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.0.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.156 
+l.153 
        <./economiacircolare.jpg>] [4]
 Capitolo 1.
 [5
@@ -406,20 +406,20 @@ File: lstlang2.sty 2019/02/27 1.8b listings language file
 (c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2019/02/27 1.8b listings language file
 ) [9] [10]
-Overfull \hbox (18.15683pt too wide) in paragraph at lines 288--289
+Overfull \hbox (18.15683pt too wide) in paragraph at lines 285--286
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][] 
  []
 
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 293--294
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 290--291
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 298--299
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 295--296
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -430,81 +430,81 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 <bot_telegram.jpg, id=346, 184.89075pt x 130.086pt>
 File: bot_telegram.jpg Graphic file (type jpg)
 <use bot_telegram.jpg>
-Package pdftex.def Info: bot_telegram.jpg  used on input line 343.
+Package pdftex.def Info: bot_telegram.jpg  used on input line 340.
 (pdftex.def)             Requested size: 390.0pt x 274.41928pt.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 \section
+l.347 \section
               {Il cestino} <./bot_telegram.jpg>]
 <strutturasotto1.png, id=356, 532.08788pt x 474.27188pt>
 File: strutturasotto1.png Graphic file (type png)
 <use strutturasotto1.png>
-Package pdftex.def Info: strutturasotto1.png  used on input line 364.
+Package pdftex.def Info: strutturasotto1.png  used on input line 361.
 (pdftex.def)             Requested size: 390.0pt x 347.634pt.
  [14]
 <fotostrutturasotto3modificatafiltro.jpg, id=361, 255.354pt x 264.08662pt>
 File: fotostrutturasotto3modificatafiltro.jpg Graphic file (type jpg)
 <use fotostrutturasotto3modificatafiltro.jpg>
 Package pdftex.def Info: fotostrutturasotto3modificatafiltro.jpg  used on input
- line 372.
+ line 369.
 (pdftex.def)             Requested size: 390.0pt x 403.35005pt.
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.375 
+l.372 
        <./strutturasotto1.png>] [16pdfTeX warning (ext4): destination with the 
 same identifier (name{figure.1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.378 
+l.375 
        <./fotostrutturasotto3modificatafiltro.jpg>]
 <strutturasopra1.png, id=374, 486.31688pt x 353.82187pt>
 File: strutturasopra1.png Graphic file (type png)
 <use strutturasopra1.png>
-Package pdftex.def Info: strutturasopra1.png  used on input line 383.
+Package pdftex.def Info: strutturasopra1.png  used on input line 380.
 (pdftex.def)             Requested size: 390.0pt x 283.74353pt.
 <fotostrutturasopramodificatafiltro.jpg, id=375, 385.44pt x 289.08pt>
 File: fotostrutturasopramodificatafiltro.jpg Graphic file (type jpg)
 <use fotostrutturasopramodificatafiltro.jpg>
 Package pdftex.def Info: fotostrutturasopramodificatafiltro.jpg  used on input 
-line 389.
+line 386.
 (pdftex.def)             Requested size: 390.0pt x 292.4978pt.
  [17pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.392 
+l.389 
        <./strutturasopra1.png>]
 <arduinomega.jpg, id=385, 1104.125pt x 725.71124pt>
 File: arduinomega.jpg Graphic file (type jpg)
 <use arduinomega.jpg>
-Package pdftex.def Info: arduinomega.jpg  used on input line 406.
+Package pdftex.def Info: arduinomega.jpg  used on input line 403.
 (pdftex.def)             Requested size: 390.0pt x 256.33923pt.
  [18pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.409 
+l.406 
        <./fotostrutturasopramodificatafiltro.jpg>] [19pdfTeX warning (ext4): de
 stination with the same identifier (name{figure.1.6}) has been already used, du
 plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.433 
+l.430 
        <./arduinomega.jpg>]
 <fotoresistenza.png, id=401, 450.18187pt x 286.06876pt>
 File: fotoresistenza.png Graphic file (type png)
 <use fotoresistenza.png>
-Package pdftex.def Info: fotoresistenza.png  used on input line 451.
+Package pdftex.def Info: fotoresistenza.png  used on input line 448.
 (pdftex.def)             Requested size: 100.37537pt x 63.78214pt.
 
 (c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -520,106 +520,106 @@ File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.465 	luce1=
+l.462 	luce1=
              analogRead(A2); <./fotoresistenza.png>]
 <ultrasonic.png, id=415, 674.52pt x 433.62pt>
 File: ultrasonic.png Graphic file (type png)
 <use ultrasonic.png>
-Package pdftex.def Info: ultrasonic.png  used on input line 482.
+Package pdftex.def Info: ultrasonic.png  used on input line 479.
 (pdftex.def)             Requested size: 100.37537pt x 64.5241pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.487 #
+l.484 #
        include <NewPing.h> <./ultrasonic.png>]
 <peso.png, id=434, 639.89063pt x 484.81125pt>
 File: peso.png Graphic file (type png)
 <use peso.png>
-Package pdftex.def Info: peso.png  used on input line 519.
+Package pdftex.def Info: peso.png  used on input line 516.
 (pdftex.def)             Requested size: 100.37537pt x 76.04747pt.
  [22] [23pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.1.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.547 
+l.544 
        <./peso.png>]
 <colorsensor.jpg, id=490, 501.875pt x 376.40625pt>
 File: colorsensor.jpg Graphic file (type jpg)
 <use colorsensor.jpg>
-Package pdftex.def Info: colorsensor.jpg  used on input line 550.
+Package pdftex.def Info: colorsensor.jpg  used on input line 547.
 (pdftex.def)             Requested size: 100.37537pt x 75.2799pt.
  [24pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.576 	frequency 
+l.573 	frequency 
                  = pulseIn(out, LOW); <./colorsensor.jpg>]
 <schemacollegamento.png, id=517, 895.84688pt x 575.14874pt>
 File: schemacollegamento.png Graphic file (type png)
 <use schemacollegamento.png>
-Package pdftex.def Info: schemacollegamento.png  used on input line 617.
+Package pdftex.def Info: schemacollegamento.png  used on input line 614.
 (pdftex.def)             Requested size: 390.0pt x 250.38075pt.
  [25]
 <form1.png, id=558, 311.36325pt x 126.4725pt>
 File: form1.png Graphic file (type png)
 <use form1.png>
-Package pdftex.def Info: form1.png  used on input line 635.
+Package pdftex.def Info: form1.png  used on input line 632.
 (pdftex.def)             Requested size: 301.1261pt x 122.32115pt.
  [26pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.638 L
+l.635 L
        a seconda pagina chiamata "Form2" serve per registrare i dati relativ...
  <./schemacollegamento.png>]
 <form2.png, id=565, 542.62724pt x 445.665pt>
 File: form2.png Graphic file (type png)
 <use form2.png>
-Package pdftex.def Info: form2.png  used on input line 641.
+Package pdftex.def Info: form2.png  used on input line 638.
 (pdftex.def)             Requested size: 301.1261pt x 247.313pt.
 <formcam.png, id=566, 347.49825pt x 190.91325pt>
 File: formcam.png Graphic file (type png)
 <use formcam.png>
-Package pdftex.def Info: formcam.png  used on input line 646.
+Package pdftex.def Info: formcam.png  used on input line 643.
 (pdftex.def)             Requested size: 301.1261pt x 165.44939pt.
  [27pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.649 N
+l.646 N
        ella terza pagina indicizzata come "Form3" bisogna inizializzarla com...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.13})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.649 N
+l.646 N
        ella terza pagina indicizzata come "Form3" bisogna inizializzarla com...
  <./form1.png> <./form2.png>]
 <form3.png, id=576, 522.15076pt x 345.08925pt>
 File: form3.png Graphic file (type png)
 <use form3.png>
-Package pdftex.def Info: form3.png  used on input line 652.
+Package pdftex.def Info: form3.png  used on input line 649.
 (pdftex.def)             Requested size: 301.1261pt x 199.01979pt.
  [28pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.655 \chapter
+l.652 \chapter
               {Addestramento train e modelli}pdfTeX warning (ext4): destination
  with the same identifier (name{figure.1.15}) has been already used, duplicate 
 ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.655 \chapter
+l.652 \chapter
               {Addestramento train e modelli} <./formcam.png> <./form3.png>]
 Capitolo 2.
 [29
@@ -633,14 +633,14 @@ Capitolo 3.
 ]
 Appendice A.
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 763--764
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 760--761
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 768--769
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 765--766
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  
@@ -649,186 +649,186 @@ Overfull \hbox (31.95346pt too wide) in paragraph at lines 768--769
 [32
 
 ]
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 773--774
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 770--771
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 778--779
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 775--776
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 783--784
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 780--781
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 788--789
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 785--786
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 793--794
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 790--791
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 793--794
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 790--791
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 798--799
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 795--796
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 798--799
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 795--796
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 [33]
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 803--804
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 800--801
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 803--804
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 800--801
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 808--809
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 805--806
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 808--809
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 805--806
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 813--814
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 810--811
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (17.46133pt too wide) in paragraph at lines 813--814
+Overfull \hbox (17.46133pt too wide) in paragraph at lines 810--811
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 818--819
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 815--816
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 818--819
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 815--816
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 823--824
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 820--821
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 823--824
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 820--821
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 [34]
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 828--829
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 825--826
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (34.7074pt too wide) in paragraph at lines 828--829
+Overfull \hbox (34.7074pt too wide) in paragraph at lines 825--826
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 833--834
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 830--831
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 833--834
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 830--831
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 838--839
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 835--836
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 838--839
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 835--836
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 [35] [36] [37] [38] [39] [40]
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 1087--1088
 [][][][][][][][][][][][][][][][] 
  []
 
 [41] [42] [43] [44]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1220.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1217.
  [45
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1217.
  (./TESI_SACCAGGI_GIACOMO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1220.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1220.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1217.
 
 Package rerunfilecheck Info: File `TESI_SACCAGGI_GIACOMO.out' has not changed.
 (rerunfilecheck)             Checksum: 9209AC4C11581B249EFB9020E0607A73;3079.
