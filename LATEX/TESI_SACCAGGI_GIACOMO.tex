@@ -41,6 +41,9 @@
 	tabsize=3
 }
 
+
+
+
 %%\title{\textsc{Cestino}}
 
 %\title{UNIVERSIT\'A BICOCCA\\[0.5cm]SEDE DI MILANO\\[1cm]Facoltà di Scienze statistiche ed economiche\\[1cm]\includegraphics[width=5cm]{logo}\\[1cm]Titolo}
@@ -49,29 +52,37 @@
 
 
 
-
 \begin{document}
-\pagenumbering{roman}
 %%%% Opzione per interlinea 2
+
+\pagenumbering{roman}
 
 \begin{titlepage}
 	\begin{center}
 		
 		\Huge
-		\textbf{Titolo tesi}
+		\textbf{La raccolta differenziata, un problema di classificazione}
 		
 		\vspace{0.5cm}
 		\LARGE
-		Sottotitolo
+		Modelli previsionali e applicazioni
 		
 		\vspace{1cm}
 		
-		\textbf{Giacomo Saccaggi}
-		
+	\end{center}
+
+	\begin{tabbing}
+		\hspace*{9cm} \= \hspace*{7cm}  \kill
+		Candidato: \> Relatore: \\
+		Giacomo Saccaggi \> Ch.mo Prof. Nicola Lunardon \\
+	
+	\end{tabbing}
+	\begin{center}
+		\LARGE	
 		\vfill
 		
 		Facoltà di\\
-		Scienze statistiche ed economiche
+		Scienze Statistiche ed Economiche
 		
 		\vspace{0.8cm}
 		
@@ -81,8 +92,11 @@
 		\Large
 		Dipartimento di Statistica\\
 		Universit\'a Bicocca\\
-		Sede di Milano\\
-		2019/2020
+		Sede di Milano
+		
+		\vspace{0.8cm}
+		
+		Anno Accademico 2018/2019
 		
 	\end{center}
 \end{titlepage}
@@ -93,10 +107,11 @@
 \end{flushright}
 
 
+\renewcommand{\abstractname}{Abstract}
 
-
-
-
+\begin{abstract}
+Qui scrivere abstract
+\end{abstract}
 
 
 
@@ -118,17 +133,17 @@
 \addcontentsline{toc}{chapter}{Introduzione} \markboth{Introduzione}{} 
 
 
-L’economia italiana è oggi la più performante d’Europa per circolarità di materia, produttività delle risorse e capacità di riciclo. A dimostrarlo sono i numeri del rapporto “L’Economia Circolare in Italia – la filiera del riciclo asse portante di un’economia senza rifiuti”~\cite{chiave1}. Il documento, pubblicato nel gennaio del 2019 e curato dall’esperto ambientale Duccio Bianchi di Ambiente Italia, rappresenta il primo vero bilancio sulla “circolarità” nazionale, settore che vale oggi 88 miliardi di fatturato e 22 miliardi di valore aggiunto, ovvero l’1,5 \% del PIL.
+L’economia italiana è oggi la più \textit{performante} d’Europa per circolarità di materia, produttività delle risorse e capacità di riciclo. A dimostrarlo sono i numeri del rapporto “\textit{L’Economia Circolare in Italia – la filiera del riciclo asse portante di un’economia senza rifiuti}”~\cite{chiave1}. Il documento, pubblicato nel gennaio del 2019 e curato dall’esperto ambientale Duccio Bianchi di Ambiente Italia, rappresenta il primo vero bilancio sulla “circolarità” nazionale, settore che vale oggi 88 miliardi di fatturato e 22 miliardi di valore aggiunto, ovvero l’1,5 \% del PIL.
 
-In questo libro emerge come l’Italia sia attualmente capofila in Europa nei tre indice che l'autore definisce fondamentali per valutare un economia circolare:  \textbf{tasso di produttività nell’uso delle risorse} (quanti euro di PIL si producono per ogni kg di risorse consumate),  \textbf{tasso di circolarità della materia nell’economia} (quante materie seconde impieghiamo sul totale dei consumi di materia) e infine il \textbf{tasso di riciclo dei rifiuti} (quanti rifiuti, urbani e non urbani, inclusi l’import ed export, avviamo a riciclo internamente). Le performance nazionali risultano non solo superiori alla media UE ma anche alle prestazioni dei principali stati come Germania, Spagna, Regno Unito e Francia.
+In questo libro emerge come l’Italia sia attualmente capofila in Europa nei tre indice che l'autore definisce fondamentali per valutare un'economia circolare:  \textbf{tasso di produttività nell’uso delle risorse} (l'ammontare di euro di PIL prodotte per ogni kg di risorse consumate),  \textbf{tasso di circolarità della materia nell’economia} (la quantità di materie seconde impiegate sul totale dei consumi di materia) e infine il \textbf{tasso di riciclo dei rifiuti} (il volume di rifiuti, urbani e non urbani, inclusi l’import ed export, destinati al riciclo internamente). Le \textit{performance} nazionali risultano non solo superiori alla media UE ma anche alle prestazioni dei principali stati come Germania, Spagna, Regno Unito e Francia.
 
 Il riciclo è un processo di conversione che trasforma i rifiuti in nuovi materiali, oggetti o sostanze del tutto differenti dai rifiuti d’origine. Questo processo porta  quattro vantaggi:
 
 \begin{itemize}
-	\item Conserva le risorse: i materiali ricavati vengono convertiti in nuovi prodotti, riducendo la necessità estrarre materie prime dalla Terra, attraverso l'estrazione e la silvicoltura. Il riciclaggio aiuta a conservare importanti materie prime e protegge gli habitat naturali; inoltre può essere una grande possibilità di evitare importazioni per territori come quello italiano scarso di risorse naturali.
-	\item Consente di risparmiare energia: l'uso di materiali riciclati nel processo di produzione consuma molta meno energia di quella necessaria per la produzione di nuovi prodotti; inoltre, si ottiene un ulteriore risparmio energetico perché è necessaria più energia per estrarre, raffinare, trasportare e elaborare materie prime pronte per l'industria rispetto alla fornitura di materiali pronti per l'industria.
-	\item Aiuta a proteggere l'ambiente: il riciclaggio riduce la necessità di estrazione (estrazione, silvicoltura e disboscamento), raffinazione e lavorazione di materie prime che creano un notevole inquinamento dell'aria e dell'acqua. Poiché il riciclaggio consente di risparmiare energia, riduce anche le emissioni di gas serra, il che aiuta a contrastare i cambiamenti climatici. 
-	\item Riduce l'accumulo di rifiuti: i materiali riciclabili vengono rielaborati in nuovi prodotti e, di conseguenza, la quantità di rifiuti inviati alle discariche si riduce. 
+	\item Conservazione delle risorse: i materiali ricavati vengono convertiti in nuovi prodotti, riducendo la necessità di estrarre materie prime dalla Terra, attraverso l'estrazione e la silvicoltura. Il riciclaggio aiuta a conservare importanti materie prime e protegge gli habitat naturali; inoltre può essere una grande possibilità di evitare importazioni per territori come quello italiano scarso di risorse naturali.
+	\item Risparmio di energia: l'uso di materiali riciclati nel processo di produzione consuma molta meno energia di quella necessaria per la produzione di nuovi prodotti, si ottiene un ulteriore risparmio energetico perché è necessaria più energia per estrarre, raffinare, trasportare e elaborare materie prime pronte per l'industria rispetto al riciclo.
+	\item Protezione dell'ambiente: il riciclaggio riduce la necessità di estrazione (estrazione, silvicoltura e disboscamento), raffinazione e lavorazione di materie prime che creano un notevole inquinamento dell'aria e dell'acqua. Poiché il riciclaggio consente di risparmiare energia, riduce anche le emissioni di gas serra, il che aiuta a contrastare i cambiamenti climatici. 
+	\item Riduzione dell'accumulo di rifiuti: i materiali riciclabili vengono rielaborati in nuovi prodotti e, di conseguenza, la quantità di rifiuti inviati alle discariche si riduce. 
 \end{itemize} 
 
 \begin{figure}[H]
@@ -139,7 +154,7 @@ Il riciclo è un processo di conversione che trasforma i rifiuti in nuovi materia
 \end{figure}
 
 
-In quest'ambito subentra il concetto di economia circolare ossia un sistema economico volto ad eliminare gli sprechi e l'uso continuo delle risorse. I sistemi circolari impiegano il riutilizzo, la condivisione, la riparazione, il rinnovo, la rigenerazione e il riciclaggio per creare un sistema a circuito chiuso, riducendo al minimo l'uso di input di risorse e la creazione di rifiuti, inquinamento ed emissioni di carbonio. L'economia circolare mira a mantenere i prodotti, le attrezzature e le infrastrutture in uso più a lungo rispetto invece alla classica economia lineare che si basa sull'utilizzo di risorse sempre nuove e l'eliminazione di quelle vecchie.
+In quest'ambito subentra il concetto di economia circolare ossia un sistema economico volto ad eliminare gli sprechi e l'uso continuo delle risorse. I sistemi circolari impiegano il riutilizzo, la condivisione, la riparazione, il rinnovo, la rigenerazione e il riciclaggio per creare un sistema a circuito chiuso, riducendo al minimo l'uso di \textit{input} di risorse e la creazione di rifiuti, inquinamento ed emissioni di carbonio. L'economia circolare mira a mantenere i prodotti, le attrezzature e le infrastrutture in uso più a lungo rispetto invece alla classica economia lineare, che si basa sull'utilizzo di risorse sempre nuove e l'eliminazione di quelle vecchie.
 
 \begin{figure}[H]
 	\flushleft
@@ -149,14 +164,16 @@ In quest'ambito subentra il concetto di economia circolare ossia un sistema econ
 \end{figure}
 
 
-Tra le tante eccellenze italiane nell'ambito del riciclo una delle più importanti riguarda il legno che, come viene evidenziato nell'articolo del giornale Il Sole 24 Ore da Giovanna Mancini~\cite{chiave2}, in poco più di 20 anni il sistema del recupero e del riciclo del legno ha creato una nuova economia che ha prodotto risultati importanti sia in termini ambientali, sia per la capacità di creare sviluppo e occupazione. L’impatto economico sulla produzione nazionale delle attività della filiera del recupero del legno post consumo è stimabile, secondo il rapporto del politecnico, in circa 1,4 miliardi di euro, mentre il contributo sull’occupazione è di quasi seimila posti di lavoro complessivamente sostenuti in Italia.
+Tra le tante eccellenze italiane nell'ambito del riciclo una delle più importanti riguarda il sistema del recupero e del riciclo del legno che, come viene evidenziato nell'articolo del giornale Il Sole 24 Ore da Giovanna Mancini~\cite{chiave2}, in poco più di 20 anni ha creato una nuova economia che ha prodotto risultati importanti sia in termini ambientali, sia per la capacità di creare sviluppo e occupazione. L’impatto economico sulla produzione nazionale delle attività della filiera del recupero del legno \textit{post} consumo è stimabile in circa 1,4 miliardi di euro, mentre il contributo sull’occupazione è di quasi seimila posti di lavoro complessivamente sostenuti in Italia.
 
 
 
-In un industria che sta migrando verso materie prime riciclate la raccolta differenziata, ossia il processo mediante il quale i rifiuti vengono separati in diversi elementi, ricopre un importanza cruciale in quanto più essa viene effettuata con cura e controllo e più il prodotto finale sarà "puro". Questa procedura è essenziale affinché le aziende che si occupano di riciclo possano operare nel settore. 
+In un sistema industriale che sta migrando verso materie prime riciclate, la raccolta differenziata, ossia il processo mediante il quale i rifiuti vengono separati in diversi elementi, ricopre un'importanza cruciale, in quanto più essa viene effettuata con cura e controllo e più il prodotto finale sarà \virgolette{puro}. Questa procedura è essenziale affinché le aziende che si occupano di riciclo possano operare nel settore. 
 
 
-L'obbiettivo di questo lavoro vuole essere quello di affrontare il problema della differenziata da un punto di vista più analitico e proporre alcune idee e soluzioni di come il Data Science possa essere d'aiuto nel riuscire a migliorare lo sfruttamento delle risorse. La dinamica della raccolta differenziata si declina in un problema di classificazione; durante il lavoro si andranno a sfruttare sia dati strutturati che dati non strutturati utilizzando algoritmi di Deep Learning per riuscire a classificare in modo accurato i differenti tipi di rifiuti.
+L'obbiettivo di questo lavoro vuole essere quello di affrontare il problema della differenziata da un punto di vista scientifico e proporre alcune idee e soluzioni di come il \textit{Data Science} possa essere d'aiuto nel riuscire a migliorare lo sfruttamento delle risorse. La dinamica della raccolta differenziata si declina in un problema di classificazione; durante il lavoro si andranno a sfruttare sia dati strutturati, che dati non strutturati, utilizzando algoritmi di \textit{Deep Learning} per riuscire a classificare in modo accurato i differenti tipi di rifiuti.
+
+Le domande della ricerca, quindi, sono due: \virgolette{ Come si può analizzare la raccolta differenziata come un problema di classificazione statistica?} e \virgolette{Quali applicazioni potrebbero essere implementate con l'utilizzo dei modelli previsionali?}
 
 
 
@@ -166,23 +183,23 @@ L'obbiettivo di questo lavoro vuole essere quello di affrontare il problema dell
 
 \section{Struttura del lavoro}
 
-Il riciclo può essere una risorsa molto importante che può non solo garantire un economia più eco sostenibile ma può essere una grande risorsa per l'occupazione e per evitare di importare materie prime.
+Il quesito di questo progetto ha implicato uno studio e delle conoscenze trasversali ai problemi di classificazione statistica, in quanto si è dovuto fare un'analisi \virgolette{completa} dalla costruzione del \textit{data set} fino all'implementazione di applicazioni.
 
-Per affrontare questo problema si è deciso di strutturare il lavoro in quattro fasi: reperimento dei dati, elaborazione, previsione e infine scelta del modello. Per il carattere applicativo del progetto durante tutto il lavoro si andranno ad approfondire la teoria dei modelli e degli strumenti usati andando ad evidenziare alcune implementazioni ritenute utili ai fini della comprensione, per le altre si lasciano i codici nell'Appendice. 
+Per affrontare questo problema si è deciso di strutturare il lavoro in quattro fasi: reperimento dei dati, elaborazione, previsione e, infine, scelta del modello. Per il carattere applicativo del progetto durante tutto il lavoro si approfondiranno la teoria dei modelli e degli strumenti usati andando ad evidenziare alcune implementazioni ritenute utili ai fini della comprensione, per le altre si riportano i codici nell'Appendice. 
 
-Nella prima fase, si è deciso di reperire i dati per poter classificare i rifiuti utilizzando tre strategie: Web Scraping, programmazione di un Bot di Telegram e costruzione di un cestino che potesse registrare i dati dei rifiuti. Ognuna di queste strategie è stata scelta per ragioni differenti. 
+Nella prima fase, si è deciso di reperire i dati per poter classificare i rifiuti utilizzando tre strategie: Web Scraping, programmazione di un \textit{Chat Bot di Telegram} e costruzione di un cestino che potesse registrare i dati dei rifiuti. Ognuna di queste strategie è stata scelta per ragioni differenti. 
 
-Il Web Scraping è stata scelta come strategia iniziale perché il World Wide Web costituisce una fonte quasi infinita di dati (in questo caso di immagini) e non usarlo sarebbe stata una scelta che avrebbe portato all'esclusione di risorse determinanti.
+Il \textit{Web Scraping} è stata scelta come strategia iniziale perché il \textit{World Wide Web} costituisce una fonte quasi infinita di dati (in questo caso di immagini) e non usarlo sarebbe stata una scelta che avrebbe portato all'esclusione di risorse determinanti.
 
-Il Bot di Telegram è stato scelto come strumento per avere immagini più precise riguardo alle macrocategorie più comuni di rifiuti, quali: carta, plastica e vetro.
+Il \textit{Bot} di \textit{Telegram} è stato scelto come strumento per avere immagini più precise riguardo alle macrocategorie più comuni di rifiuti, quali: carta, plastica e vetro.
 
-Infine si è deciso di costruire un cestino così da poter raccogliere dei dati selezionati reputati importanti nel classificare gli oggetti. Come tecnologia di implementazione in questa prima fase si è deciso di utilizzare la piattaforma hardware Arduino per la sua semplicità e versatilità, per la realizzazione di questa parte del progetto è stato necessario costruire un software che fosse in grado di registrare e salvare i dati inviati dall'Arduino così da automatizzare e sveltire il più possibile il processo di costruzione del dataset.
-
-
-La fase successiva costituisce il fulcro di questo progetto in quanto si sono dovuti analizzare i dati raccolti precedentemente e capire come, sfruttando algoritmi di Deep Learning e Machine Learning, riuscire a classificare nel modo migliore gli oggetti.
+Infine, si è deciso di costruire un cestino così da poter raccogliere dei dati selezionati reputati importanti nel classificare gli oggetti. Come tecnologia di implementazione in questa prima fase si è deciso di utilizzare la piattaforma hardware Arduino per la sua semplicità e versatilità. Per la realizzazione di questa parte del progetto, è stato necessario costruire un software che fosse in grado di registrare e salvare i dati inviati dall'Arduino così da automatizzare e sveltire il più possibile il processo di costruzione del dataset.
 
 
-Nell'ultima fase si sono combinati tramite meccanismi di Ensemble Learning i vari classificatori così da trovare un previsore migliore.
+La fase successiva costituisce il fulcro di questo progetto, in quanto analizzando i dati raccolti precedentemente si è cercato di comprendere come, sfruttando algoritmi di \textit{Deep Learning} e \textit{Machine Learning}, si riuscisse a classificare nel modo migliore i rifiuti.
+
+
+Nell'ultima fase si sono combinati tramite meccanismi di \textit{Ensemble Learning} i vari classificatori, così da trovare un previsore migliore, con il quale si sono costruite due applicazioni per fare la raccolta differenziata.
 
  
 
@@ -193,27 +210,30 @@ Nell'ultima fase si sono combinati tramite meccanismi di Ensemble Learning i var
 
 Il regolamento della raccolta differenziata può differire da zona a zona. Come regole di riferimento si è deciso di utilizzare il regolamento vigente nella città metropolitana di Milano.
 Il capoluogo lombardo, infatti, è diventato il Comune che ha raggiunto la quota record del 54\% di raccolta differenziata, situandosi in cima alla classifica italiana e al secondo posto in Europa dopo Vienna.
-Un risultato importante e un fenomeno che ha catturato anche l’attenzione di New York, il cui Assessorato all’ambiente di New York ha deciso di studiare il modus operandi di Milano per adattarlo alla metropoli americana.
+Un risultato importante e un fenomeno che ha catturato anche l’attenzione di New York, il cui Assessorato all’ambiente ha deciso di studiare il \textit{modus operandi} di Milano per adattarlo alla metropoli americana.
 
 Nei prossimi capitoli si parlerà genericamente di plastica, carta o altro rifiuto. In questa sezione descriviamo quali materiali o oggetti rientrano nelle rispettive categorie.
 
-Innanzitutto va ricordato come esistano cinque differenti tipi di rifiuti, da depositare in appositi cassonetti: si tratta del sacco trasparente neutro per i rifiuti generici, il sacco giallo per plastica e metallo, il cassonetto verde per il vetro, il cassonetto bianco per carta e cartone e il cassonetto marrone per rifiuti organici. Vediamo le varie corrispondenze.
+Innanzitutto va ricordato come esistano cinque differenti tipi di rifiuti: rifiuti generici, plastica e metallo, vetro, carta e cartone e rifiuti organici, definiti come segue:
 
 \begin{itemize}
-	\item Indifferenziato (sacco trasparente): vi finiscono tutti i rifiuti generici come i piatti rotti, la ceramica in generale, la carta sporca e oleata, cd, DVD, videocassette e musicassette, piccoli accendini, filtri dell’aspirapolvere, pannolini e assorbenti e mozziconi di sigaretta.
-	\item Carta (cassonetto bianco): vi finiscono tutti gli oggetti di carta o cartone quali giornali, riviste, libri e quaderni privati delle parti di plastica, adesive e in metallo, ma anche i contenitori in Tetra Pak (quelli usati per il latte, i succhi di frutta e così via), le scatole in cartone e i cartoni della pizza senza avanzi.
-	\item Plastica (sacco giallo): vi finiscono le plastiche e i metalli, inclusivi di bottiglie, flaconi e sacchetti di plastica, le vaschette per gli alimenti anche in polistirolo, tutte le scatolette e i barattoli per alimenti una volta sciacquate, lattine per bevande, tubetti di plastica (del dentifricio, per esempio), fogli di alluminio, pellicole per imballaggio, nonché oggetti in metallo come pentole, posate, caffettiere, tappi, capsule, chiavi e lucchetti.
-	\item Vetro (cassonetto verde): vi finiscono tutti i materiali in vetro come bottiglie e bicchieri, vasi, caraffe e barattoli. Da non inserirvi invece lampadine, specchi e gli oggetti in cristallo.
-	\item Umido (cassonetto marrone): vi finiscono tutti i rifiuti di natura organica in tutte le loro parti, inclusivi di frutta, frutta secca, verdura, carne e pesce, pane, riso, pasta, scarti di cucina, avanzi, fondi di caffè, filtri di tè e tisane, fiori, semi e foglie, e alimenti avariati.
+	\item Indifferenziato: tutti i rifiuti generici come i piatti rotti, la ceramica in generale, la carta sporca e oleata, cd, DVD, videocassette e musicassette, piccoli accendini, filtri dell’aspirapolvere, pannolini e assorbenti e mozziconi di sigaretta.
+	\item Carta: vi finiscono tutti gli oggetti di carta o cartone quali giornali, riviste, libri e quaderni privati delle parti di plastica, adesive e in metallo, ma anche i contenitori in Tetra Pak (quelli usati per il latte, i succhi di frutta e così via), le scatole in cartone e i cartoni della pizza senza avanzi.
+	\item Plastica: le plastiche e i metalli, inclusivi di bottiglie, flaconi e sacchetti di plastica, le vaschette per gli alimenti anche in polistirolo, tutte le scatolette e i barattoli per alimenti una volta sciacquate, lattine per bevande, tubetti di plastica (del dentifricio, per esempio), fogli di alluminio, pellicole per imballaggio, nonché oggetti in metallo come pentole, posate, caffettiere, tappi, capsule, chiavi e lucchetti.
+	\item Vetro: tutti i materiali in vetro come bottiglie e bicchieri, vasi, caraffe e barattoli. Da non inserirvi invece lampadine, specchi e gli oggetti in cristallo.
+	\item Umido: tutti i rifiuti di natura organica in tutte le loro parti, inclusivi di frutta, frutta secca, verdura, carne e pesce, pane, riso, pasta, scarti di cucina, avanzi, fondi di caffè, filtri di tè e tisane, fiori, semi e foglie, e alimenti avariati.
 	
 \end{itemize}
+
+Per una questione igienica intrinseca nella categoria dei rifiuti organici non è stato possibile in alcuni modelli e applicazioni prenderli in analisi, in quei casi, pertanto, si è deciso di considerarli rifiuti generici.
+
 
 \section{Web Scraping}
 
 
 \subsection{Funzionamento}
 
-Il Web scraping~\cite{chiave3} (chiamato anche web harvesting, o web data extraction) è un insieme di tecniche utilizzate per l'estrazione di dati dai siti Web. È una forma di copia, in cui i dati specifici vengono raccolti e copiati dal web accedendo al World Wide Web direttamente utilizzando il protocollo Hypertext Transfer Protocol o tramite un browser Web, in genere in un database locale centrale o foglio di calcolo, per il successivo recupero o analisi, il termine in genere si riferisce a processi automatizzati implementati utilizzando un web crawler, un bot o un server.
+Il Web scraping~\cite{chiave3} (chiamato anche web harvesting, o web data extraction) è un insieme di tecniche utilizzate per l'estrazione di dati dai siti Web. È una forma di copia, in cui i dati specifici vengono raccolti e copiati accedendo al World Wide Web direttamente utilizzando il protocollo Hypertext Transfer Protocol o tramite un browser Web, in genere in un database locale centrale o foglio di calcolo, per il successivo recupero o analisi, il termine in genere si riferisce a processi automatizzati implementati utilizzando un web crawler, un bot o un server.
 
 Tra le tante possibili soluzioni si è deciso di utilizzare la tecnica di Web Scraping chiamata HTML Parsing ossia una deserializzazione delle pagine HTML. Questo processo riceve il codice HTML non elaborato, lo interpreta e genera dal codice una struttura ad albero DOM (Document Object Model).
 
@@ -222,10 +242,10 @@ Questa tecnica è molto versatile in quanto gran parte dei siti Web hanno grandi 
 
 \subsection{Implementazione}
 
-Per fare Web Scraping si è deciso di utilizzare il linguaggio R, questo perchè oltre ai pacchetti appositi che aiutano nell'operazione di creazione dello wrapper in R sono presenti delle ottime librerie per fare text mining, la più famosa \virgolette{"stringr"}, che aiutano in determinate operazioni a gestire operazioni di HTML parsing più complicate.
+Per fare Web Scraping si è deciso di utilizzare il linguaggio R, questo perchè oltre ai pacchetti appositi che aiutano nell'operazione di creazione dello wrapper in R sono presenti delle ottime librerie per fare text mining, la più famosa \virgolette{stringr}, che aiutano in determinate operazioni a gestire operazioni di HTML parsing più complicate.
 
-La libreria utilizzata in questa fase è "rvest" (creata da Hadley Wickham [aut, cre], RStudio [cph]) la quale gestisce e migliora alcune funzioni contenute nel pacchetto "xml2" (creata da Hadley Wickham [aut], Jim Hester [aut, cre], Jeroen Ooms [aut], RStudio [cph], R Foundation [ctb]), queste due librerie si basano su un pacchetto creato per il linguaggio C++ da Daniel Veillard (versione definitiva pubblicata alla fine del 2012) di nome "libxml2". Le funzioni che abbiamo utilizzato di queste librerie sono tre:
-$read\_html()$ del pacchetto "xml2"; $xml\_attrs$ e $html\_nodes()$ del pacchetto "rvest".
+La libreria utilizzata in questa fase è \virgolette{rvest} (creata da Hadley Wickham [aut, cre], RStudio [cph]) la quale gestisce e migliora alcune funzioni contenute nel pacchetto \virgolette{xml2} (creata da Hadley Wickham [aut], Jim Hester [aut, cre], Jeroen Ooms [aut], RStudio [cph], R Foundation [ctb]), queste due librerie si basano su un pacchetto creato per il linguaggio C++ da Daniel Veillard (versione definitiva pubblicata alla fine del 2012) di nome \virgolette{libxml2}. Le funzioni che abbiamo utilizzato di queste librerie sono tre:
+$read\_html()$ del pacchetto \virgolette{xml2}; $xml\_attrs()$ e $html\_nodes()$ del pacchetto \virgolette{rvest}.
 
 La prima funzione read\_html() serve per deserializzare le pagine HTML e trasformarle in una lista strutturata come un albero DOM.
 
@@ -235,7 +255,7 @@ library("xml2")
 page<-read_html("###---link---###")
 \end{lstlisting}
 
-Le due funzioni del pacchetto "rvest", invece, aiutano ad individuare i diversi elementi del documento. In questo caso si utilizzano congiuntamente per trovare il link di origine delle immagini per poi scaricarle.
+Le due funzioni del pacchetto \virgolette{rvest}, invece, aiutano ad individuare i diversi elementi del documento. In questo caso si utilizzano congiuntamente per trovare il link di origine delle immagini per poi scaricarle.
 
 \begin{lstlisting}[language=R]
 install.packages("rvest")
@@ -253,12 +273,13 @@ download.file(link_img, destfile="PATH", method='curl')
 
 
 
-Per la ricerca dei siti dove scaricare le immagini si è utilizzata la logica alla base delle ricerche sui più comuni motori di ricerca per immagini: Google, Bing e Pixabay.
+Per la ricerca dei siti dove scaricare le immagini si è sfruttato il funzionamento alla base delle ricerche sui più comuni motori di ricerca per immagini: Google, Bing e Pixabay.
 
-La logica che sta alla base delle ricerche online permette di trovare tutte le immagini collegate inserendo una o più parole chiave. Quindi si è deciso di creare delle liste di parole per ogni categorie specificate nella sezione precedente e di trovare le immagini collegate al quella particolare Keyword.
+La logica che sta alla base delle ricerche online permette di trovare tutte le immagini collegate inserendo una o più parole chiave. Quindi si è deciso di creare delle liste di parole per ogni categorie rifiuto e di trovare le immagini collegate per le differenti Keywords.
 
-In termini generali si è creato un array con una serie di parole chiave queste sono state combinate all'interno di un ciclo $for$ creando, attraverso le funzioni $gsub()$ e $paste0()$ creando un URL che potesse comunicare con il motore di ricerca.
-
+In termini generali si è creato un \textit{array} con una serie di parole chiave, queste sono state combinate all'interno di un ciclo $for$ creando, attraverso le funzioni $gsub()$ e $paste0()$, un URL che potesse comunicare con il motore di ricerca.
+$$ $$
+$$ $$
 Le parole chiavi scelte per l'analisi:
 
 \begin{lstlisting}[language=R]
@@ -280,7 +301,6 @@ Latta_e_alluminio<-c("lattine per bevande", "fogli di alluminio", "lattine di co
 La funzione per scaricare le immagini:
 
 \begin{lstlisting}[language=R]
-
 #1
 try({page<-read_html(paste0("https://www.google.com/search?source=&q=" ,gsub(" ","+",parola_chiave[i]),"+jpg&source=lnms&tbm=isch"))
 	for (t in 1:length(html_nodes(page,xpath = '//img'))) {
@@ -314,7 +334,7 @@ La prima particolarità di Telegram è quella di basarsi su un protocollo di comun
 La seconda qualità di Telegram riguarda l'elevato livello di sicurezza, infatti, grazie all'utilizzo di algoritmi di criptazione interni alle chat aumenta notevolmente il livello di privacy.
 
 
-Secondo la definizione classica data al termine Bot (abbreviazione di "robot"), è una chat con la quale è possibile inviare input ad un server tramite comandi precedentemente programmati e ricevere output direttamente nella chat e/o sul server. I chatbot stanno diventando sempre più importanti in un mondo nel quale si cerca di automatizzare il più possibile ogni tipo di processo e anche le grandi aziende si stanno spingendo verso quella direzione si pensi ad esempio a “TOBI” chatbot di Vodafone con il quale è possibile chattare sull’app o sul sito della società di telecomunicazioni per aiutare il cliente a risolvere eventuali problemi.
+Secondo la definizione classica data al termine Bot (abbreviazione di \virgolette{robot}), è una chat con la quale è possibile inviare input ad un server tramite comandi precedentemente programmati e ricevere output direttamente nella chat e/o sul server. I chatbot stanno diventando sempre più importanti in un mondo nel quale si cerca di automatizzare il più possibile ogni tipo di processo e anche le grandi aziende si stanno spingendo verso quella direzione si pensi ad esempio a “TOBI” chatbot di Vodafone con il quale è possibile chattare sull’app o sul sito della società di telecomunicazioni per aiutare il cliente a risolvere eventuali problemi.
 
 
 
@@ -322,7 +342,7 @@ Secondo la definizione classica data al termine Bot (abbreviazione di "robot"), 
 
 \subsection{Implementazione}
 
-Il Bot implementato in questa sezione ha come funzione quella di ricevere immagini per categoria di rifiuto, salvarle e restituire a colui che ha inviato l'immagine un messaggio di ringraziamento. Nel programmare tale Bot si è utilizzato il pacchetto di Python "Telepot" grazie al quale si riesce ad inviare e ricevere (GET e POST request nel linguaggio PHP) richieste al server direttamente dalla chat. In particolare questa libreria permette di identificare la tipologia di messaggio che il soggetto invia sulla chat tramite la funzione "content\_type" e istruirlo a compiere determinate azioni nel caso vengano inviate determinate tipologie di messaggio. Il bot in questione doveva salvare l'immagine con la funzione "bot.download\_file(file, path)" e restituire un messaggio di ringraziamento attraverso la funzione "bot.sendMessage(chat\_id, message)".
+Il Bot implementato in questa sezione ha come funzione quella di ricevere immagini per categoria di rifiuto, salvarle e restituire a colui che ha inviato l'immagine un messaggio di ringraziamento. Nel programmare tale Bot si è utilizzato il pacchetto di Python \virgolette{Telepot} grazie al quale si riesce ad inviare e ricevere (GET e POST request nel linguaggio PHP) richieste al server direttamente dalla chat. In particolare questa libreria permette di identificare la tipologia di messaggio che il soggetto invia sulla chat tramite la funzione \virgolette{content\_type} e istruirlo a compiere determinate azioni nel caso vengano inviate determinate tipologie di messaggio. Il bot in questione doveva salvare l'immagine con la funzione \virgolette{bot.download\_file(file, path)} e restituire un messaggio di ringraziamento attraverso la funzione \virgolette{bot.sendMessage(chat\_id, message)}.
 
 
 
@@ -341,7 +361,7 @@ Si è deciso di creare 3 bot per le tre categorie principali di rifiuti: Plastica
 	\caption{Funzionamento Bot di Telegram}
 \end{figure}
 
-Per il funzionamento del Bot si è deciso di utilizzare un server collegato ad un rete locale piuttosto che un VPS (Virtual Private Server) per due ragioni: da un lato, non avendo la necessità di una grande capacità computazionale, risultava più conveniente in termini economici e dall'altro erano più semplici eventuali modifiche in corso d'opera.
+Per il funzionamento del Bot si è deciso di utilizzare un server collegato ad una rete locale piuttosto che un VPS (Virtual Private Server) per due ragioni: da un lato, non avendo la necessità di una grande capacità computazionale, risultava più conveniente in termini economici e dall'altro erano più semplici eventuali modifiche in corso d'opera.
 
 
 \section{Il cestino}
@@ -351,7 +371,7 @@ Come ultima fonte per reperire i dati si è deciso di costruire un cestino così d
 
 \subsection{Meccanica}
 
-Nel costruire il cestino per semplicità si è pensato di dividere la struttura in due unità: la struttura inferiore (o struttura reggente) che ha come scopo quello di contenere i comparti delle categorie di rifiuto e di reggere l'assetto; la struttura superiore (o il "cervello") ossia una telaio mobile dove vengono posti tutti i componenti elettronici che hanno come scopo quello di interpretare i messaggi inviati dal cestino, interfacciarsi con l'utente e fare la raccolata differenziata ruotando sopra la struttura reggente.
+Nel costruire il cestino per semplicità si è pensato di dividere la struttura in due unità: la struttura inferiore (o struttura reggente) che ha come scopo quello di contenere i comparti delle categorie di rifiuto e di reggere l'assetto; la struttura superiore (o il \virgolette{cervello}) ossia una telaio mobile dove vengono posti tutti i componenti elettronici che hanno come scopo quello di interpretare i messaggi inviati dal cestino, interfacciarsi con l'utente e fare la raccolta differenziata ruotando sopra la struttura reggente.
 
 La struttura inferiore è composta da una base circolare di dimensioni 40x40x5 cm da cui si ergono 4 pilastri di dimensione 1x1x20 cm che sorreggono un cerchio di raggio 40 cm e di dimensione della linea 5 cm su cui vengono poste delle ruote che permettono alla struttura superiore di muoversi in fluidità.
 
@@ -628,15 +648,15 @@ int readColor() {
 
 In questo capitolo non si andranno ad analizzare i codici nello specifico in quanto molto lunghi e poco utili ai fini della tesi lasciando i codici commentati nell'Appendice A sezione [A.1.4] e [A.3.1] ma si spiegheranno le funzioni che il software deve svolgere.
 
-Il programma lo ho chiamato "Recycling bin" ed è strutturato in 3 pagine.
-La prima pagina denominata "Form1" serve per indirizzare l'utente verso la funzione di addestramento e reperimento dei dati o la sezione di riconoscimento e analisi dei dati.
+Il programma si è deciso di chiamarlo \virgolette{Recycling bin} ed è strutturato in 3 pagine.
+La prima pagina denominata \virgolette{Form1} serve per indirizzare l'utente verso la funzione di addestramento e reperimento dei dati o la sezione di riconoscimento e analisi dei dati.
 
 \begin{figure}[H]
 	\center
 	\includegraphics[width=300px]{form1.png}
 	\caption{Form1}
 \end{figure}
-La seconda pagina chiamata "Form2" serve per registrare i dati relativi ai rifiuti. Per inizializzare il programma occorre prima collegarlo alla telecamera del cestino una Logitech C270 Webcam HD scegliendo le specifiche grafiche e poi selezionare la porta COM relativa all'Arduino, operando antecedentemente una scansione delle porte così da poter leggere ed inviare i dati.
+La seconda pagina chiamata \virgolette{Form2} serve per registrare i dati relativi ai rifiuti. Per inizializzare il programma occorre prima collegarlo alla telecamera del cestino una Logitech C270 Webcam HD scegliendo le specifiche grafiche e poi selezionare la porta COM relativa all'Arduino, operando antecedentemente una scansione delle porte così da poter leggere ed inviare i dati.
 \begin{figure}[H]
 	\center
 	\includegraphics[width=300px]{form2.png}
@@ -647,7 +667,7 @@ La seconda pagina chiamata "Form2" serve per registrare i dati relativi ai rifiu
 	\includegraphics[width=300px]{formcam.png}
 	\caption{Form di inizializzazione Webcam}
 \end{figure}
-Nella terza pagina indicizzata come "Form3" bisogna inizializzarla come visto per la precedente e poi una volta inserito l'oggetto cliccare sul pulsante riconosci per attivare il cestino al riconoscimento.
+Nella terza pagina indicizzata come \virgolette{Form3} bisogna inizializzarla come visto per la precedente e poi una volta inserito l'oggetto cliccare sul pulsante riconosci per attivare il cestino al riconoscimento.
 \begin{figure}[H]
 	\center
 	\includegraphics[width=300px]{form3.png}

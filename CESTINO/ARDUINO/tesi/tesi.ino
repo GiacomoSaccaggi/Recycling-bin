@@ -10,7 +10,7 @@ HX711 scale(A4, A5);    // parameter "gain" is ommited; the default value 128 is
 
 
 NewPing sonar1(10, 9, 200);
-NewPing sonar2(12, 11, 200);
+NewPing sonar2(11, 12, 200);
 int magnetic, md,  luce1, luce2, distanza1 ;
 const int s0 = 3;  
 const int s1 = 4;  
@@ -64,7 +64,11 @@ void loop() {
     
     unsigned int distanza2 = sonar2.ping();
     distanza2=distanza2 / US_ROUNDTRIP_CM;
- 
+
+
+    
+    Serial.print(scale.get_units(10)*28.3495231, 1);
+    Serial.print(",");
     Serial.print(luce1);
     Serial.print(",");
     Serial.print(luce2);
@@ -74,7 +78,6 @@ void loop() {
     Serial.print(distanza2);
     Serial.print(",");
     color = readColor();
-    Serial.print(scale.get_units(10)*28.3495231, 1);
     Serial.println("");
     
 
@@ -159,7 +162,6 @@ int readColor() {
   
   //Printing the value on the serial monitor
   Serial.print(frequency);  //printing blu color frequency
-  Serial.print(",");
   
   
   

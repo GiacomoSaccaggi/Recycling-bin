@@ -22,6 +22,7 @@ Partial Class Form3
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -36,6 +37,7 @@ Partial Class Form3
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
+        Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -44,7 +46,7 @@ Partial Class Form3
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(190, 251)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(362, 189)
         Me.Button1.TabIndex = 0
@@ -55,7 +57,7 @@ Partial Class Form3
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.1!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(123, 174)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(478, 57)
         Me.TextBox1.TabIndex = 1
@@ -199,7 +201,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form3"
         Me.Text = "Riconoscimento"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -223,4 +225,5 @@ Partial Class Form3
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
+    Friend WithEvents SerialPort1 As IO.Ports.SerialPort
 End Class
