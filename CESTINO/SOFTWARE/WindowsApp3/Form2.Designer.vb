@@ -48,7 +48,7 @@ Partial Class Form2
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(164, 127)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(201, 118)
         Me.Button1.TabIndex = 0
@@ -70,7 +70,7 @@ Partial Class Form2
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(164, 248)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(201, 118)
         Me.Button2.TabIndex = 2
@@ -80,7 +80,7 @@ Partial Class Form2
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(369, 249)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(201, 118)
         Me.Button3.TabIndex = 3
@@ -90,7 +90,7 @@ Partial Class Form2
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(369, 127)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(201, 118)
         Me.Button6.TabIndex = 6
@@ -100,7 +100,7 @@ Partial Class Form2
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(2, 1)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(201, 33)
         Me.Button7.TabIndex = 7
@@ -110,7 +110,7 @@ Partial Class Form2
         'PictureBox1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(652, 142)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(121, 86)
         Me.PictureBox1.TabIndex = 8
@@ -119,7 +119,7 @@ Partial Class Form2
         'PictureBox2
         '
         Me.PictureBox2.Location = New System.Drawing.Point(652, 248)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(121, 86)
         Me.PictureBox2.TabIndex = 9
@@ -128,7 +128,7 @@ Partial Class Form2
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(652, 102)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(124, 37)
         Me.Button8.TabIndex = 10
@@ -149,7 +149,7 @@ Partial Class Form2
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(390, 5)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(203, 24)
         Me.ComboBox1.TabIndex = 13
@@ -157,7 +157,7 @@ Partial Class Form2
         'Button9
         '
         Me.Button9.Location = New System.Drawing.Point(206, 1)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(96, 33)
         Me.Button9.TabIndex = 14
@@ -167,7 +167,7 @@ Partial Class Form2
         'Button10
         '
         Me.Button10.Location = New System.Drawing.Point(605, 1)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(2)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(96, 33)
         Me.Button10.TabIndex = 15
@@ -177,7 +177,7 @@ Partial Class Form2
         'Button11
         '
         Me.Button11.Location = New System.Drawing.Point(605, 1)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button11.Margin = New System.Windows.Forms.Padding(2)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(96, 33)
         Me.Button11.TabIndex = 16
@@ -188,7 +188,7 @@ Partial Class Form2
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(2, 510)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 40
         Me.DataGridView1.Size = New System.Drawing.Size(880, 206)
@@ -197,7 +197,7 @@ Partial Class Form2
         'Button12
         '
         Me.Button12.Location = New System.Drawing.Point(786, 1)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(2)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(96, 33)
         Me.Button12.TabIndex = 18
@@ -225,7 +225,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Button11)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form2"
         Me.Text = "Addestramento"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

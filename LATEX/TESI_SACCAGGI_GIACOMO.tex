@@ -141,8 +141,8 @@ Il riciclo è un processo di conversione che trasforma i rifiuti in nuovi materia
 
 \begin{itemize}
 	\item Conservazione delle risorse: i materiali ricavati vengono convertiti in nuovi prodotti, riducendo la necessità di estrarre materie prime dalla Terra, attraverso l'estrazione e la silvicoltura. Il riciclaggio aiuta a conservare importanti materie prime e protegge gli habitat naturali; inoltre può essere una grande possibilità di evitare importazioni per territori come quello italiano scarso di risorse naturali.
-	\item Risparmio di energia: l'uso di materiali riciclati nel processo di produzione consuma molta meno energia di quella necessaria per la produzione di nuovi prodotti, si ottiene un ulteriore risparmio energetico perché è necessaria più energia per estrarre, raffinare, trasportare e elaborare materie prime pronte per l'industria rispetto al riciclo.
-	\item Protezione dell'ambiente: il riciclaggio riduce la necessità di estrazione (estrazione, silvicoltura e disboscamento), raffinazione e lavorazione di materie prime che creano un notevole inquinamento dell'aria e dell'acqua. Poiché il riciclaggio consente di risparmiare energia, riduce anche le emissioni di gas serra, il che aiuta a contrastare i cambiamenti climatici. 
+	\item Risparmio di energia: l'uso di materiali riciclati nel processo di produzione consuma molta meno energia di quella necessaria per la produzione di nuovi prodotti; inoltre si ottiene un ulteriore risparmio energetico perché è necessaria più energia per estrarre, raffinare, trasportare e elaborare materie prime pronte per l'industria rispetto al riciclo.
+	\item Protezione dell'ambiente: il riciclaggio riduce la necessità di estrazione, raffinazione e lavorazione di materie prime che creano un notevole inquinamento dell'aria e dell'acqua; inoltre poichè il riciclaggio consente di risparmiare energia, riduce anche le emissioni di gas serra, il che aiuta a contrastare i cambiamenti climatici. 
 	\item Riduzione dell'accumulo di rifiuti: i materiali riciclabili vengono rielaborati in nuovi prodotti e, di conseguenza, la quantità di rifiuti inviati alle discariche si riduce. 
 \end{itemize} 
 
@@ -233,7 +233,7 @@ Per una questione igienica intrinseca nella categoria dei rifiuti organici non è
 
 \subsection{Funzionamento}
 
-Il Web scraping~\cite{chiave3} (chiamato anche web harvesting, o web data extraction) è un insieme di tecniche utilizzate per l'estrazione di dati dai siti Web. È una forma di copia, in cui i dati specifici vengono raccolti e copiati accedendo al World Wide Web direttamente utilizzando il protocollo Hypertext Transfer Protocol o tramite un browser Web, in genere in un database locale centrale o foglio di calcolo, per il successivo recupero o analisi, il termine in genere si riferisce a processi automatizzati implementati utilizzando un web crawler, un bot o un server.
+Il Web scraping~\cite{chiave3} (chiamato anche web harvesting, o web data extraction) è un insieme di tecniche utilizzate per l'estrazione di dati dai siti Web. È una forma di copia, in cui i dati specifici vengono raccolti e copiati accedendo al World Wide Web direttamente utilizzando il protocollo Hypertext Transfer Protocol o tramite un browser Web. In genere il termine si riferisce a processi automatizzati implementati utilizzando un web crawler, un bot o un server per il successivo recupero o analisi in un database locale centrale o foglio di calcolo.
 
 Tra le tante possibili soluzioni si è deciso di utilizzare la tecnica di Web Scraping chiamata HTML Parsing ossia una deserializzazione delle pagine HTML. Questo processo riceve il codice HTML non elaborato, lo interpreta e genera dal codice una struttura ad albero DOM (Document Object Model).
 
@@ -242,7 +242,7 @@ Questa tecnica è molto versatile in quanto gran parte dei siti Web hanno grandi 
 
 \subsection{Implementazione}
 
-Per fare Web Scraping si è deciso di utilizzare il linguaggio R, questo perchè oltre ai pacchetti appositi che aiutano nell'operazione di creazione dello wrapper in R sono presenti delle ottime librerie per fare text mining, la più famosa \virgolette{stringr}, che aiutano in determinate operazioni a gestire operazioni di HTML parsing più complicate.
+Per fare Web Scraping si è deciso di utilizzare il linguaggio R, questo perchè oltre ai pacchetti appositi che aiutano nell'operazione di creazione dello wrapper in R sono presenti delle ottime librerie per fare text mining, la più famosa \virgolette{stringr}, che aiutano a gestire operazioni di HTML parsing più complicate.
 
 La libreria utilizzata in questa fase è \virgolette{rvest} (creata da Hadley Wickham [aut, cre], RStudio [cph]) la quale gestisce e migliora alcune funzioni contenute nel pacchetto \virgolette{xml2} (creata da Hadley Wickham [aut], Jim Hester [aut, cre], Jeroen Ooms [aut], RStudio [cph], R Foundation [ctb]), queste due librerie si basano su un pacchetto creato per il linguaggio C++ da Daniel Veillard (versione definitiva pubblicata alla fine del 2012) di nome \virgolette{libxml2}. Le funzioni che abbiamo utilizzato di queste librerie sono tre:
 $read\_html()$ del pacchetto \virgolette{xml2}; $xml\_attrs()$ e $html\_nodes()$ del pacchetto \virgolette{rvest}.
@@ -255,6 +255,8 @@ library("xml2")
 page<-read_html("###---link---###")
 \end{lstlisting}
 
+$$ $$
+
 Le due funzioni del pacchetto \virgolette{rvest}, invece, aiutano ad individuare i diversi elementi del documento. In questo caso si utilizzano congiuntamente per trovare il link di origine delle immagini per poi scaricarle.
 
 \begin{lstlisting}[language=R]
@@ -264,6 +266,7 @@ t<-1 # img t-esima presente nella pagina
 link_img<-xml_attrs(html_nodes(page, xpath = "//img")[[t]])[["src"]]
 \end{lstlisting}
 
+$$ $$
 Infine una volta trovati i link delle immagini presenti nelle varie pagine si salvano tramite la funzione $download.file()$
 
 
@@ -278,8 +281,7 @@ Per la ricerca dei siti dove scaricare le immagini si è sfruttato il funzionamen
 La logica che sta alla base delle ricerche online permette di trovare tutte le immagini collegate inserendo una o più parole chiave. Quindi si è deciso di creare delle liste di parole per ogni categorie rifiuto e di trovare le immagini collegate per le differenti Keywords.
 
 In termini generali si è creato un \textit{array} con una serie di parole chiave, queste sono state combinate all'interno di un ciclo $for$ creando, attraverso le funzioni $gsub()$ e $paste0()$, un URL che potesse comunicare con il motore di ricerca.
-$$ $$
-$$ $$
+
 Le parole chiavi scelte per l'analisi:
 
 \begin{lstlisting}[language=R]
@@ -319,7 +321,7 @@ try({page<-read_html(paste0("https://pixabay.com/it/images/search/" ,gsub(" ","%
 
 \end{lstlisting}
 
-Così facendo si è stati in grado di trovare i links di tutte le immagini presenti nel sito, nella funzione sopra descritta si sono spesso utilizzati dei $try()$ per evitare gli errori 404, molto comuni quando si automatizza il parsing HTML.
+Così facendo si è stati in grado di trovare i links di tutte le immagini presenti nel sito. Nella funzione sopra descritta si sono spesso utilizzati dei $try()$ per evitare gli errori 404, molto comuni quando si automatizza il parsing HTML.
 Funzione al completo descritta nell'Appendice A.1.1 .
 
 
@@ -334,7 +336,7 @@ La prima particolarità di Telegram è quella di basarsi su un protocollo di comun
 La seconda qualità di Telegram riguarda l'elevato livello di sicurezza, infatti, grazie all'utilizzo di algoritmi di criptazione interni alle chat aumenta notevolmente il livello di privacy.
 
 
-Secondo la definizione classica data al termine Bot (abbreviazione di \virgolette{robot}), è una chat con la quale è possibile inviare input ad un server tramite comandi precedentemente programmati e ricevere output direttamente nella chat e/o sul server. I chatbot stanno diventando sempre più importanti in un mondo nel quale si cerca di automatizzare il più possibile ogni tipo di processo e anche le grandi aziende si stanno spingendo verso quella direzione si pensi ad esempio a “TOBI” chatbot di Vodafone con il quale è possibile chattare sull’app o sul sito della società di telecomunicazioni per aiutare il cliente a risolvere eventuali problemi.
+Secondo la definizione classica data al termine Bot (abbreviazione di \virgolette{robot}), è una chat con la quale è possibile inviare input ad un server tramite comandi precedentemente programmati e ricevere output direttamente nella chat e/o sul server. I chatbot stanno diventando sempre più importanti in un mondo nel quale si cerca di automatizzare il più possibile ogni tipo di processo, anche le grandi aziende si stanno spingendo verso quella direzione si pensi ad esempio a “TOBI” chatbot di Vodafone con il quale è possibile chattare sull’app o sul sito della società di telecomunicazioni per aiutare il cliente a risolvere eventuali problemi.
 
 
 
@@ -366,14 +368,14 @@ Per il funzionamento del Bot si è deciso di utilizzare un server collegato ad un
 
 \section{Il cestino}
 
-Come ultima fonte per reperire i dati si è deciso di costruire un cestino così da poter raccogliere dati di tipo strutturato sui rifiuti. Nel costruire il cestino si è dovuto progettare un lavoro di tipo meccanico per far si che il cestino funzionasse dal punto di vista strutturale; di tipo robotico in quanto questo cestino doveva essere in grado di muoversi e inviare i dati ricevuti dai sensori al computer; e, infine, di tipo softwaristico in quanto si è dovuto programmare un software che fosse in grado di in fase iniziale ricevere e salvare i dati inviati dal cestino e in una fase successiva riconoscere l'oggetto attraverso i dati ricevuti e riuscire a comandare il cestino per fargli fare la differenziata.
+Come ultima fonte per reperire i dati si è deciso di costruire un cestino così da poter raccogliere dati di tipo strutturato sui rifiuticosi da avere un dataset molto preciso circa le diverse tipologie di rifiuto. Nel costruire il cestino si è dovuto progettare un lavoro di tipo "meccanico" per far si che il cestino funzionasse dal punto di vista strutturale; di tipo "robotico" in quanto questo cestino doveva essere in grado di muoversi e inviare i dati ricevuti dai sensori al computer; e, infine, di tipo "softwaristico" in quanto si è dovuto programmare un software che fosse in grado di ricevere e salvare i dati inviati dal cestino in fase iniziale e in una fase successiva riconoscere l'oggetto attraverso i dati ricevuti e riuscire a comandare il cestino per porre il rifiuto nell'apposito comparto.
 
 
 \subsection{Meccanica}
 
-Nel costruire il cestino per semplicità si è pensato di dividere la struttura in due unità: la struttura inferiore (o struttura reggente) che ha come scopo quello di contenere i comparti delle categorie di rifiuto e di reggere l'assetto; la struttura superiore (o il \virgolette{cervello}) ossia una telaio mobile dove vengono posti tutti i componenti elettronici che hanno come scopo quello di interpretare i messaggi inviati dal cestino, interfacciarsi con l'utente e fare la raccolta differenziata ruotando sopra la struttura reggente.
+Nel costruire il cestino per semplicità si è pensato di dividere la struttura in due unità: la struttura inferiore (o struttura reggente) che ha come scopo quello di contenere i comparti delle categorie di rifiuto e di reggere l'assetto; la struttura superiore (o il \virgolette{cervello}) ossia una telaio mobile sul quale vengono posti tutti i componenti elettronici che hanno come scopo quello di interpretare i messaggi inviati dal cestino, interfacciarsi con l'utente e fare la raccolta differenziata ruotando sopra la struttura reggente.
 
-La struttura inferiore è composta da una base circolare di dimensioni 40x40x5 cm da cui si ergono 4 pilastri di dimensione 1x1x20 cm che sorreggono un cerchio di raggio 40 cm e di dimensione della linea 5 cm su cui vengono poste delle ruote che permettono alla struttura superiore di muoversi in fluidità.
+La struttura inferiore è composta da una base circolare di dimensioni 40x40x5 cm da cui si ergono 4 pilastri di dimensione 1x1x20 cm che sorreggono un cerchio di raggio 40 cm e di dimensione della linea 5 cm e spessore 1 cm su cui vengono poste delle ruote che permettono alla struttura superiore di muoversi in fluidità.
 
 
 \begin{figure}[H]
@@ -382,7 +384,7 @@ La struttura inferiore è composta da una base circolare di dimensioni 40x40x5 cm
 	\caption{Modello 3D della struttura inferiore}
 \end{figure}
 
-In fase di costruzione si è deciso di diminuire il numero di ruote scorrevoli poste sopra in quanto si reputavano superflue, al posto di 12 si è preferito collocarne 8. La base della struttura è stata costruita in legno , il resto della struttura in ferro.
+In fase di costruzione si è deciso di diminuire il numero di ruote scorrevoli poste sopra in quanto alcune si reputavano superflue, al posto di 12 si è preferito collocarne 8. La base della struttura è stata costruita in legno , il resto della struttura in ferro.
 
 \begin{figure}[H]
 	\center
@@ -391,7 +393,7 @@ In fase di costruzione si è deciso di diminuire il numero di ruote scorrevoli po
 \end{figure}
 
 
-La struttura superiore costituisce la base sopra la quale vengono poste tutte le componenti di robotica, essa è costituita da una base circolare 40x40x1 cm sopra alla quale è agganciato un cestino 10x15x25 cm con all'interno una base mobile delle dimensioni interne del cestino che permette di far cadere i rifiuti. Sotto la base sono posizionate su un triangolo equilatero inscritto nella circonferenza posta sugli estremi della base tre ruote, due di queste girano a vuoto per centrare la base sulla struttura inferiore mentre una è robotizzata e consente all'impianto di ruotare.
+La struttura superiore costituisce la base sopra la quale vengono poste tutte le componenti di robotica, essa è costituita da una base circolare 40x40x1 cm sopra alla quale è agganciato un cestino 10x15x25 cm con all'interno una base mobile delle dimensioni interne del cestino che permette di far cadere i rifiuti nell'apposito comparto. Sotto la base sono posizionate su un triangolo equilatero inscritto nella circonferenza posta sugli estremi della base tre ruote, due di queste girano a vuoto per centrare la base sulla struttura inferiore mentre una è robotizzata e consente all'impianto di ruotare.
 
 La base sopra è divisa in tre sezioni: la parte con le componenti di robotica che inviano e ricevono segnali, la parte dove è posto un mini pc Beelink AP34 (con processore Intel Celeron N3450 e 4 GB di memoria RAM DDR3 SDRAM) sul quale viene installato il software in grado di ricevere e inviare input e output al sistema e infine una terza sezione dove è posizionato un monitor 3,5 pollici touch screen che permette all'utente di interfacciarsi con il sistema attraverso il programma.
 
@@ -440,7 +442,7 @@ I sensori sono componenti elettronici in grado di percepire e misurare le caratt
 \begin{itemize}
 	\item Gli attuatori 
 
-Gli attuatori sono componenti in grado di modificare le caratteristiche fisiche dell’ambiente circostante e quindi essenzialmente, sorgenti di luce, calore, umidità,  suono, movimento, campo magnetico ed elettromagnetico. 
+Gli attuatori sono componenti in grado di modificare le caratteristiche fisiche dell’ambiente circostante e quindi essenzialmente, sorgenti di luce, calore, umidità, suono, movimento, campo magnetico ed elettromagnetico. 
 
 \end{itemize}
 
@@ -667,7 +669,7 @@ La seconda pagina chiamata \virgolette{Form2} serve per registrare i dati relati
 	\includegraphics[width=300px]{formcam.png}
 	\caption{Form di inizializzazione Webcam}
 \end{figure}
-Nella terza pagina indicizzata come \virgolette{Form3} bisogna inizializzarla come visto per la precedente e poi una volta inserito l'oggetto cliccare sul pulsante riconosci per attivare il cestino al riconoscimento.
+Nella terza pagina indicizzata \virgolette{Form3} bisogna inizializzarla come visto per la precedente e poi una volta inserito l'oggetto cliccare sul pulsante riconosci per attivare il cestino al riconoscimento. L'output della previsione verrà inviato al cestino e scritto nella TextBox posta sopra il pulsante.
 \begin{figure}[H]
 	\center
 	\includegraphics[width=300px]{form3.png}
