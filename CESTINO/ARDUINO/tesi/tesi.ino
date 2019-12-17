@@ -67,19 +67,6 @@ void loop() {
 
 
     
-    Serial.print(scale.get_units(10)*28.3495231, 1);
-    Serial.print(",");
-    Serial.print(luce1);
-    Serial.print(",");
-    Serial.print(luce2);
-    Serial.print(",");
-    Serial.print(distanza1);
-    Serial.print(",");
-    Serial.print(distanza2);
-    Serial.print(",");
-    color = readColor();
-    Serial.println("");
-    
 
 
   
@@ -92,6 +79,33 @@ void loop() {
     char a;
     a = Serial.read ();
     switch (a) {
+      case '0': // prendere info
+      digitalWrite(motorpinDC,LOW);
+        magnetic=analogRead(A0);
+        luce1=analogRead(A2);
+        luce2=analogRead(A3);
+        distanza1 = sonar1.ping();
+        distanza1=distanza1 / US_ROUNDTRIP_CM;
+        distanza2 = sonar2.ping();
+        distanza2=distanza2 / US_ROUNDTRIP_CM;
+        color=0;
+        scale.power_down();          
+        delay(5000);
+        scale.power_up();
+        Serial.print(scale.get_units(10)*28.3495231, 1);
+        Serial.print(",");
+        Serial.print(luce1);
+        Serial.print(",");
+        Serial.print(luce2);
+        Serial.print(",");
+        Serial.print(distanza1);
+        Serial.print(",");
+        Serial.print(distanza2);
+        Serial.print(",");
+        color = readColor();
+        Serial.println("");        
+        delay(1000);
+        break;
       case '1': // tira su
         motoreservo.write(80);
         Serial.println("SU");

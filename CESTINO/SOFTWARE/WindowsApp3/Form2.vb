@@ -57,39 +57,58 @@ Public Class Form2
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         '1
-        PictureBox2.Image = PictureBox1.Image
 
+        Button1.Enabled = False
+        Button2.Enabled = False
+        Button3.Enabled = False
+        Button6.Enabled = False
 
         Dim testo As String
         Dim dataArr() As String
 
+        Dim h As Integer = 0
+        Dim m As Integer = 0
+
+        Dim index As Integer = 0
 
         For i As Integer = 1 To 10
 
+            PictureBox2.Image = PictureBox1.Image
+
             testo = "carta," + SerialPort1.ReadExisting
             dataArr = testo.Split(",")
-            If dataArr.Length = 8 Then
-                DataGridView1.Rows.Add(dataArr)
-                Dim timeStamp As DateTime = DateTime.Now
-                ' Dim exePath As String = Application.StartupPath()
-                Dim path As String = "C:\Users\gieck\Desktop\carta" + timeStamp.ToString + i.ToString + ".jpg"
-                PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
-            Else
+            SerialPort1.Write("0")
+            wait(14)
+            For t As Integer = 1 To 1000
                 testo = "carta," + SerialPort1.ReadExisting
                 dataArr = testo.Split(",")
-                If dataArr.Length = 8 Then
-                    DataGridView1.Rows.Add(dataArr)
-                    Dim timeStamp As DateTime = DateTime.Now
-                    ' Dim exePath As String = Application.StartupPath()
-                    Dim path As String = "C:\Users\gieck\Desktop\carta" + timeStamp.ToString + i.ToString + ".jpg"
-                    PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+                If dataArr.Length = 9 Then
+                    Exit For
                 End If
+            Next
+            If dataArr.Length = 9 Then
+                DataGridView1.Rows.Add(dataArr)
+                Dim timeStamp As DateTime = DateTime.Now
+                Dim ora As String = timeStamp.ToString
+                ora = ora.Replace(":", "_")
+                ora = ora.Replace("/", "_")
+                ora = ora.Replace(" ", "_")
+                ' Dim exePath As String = Application.StartupPath()
+                Dim path As String = "C:\Users\gieck\Desktop\carta" + ora + i.ToString + ".jpg"
+                PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+                h = h + 1
             End If
-
+            m = i
             SerialPort1.Write("3")
+            wait(10)
         Next
 
+        Button1.Enabled = True
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button6.Enabled = True
 
+        MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
 
 
 
@@ -117,29 +136,33 @@ Public Class Form2
 
             testo = "plastica," + SerialPort1.ReadExisting
             dataArr = testo.Split(",")
-            index = 0
-            Do While dataArr.Length >= 9
-
-                Debug.Write(index.ToString & " ")
-                index += 1
+            SerialPort1.Write("0")
+            wait(14)
+            For t As Integer = 1 To 1000
                 testo = "plastica," + SerialPort1.ReadExisting
                 dataArr = testo.Split(",")
-            Loop
-            DataGridView1.Rows.Add(dataArr)
-            Dim timeStamp As DateTime = DateTime.Now
-            Dim ora As String = timeStamp.ToString
-            ora = ora.Replace(":", "_")
-            ora = ora.Replace("/", "_")
-            ora = ora.Replace(" ", "_")
-            ' Dim exePath As String = Application.StartupPath()
-            Dim path As String = "C:\Users\gieck\Desktop\plastica" + ora + i.ToString + ".jpg"
-            PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
-            h = h + 1
-
+                If dataArr.Length = 9 Then
+                    Exit For
+                End If
+            Next
+            If dataArr.Length = 9 Then
+                DataGridView1.Rows.Add(dataArr)
+                Dim timeStamp As DateTime = DateTime.Now
+                Dim ora As String = timeStamp.ToString
+                ora = ora.Replace(":", "_")
+                ora = ora.Replace("/", "_")
+                ora = ora.Replace(" ", "_")
+                ' Dim exePath As String = Application.StartupPath()
+                Dim path As String = "C:\Users\gieck\Desktop\plastica" + ora + i.ToString + ".jpg"
+                PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+                h = h + 1
+            End If
             m = i
+            SerialPort1.Write("3")
+            wait(10)
         Next
 
-        Button1.Enabled = True
+            Button1.Enabled = True
         Button2.Enabled = True
         Button3.Enabled = True
         Button6.Enabled = True
@@ -150,73 +173,118 @@ Public Class Form2
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         '1
-        PictureBox2.Image = PictureBox1.Image
 
+        Button1.Enabled = False
+        Button2.Enabled = False
+        Button3.Enabled = False
+        Button6.Enabled = False
 
         Dim testo As String
         Dim dataArr() As String
 
+        Dim h As Integer = 0
+        Dim m As Integer = 0
+
+        Dim index As Integer = 0
 
         For i As Integer = 1 To 10
 
+            PictureBox2.Image = PictureBox1.Image
+
             testo = "vetro," + SerialPort1.ReadExisting
             dataArr = testo.Split(",")
-            If dataArr.Length = 8 Then
-                DataGridView1.Rows.Add(dataArr)
-                Dim timeStamp As DateTime = DateTime.Now
-                ' Dim exePath As String = Application.StartupPath()
-                Dim path As String = "C:\Users\gieck\Desktop\vetro" + timeStamp.ToString + i.ToString + ".jpg"
-                PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
-            Else
+            SerialPort1.Write("0")
+            wait(14)
+            For t As Integer = 1 To 1000
                 testo = "vetro," + SerialPort1.ReadExisting
                 dataArr = testo.Split(",")
-                If dataArr.Length = 8 Then
-                    DataGridView1.Rows.Add(dataArr)
-                    Dim timeStamp As DateTime = DateTime.Now
-                    ' Dim exePath As String = Application.StartupPath()
-                    Dim path As String = "C:\Users\gieck\Desktop\vetro" + timeStamp.ToString + i.ToString + ".jpg"
-                    PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+                If dataArr.Length = 9 Then
+                    Exit For
                 End If
+            Next
+            If dataArr.Length = 9 Then
+                DataGridView1.Rows.Add(dataArr)
+                Dim timeStamp As DateTime = DateTime.Now
+                Dim ora As String = timeStamp.ToString
+                ora = ora.Replace(":", "_")
+                ora = ora.Replace("/", "_")
+                ora = ora.Replace(" ", "_")
+                ' Dim exePath As String = Application.StartupPath()
+                Dim path As String = "C:\Users\gieck\Desktop\vetro" + ora + i.ToString + ".jpg"
+                PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+                h = h + 1
             End If
-
+            m = i
             SerialPort1.Write("3")
+            wait(10)
         Next
+
+        Button1.Enabled = True
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button6.Enabled = True
+
+        MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
+
+
 
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         '1
-        PictureBox2.Image = PictureBox1.Image
 
+        Button1.Enabled = False
+        Button2.Enabled = False
+        Button3.Enabled = False
+        Button6.Enabled = False
 
         Dim testo As String
         Dim dataArr() As String
 
+        Dim h As Integer = 0
+        Dim m As Integer = 0
+
+        Dim index As Integer = 0
 
         For i As Integer = 1 To 10
 
-            testo = "indifferenziato," + SerialPort1.ReadExisting
+            PictureBox2.Image = PictureBox1.Image
+
+            testo = "indifferenziata," + SerialPort1.ReadExisting
             dataArr = testo.Split(",")
-            If dataArr.Length = 8 Then
+            SerialPort1.Write("0")
+            wait(14)
+            For t As Integer = 1 To 1000
+                testo = "indifferenziata," + SerialPort1.ReadExisting
+                dataArr = testo.Split(",")
+                If dataArr.Length = 9 Then
+                    Exit For
+                End If
+            Next
+            If dataArr.Length = 9 Then
                 DataGridView1.Rows.Add(dataArr)
                 Dim timeStamp As DateTime = DateTime.Now
+                Dim ora As String = timeStamp.ToString
+                ora = ora.Replace(":", "_")
+                ora = ora.Replace("/", "_")
+                ora = ora.Replace(" ", "_")
                 ' Dim exePath As String = Application.StartupPath()
-                Dim path As String = "C:\Users\gieck\Desktop\indifferenziato" + timeStamp.ToString + i.ToString + ".jpg"
+                Dim path As String = "C:\Users\gieck\Desktop\indifferenziata" + ora + i.ToString + ".jpg"
                 PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
-            Else
-                testo = "indifferenziato," + SerialPort1.ReadExisting
-                dataArr = testo.Split(",")
-                If dataArr.Length = 8 Then
-                    DataGridView1.Rows.Add(dataArr)
-                    Dim timeStamp As DateTime = DateTime.Now
-                    ' Dim exePath As String = Application.StartupPath()
-                    Dim path As String = "C:\Users\gieck\Desktop\indifferenziato" + timeStamp.ToString + i.ToString + ".jpg"
-                    PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
-                End If
+                h = h + 1
             End If
-
+            m = i
             SerialPort1.Write("3")
+            wait(10)
         Next
+
+        Button1.Enabled = True
+        Button2.Enabled = True
+        Button3.Enabled = True
+        Button6.Enabled = True
+
+        MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
+
 
     End Sub
 
@@ -359,9 +427,6 @@ Public Class Form2
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
 
-
-
-
         'create empty string
         Dim thecsvfile As String = String.Empty
         'get the column headers
@@ -384,21 +449,12 @@ Public Class Form2
             thecsvfile = thecsvfile & vbCr & vbLf
         Next
         'write the file
-
         thecsvfile = thecsvfile.Substring(0, thecsvfile.Length - 2)
 
         Dim exePath As String = Application.StartupPath()
-
         Dim fileName As String = exePath + "\DATI.csv"
 
-
-
-
-
-
         My.Computer.FileSystem.WriteAllText(exePath + "\DATI.csv", thecsvfile, False)
-
-
         MessageBox.Show("Il file è stato salvato!")
     End Sub
 End Class
