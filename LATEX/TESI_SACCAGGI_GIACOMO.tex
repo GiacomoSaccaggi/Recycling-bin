@@ -375,7 +375,7 @@ Come ultima fonte per reperire i dati si è deciso di costruire un cestino così d
 
 Nel costruire il cestino per semplicità si è pensato di dividere la struttura in due unità: la struttura inferiore (o struttura reggente) che ha come scopo quello di contenere i comparti delle categorie di rifiuto e di reggere l'assetto; la struttura superiore (o il \virgolette{cervello}) ossia una telaio mobile sul quale vengono posti tutti i componenti elettronici che hanno come scopo quello di interpretare i messaggi inviati dal cestino, interfacciarsi con l'utente e fare la raccolta differenziata ruotando sopra la struttura reggente.
 
-La struttura inferiore è composta da una base circolare di dimensioni 40x40x5 cm da cui si ergono 4 pilastri di dimensione 1x1x20 cm che sorreggono un cerchio di raggio 40 cm e di dimensione della linea 5 cm e spessore 1 cm su cui vengono poste delle ruote che permettono alla struttura superiore di muoversi in fluidità.
+La struttura inferiore è composta da una base circolare di dimensioni 60x60x5 cm da cui si ergono 4 pilastri di dimensione 1x1x20 cm che sorreggono un cerchio di raggio 60 cm e di dimensione della linea 5 cm e spessore 1 cm su cui vengono poste delle ruote che permettono alla struttura superiore di muoversi in fluidità.
 
 
 \begin{figure}[H]
@@ -393,7 +393,7 @@ In fase di costruzione si è deciso di diminuire il numero di ruote scorrevoli po
 \end{figure}
 
 
-La struttura superiore costituisce la base sopra la quale vengono poste tutte le componenti di robotica, essa è costituita da una base circolare 40x40x1 cm sopra alla quale è agganciato un cestino 10x15x25 cm con all'interno una base mobile delle dimensioni interne del cestino che permette di far cadere i rifiuti nell'apposito comparto. Sotto la base sono posizionate su un triangolo equilatero inscritto nella circonferenza posta sugli estremi della base tre ruote, due di queste girano a vuoto per centrare la base sulla struttura inferiore mentre una è robotizzata e consente all'impianto di ruotare.
+La struttura superiore costituisce la base sopra la quale vengono poste tutte le componenti di robotica, essa è costituita da una base circolare 60x60x1 cm sopra alla quale è agganciato un cestino 10x15x25 cm con all'interno una base mobile delle dimensioni interne del cestino che permette di far cadere i rifiuti nell'apposito comparto. Sotto la base sono posizionate su un triangolo equilatero inscritto nella circonferenza posta sugli estremi della base tre ruote, due di queste girano a vuoto per centrare la base sulla struttura inferiore mentre una è robotizzata e consente all'impianto di ruotare.
 
 La base sopra è divisa in tre sezioni: la parte con le componenti di robotica che inviano e ricevono segnali, la parte dove è posto un mini pc Beelink AP34 (con processore Intel Celeron N3450 e 4 GB di memoria RAM DDR3 SDRAM) sul quale viene installato il software in grado di ricevere e inviare input e output al sistema e infine una terza sezione dove è posizionato un monitor 3,5 pollici touch screen che permette all'utente di interfacciarsi con il sistema attraverso il programma.
 
@@ -566,7 +566,7 @@ void loop() {
 \end{lstlisting}
 \normalsize
 
-\textbf{Il sensore TCS3200} è un componente utilizzato allo scopo di individuare quali colori sono presenti nel suo campo visivo e esprimerlo secondo percentuali. Si tratta di un sensore composto da una matrice di 64 elementi fotosensibili di cui 16 con un filtro rosso 16 con un filtro verde e 16 con un filtro blu, più altri 16 non filtrati. Questo sensore all'uscita produce una frequenza che è funzione della luce che lo colpisce. E' possibile selezionare l'uscita legandola alla misura di uno dei 4 gruppi di sensori descritti. Arduino seleziona il colore da misurare e legge la frequenza in uscita dal modulo TCS230. Si è usato una funzione per leggere i colori chiamata "readColor()".
+\textbf{Il sensore TCS3200} è un componente utilizzato allo scopo di individuare quali colori sono presenti nel suo campo visivo. Si tratta di un sensore composto da una matrice di 64 elementi fotosensibili di cui 16 con un filtro rosso 16 con un filtro verde e 16 con un filtro blu, più altri 16 non filtrati. Questo sensore all'uscita produce una frequenza che è funzione della luce che lo colpisce. E' possibile selezionare l'uscita legandola alla misura di uno dei 4 gruppi di sensori descritti. Arduino seleziona il colore da misurare e legge la frequenza in uscita dal modulo TCS230. Si è usato una funzione per leggere i colori chiamata "readColor()".
 
 \begin{figure}[H]
 	\center
@@ -679,10 +679,83 @@ Nella terza pagina indicizzata \virgolette{Form3} bisogna inizializzarla come vi
 
 \section{Descrizione tipologie di dati}
 
-descrivere tutti i dati che il computer registra o riceve
+I dati raccolti in questo progetto sono sia strutturati che non strutturati, prima di analizzare singolarmente ogni componente del set occorre definire cosa si intende con le due tipologie.
+
+I dati strutturati sono a volte considerati dati tradizionali, costituiti principalmente da file di testo che includono informazioni molto ben organizzate; questi sono conformi a un formato tabulare con relazione tra le diverse righe e colonne (il formato tabulare non deve essere per forza in 2D ma può essere anche in più di 2 dimensioni e si parla, in questi casi, di dati semi-strutturati). Esempi comuni di dati strutturati sono i file di Excel o i database SQL.
+
+I dati non strutturati sono informazioni che non dispongono di un modello di dati predefinito questo però non implica che al loro interno non ci sia una organizzazione bensì che essa non è formalmente definita, ciò si traduce in irregolarità e ambiguità che rendono difficile la comprensione utilizzando programmi tradizionali rispetto ai dati memorizzati in database strutturati. Esempi comuni di dati non strutturati includono elementi multimediali (file audio, video, immagini) testi (libri, riviste, social media, email, messaggi).
 
 
-Dico come introduzione quanti dati ho raccolto e metto un po' di statistiche descrittive di base
+
+In questo progetto come dati strutturati si sono raccolte le informazioni relative ai quattro sensori spiegati nel capitolo precedente. Grazie alle due fotoresistenze si è stati in grado di raccogliere le informazioni relative alla quantità di luce che attraversa l'oggetto, queste sono state posizionate in due punti differenti così da poter cogliere la luce da diverse angolature. I due moduli ad ultrasuoni sono stati posizionati in modo tale da riuscire a coprire tutta la superficie del cestino per tentare di misurare le differenti modalità con cui cadono i rifiuti nel cestino. Essendo che questi due sensori misurano un onda presa in un determinato momento è stato necessario calcolarne la media e la varianza per ogni rifiuto in entrambi i moduli.
+Il sensore HX711 restituisce come informazione il peso del rifiuto. Il sensore TCS3200, infine, è un componente utilizzato allo scopo di individuare quali colori sono presenti nel suo campo visivo restituisce tre variabili che indicano la quantità registrata di colore "rosso", "blu" e "verde".
+
+
+Analisi descrittiva dei dati: Tabella di statistiche per categoria di rifiuto e grafico con pairs
+
+
+Per quanto riguarda i dati non strutturati si sono raccolte le immagini relative alle differenti tipologie di rifiuti con i tre metodi esposti in precedenza. Per quanto riguarda la prima metodologia, il Web Scraping, si sono raccolte 41042 immagini divise in 129 categorie. Con il Chatbot di Telegram sono state ricevute *num* foto relative alle tre categorie principali di rifiuti: Plastica, Carta e Vetro. Infine, attraverso il cestino, è stato possibile raccogliere, oltre ai dati strutturati spiegati in precedenza anche *num* immagini così da essere in grado di analizzare congiuntamente il problema da due punti di vista differenti.
+
+Immagini Web Scraping:
+
+\begin{table}[h!]
+	\begin{center}
+		\caption{Immagini Web Scraping.}
+		\label{tab:WEBscraping}
+		\vspace{0.5cm}
+		\begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+			\textbf{Numero} & \textbf{Descrizione} & \textbf{Quantità}\\
+			\hline
+			1 & Plastica & 5082 \\ 
+			2 & Carta & 5086 \\ 
+			3 & Tetra Pak & 1282 \\ 
+			4 & Polistirolo & 940 \\ 
+			5 & Vetro & 4811 \\ 
+			6 & Indifferenziato & 4705 \\ 
+			7 & Legno & 4799 \\ 
+			8 & Metalli & 4806 \\ 
+			9 & Umido & 4751 \\ 
+			10 & Latta & 4780 \\ 
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+\begin{table}[h!]
+	\begin{center}
+		\caption{Immagini Chatbot di Telegram.}
+		\label{tab:Telegram}
+		\vspace{0.5cm}
+		\begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+			\textbf{Numero} & \textbf{Descrizione} & \textbf{Quantità}\\
+			\hline
+			1 & Plastica & 464 \\ 
+			2 & Carta & 493 \\ 
+			5 & Vetro & 391 \\ 
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+
+\begin{table}[h!]
+	\begin{center}
+		\caption{Immagini Automatic Recycling Bin.}
+		\label{tab:ARB}
+		\vspace{0.5cm}
+		\begin{tabular}{l|c|r} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+			\textbf{Numero} & \textbf{Descrizione} & \textbf{Quantità}\\
+			\hline
+			1 & Plastica & 5082 \\ 
+			2 & Carta & 5086 \\ 
+			5 & Vetro & 4811 \\ 
+		\end{tabular}
+	\end{center}
+\end{table}
+
+tabella con numero di immagini per ogni categoria e per ogni metodo
+
+
 
 
 \section{Dati Strutturati}
@@ -743,7 +816,7 @@ Staked regression algorithm
 
 - pregi del lavoro
 
-- punti critici
+- punti critici (umido)
 
 - possibili miglioramenti (qui soffermarsi un po')
 
