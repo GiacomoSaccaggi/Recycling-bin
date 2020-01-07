@@ -126,16 +126,342 @@ background-position: 10px 12px;
   color: white;
   padding: 15px 32px;
   }
- .container h3{
- color: #ff4411; font-size: 48px; font-family: 'Signika', sans-serif; padding-bottom: 10px;  }
-
-.row h3{
-  color: #7c795d; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px;
-}
   </style>
+
+
+
+  <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+    #infobox {
+      width: 256px;
+      background: #757575;
+      color: #FFF;
+      padding: 20px;
+    }
+  </style>
+
+  <script id="code">
+    function init() {
+      if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+
+      var colors = {
+        'red': '#be4b15',
+        'green': '#52ce60',
+        'blue': '#6ea5f8',
+        'lightred': '#fd8852',
+        'lightblue': '#afd4fe',
+        'lightgreen': '#b9e986',
+        'pink': '#faadc1',
+        'purple': '#d689ff',
+        'orange': '#fdb400',
+      }
+
+      // Icons derived from SVG paths designed by freepik: http://www.freepik.com/
+      var icons = {};
+      
+
+      icons.oil =
+        "M7807 5800 c-15 -4 -57 -30 -95 -56 -86 -62 -891 -645 -957 -694\
+        -151 -112 -415 -300 -445 -318 -49 -28 -98 -34 -160 -21 -54 12 -77 28 -497\
+        371 -307 251 -393 319 -419 333 -65 34 -168 4 -205 -60 -20 -34 -68 -186 -441\
+        -1390 -49 -159 -98 -314 -107 -344 l-17 -54 -300 -112 c-164 -62 -477 -178\
+        -694 -259 -217 -81 -413 -157 -435 -169 -49 -27 -85 -87 -85 -142 0 -47 38\
+        -114 79 -138 14 -8 226 -92 471 -187 245 -94 473 -182 508 -196 34 -13 90 -35\
+        125 -48 34 -14 222 -86 417 -161 195 -75 393 -152 440 -170 47 -18 114 -44\
+        150 -58 36 -13 124 -47 195 -75 72 -28 261 -101 420 -162 160 -61 317 -122\
+        350 -135 33 -13 103 -40 155 -60 52 -20 151 -58 220 -85 69 -27 215 -83 325\
+        -125 110 -42 238 -92 285 -110 47 -18 114 -44 150 -58 36 -13 124 -47 195 -75\
+        72 -28 261 -101 420 -162 160 -61 318 -122 353 -136 34 -13 90 -35 125 -48 34\
+        -14 104 -41 155 -60 50 -20 131 -51 180 -70 163 -64 205 -75 243 -67 48 11 73\
+        26 103 61 51 61 57 25 -151 1015 -18 88 -46 223 -62 300 -25 122 -195 937\
+        -311 1495 -38 183 -311 1497 -375 1805 -18 88 -50 239 -70 335 -20 96 -43 190\
+        -52 208 -29 61 -122 102 -186 82z m-2593 -1129 c12 -13 23 -55 32 -128 80\
+        -601 75 -576 147 -686 32 -48 185 -192 1552 -1461 882 -819 799 -738 791 -770\
+        -11 -44 -48 -44 -119 -1 -34 21 -197 121 -362 223 -165 102 -388 239 -495 305\
+        -107 66 -222 136 -255 157 -33 21 -148 91 -255 157 -217 133 -647 398 -1082\
+        668 -195 120 -297 189 -317 214 -41 52 -65 130 -58 194 3 29 66 266 140 527\
+        75 261 141 496 148 523 16 66 43 97 83 97 20 0 40 -8 50 -19z"
+
+        icons.Web =
+        "m240 0c-132.546875 0-240 107.453125-240 240s107.453125 240 240 240 240-107.453125 240-240c-.148438-132.484375-107.515625-239.851562-240-240zm207.566406 324.078125-68.253906 11.777344c7.8125-28.652344 12.03125-58.164063 12.558594-87.855469h71.929687c-.902343 26.117188-6.398437 51.871094-16.234375 76.078125zm-431.367187-76.078125h71.929687c.527344 29.691406 4.746094 59.203125 12.558594 87.855469l-68.253906-11.777344c-9.835938-24.207031-15.332032-49.960937-16.234375-76.078125zm16.234375-92.078125 68.253906-11.777344c-7.8125 28.652344-12.03125 58.164063-12.558594 87.855469h-71.929687c.902343-26.117188 6.398437-51.871094 16.234375-76.078125zm215.566406-27.472656c28.746094.367187 57.421875 2.984375 85.761719 7.832031l28.238281 4.871094c8.675781 29.523437 13.34375 60.078125 13.878906 90.847656h-127.878906zm88.488281-7.9375c-29.238281-4.996094-58.828125-7.695313-88.488281-8.0625v-96c45.863281 4.40625 85.703125 46.398437 108.28125 107.511719zm-104.488281-8.0625c-29.660156.367187-59.242188 3.066406-88.480469 8.0625l-19.800781 3.425781c22.578125-61.128906 62.417969-103.136719 108.28125-107.523438zm-85.753906 23.832031c28.335937-4.847656 57.007812-7.464844 85.753906-7.832031v103.550781h-127.878906c.535156-30.769531 5.203125-61.324219 13.878906-90.847656zm-42.125 111.71875h127.878906v103.550781c-28.746094-.367187-57.421875-2.984375-85.761719-7.832031l-28.238281-4.871094c-8.675781-29.523437-13.34375-60.078125-13.878906-90.847656zm39.390625 111.488281c29.238281 5.003907 58.824219 7.714844 88.488281 8.105469v96c-45.863281-4.410156-85.703125-46.402344-108.28125-107.515625zm104.488281 8.105469c29.660156-.390625 59.242188-3.101562 88.480469-8.105469l19.800781-3.425781c-22.578125 61.128906-62.417969 103.136719-108.28125 107.523438zm85.753906-23.875c-28.335937 4.847656-57.007812 7.464844-85.753906 7.832031v-103.550781h127.878906c-.535156 30.769531-5.203125 61.324219-13.878906 90.847656zm58.117188-111.71875c-.527344-29.691406-4.746094-59.203125-12.558594-87.855469l68.253906 11.777344c9.835938 24.207031 15.332032 49.960937 16.234375 76.078125zm47.601562-93.710938-65.425781-11.289062c-11.761719-38.371094-33.765625-72.808594-63.648437-99.601562 55.878906 18.648437 102.21875 58.457031 129.074218 110.890624zm-269.871094-110.890624c-29.882812 26.792968-51.886718 61.230468-63.648437 99.601562l-65.425781 11.289062c26.855468-52.433593 73.195312-92.242187 129.074218-110.890624zm-129.074218 314.3125 65.425781 11.289062c11.761719 38.371094 33.765625 72.808594 63.648437 99.601562-55.878906-18.648437-102.21875-58.457031-129.074218-110.890624zm269.871094 110.890624c29.882812-26.792968 51.886718-61.230468 63.648437-99.601562l65.425781-11.289062c-26.855468 52.433593-73.195312 92.242187-129.074218 110.890624zm0 0";
+
+        icons.SVM =
+        "M230.505,102.78c-0.365-3.25-4.156-5.695-7.434-5.695c-10.594,0-19.996-6.218-23.939-15.842\
+        c-4.025-9.855-1.428-21.346,6.465-28.587c2.486-2.273,2.789-6.079,0.705-8.721c-5.424-6.886-11.586-13.107-18.316-18.498\
+        c-2.633-2.112-6.502-1.818-8.787,0.711c-6.891,7.632-19.27,10.468-28.836,6.477c-9.951-4.187-16.232-14.274-15.615-25.101\
+        c0.203-3.403-2.285-6.36-5.676-6.755c-8.637-1-17.35-1.029-26.012-0.068c-3.348,0.37-5.834,3.257-5.723,6.617\
+        c0.375,10.721-5.977,20.63-15.832,24.667c-9.451,3.861-21.744,1.046-28.621-6.519c-2.273-2.492-6.074-2.798-8.725-0.731\
+        c-6.928,5.437-13.229,11.662-18.703,18.492c-2.133,2.655-1.818,6.503,0.689,8.784c8.049,7.289,10.644,18.879,6.465,28.849\
+        c-3.99,9.505-13.859,15.628-25.156,15.628c-3.666-0.118-6.275,2.345-6.68,5.679c-1.016,8.683-1.027,17.535-0.049,26.289\
+        c0.365,3.264,4.268,5.688,7.582,5.688c10.07-0.256,19.732,5.974,23.791,15.841c4.039,9.855,1.439,21.341-6.467,28.592\
+        c-2.473,2.273-2.789,6.07-0.701,8.709c5.369,6.843,11.537,13.068,18.287,18.505c2.65,2.134,6.504,1.835,8.801-0.697\
+        c6.918-7.65,19.295-10.481,28.822-6.482c9.98,4.176,16.258,14.262,15.645,25.092c-0.201,3.403,2.293,6.369,5.672,6.755\
+        c4.42,0.517,8.863,0.773,13.32,0.773c4.23,0,8.461-0.231,12.692-0.702c3.352-0.37,5.834-3.26,5.721-6.621\
+        c-0.387-10.716,5.979-20.626,15.822-24.655c9.514-3.886,21.752-1.042,28.633,6.512c2.285,2.487,6.063,2.789,8.725,0.73\
+        c6.916-5.423,13.205-11.645,18.703-18.493c2.135-2.65,1.832-6.503-0.689-8.788c-8.047-7.284-10.656-18.879-6.477-28.839\
+        c3.928-9.377,13.43-15.673,23.65-15.673l1.43,0.038c3.318,0.269,6.367-2.286,6.768-5.671\
+        C231.476,120.379,231.487,111.537,230.505,102.78z M115.616,182.27c-36.813,0-66.654-29.841-66.654-66.653\
+        s29.842-66.653,66.654-66.653s66.654,29.841,66.654,66.653c0,12.495-3.445,24.182-9.428,34.176l-29.186-29.187\
+        c2.113-4.982,3.229-10.383,3.228-15.957c0-10.915-4.251-21.176-11.97-28.893c-7.717-7.717-17.978-11.967-28.891-11.967\
+        c-3.642,0-7.267,0.484-10.774,1.439c-1.536,0.419-2.792,1.685-3.201,3.224c-0.418,1.574,0.053,3.187,1.283,4.418\
+        c0,0,14.409,14.52,19.23,19.34c0.505,0.505,0.504,1.71,0.433,2.144l-0.045,0.317c-0.486,5.3-1.423,11.662-2.196,14.107\
+        c-0.104,0.103-0.202,0.19-0.308,0.296c-0.111,0.111-0.213,0.218-0.32,0.328c-2.477,0.795-8.937,1.743-14.321,2.225l0.001-0.029\
+        l-0.242,0.061c-0.043,0.005-0.123,0.011-0.229,0.011c-0.582,0-1.438-0.163-2.216-0.94c-5.018-5.018-18.862-18.763-18.862-18.763\
+        c-1.242-1.238-2.516-1.498-3.365-1.498c-1.979,0-3.751,1.43-4.309,3.481c-3.811,14.103,0.229,29.273,10.546,39.591\
+        c7.719,7.718,17.981,11.968,28.896,11.968c5.574,0,10.975-1.115,15.956-3.228l29.503,29.503\
+        C141.125,178.412,128.825,182.27,115.616,182.27z";
+
+        icons.cnn =
+        "m42 18c.265 0 .52-.105.707-.293l11.707-11.707h1.77c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-2.184c-.265 0-.52.105-.707.293l-11.707 11.707h-1.586v-1c0-1.654-1.346-3-3-3s-3 1.346-3 3v3h-5.101c-.465-2.279-2.484-4-4.899-4-1.252 0-2.384.479-3.262 1.242l-9.256-7.068c.322-.661.518-1.392.518-2.174 0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5c1.252 0 2.384-.479 3.262-1.242l9.256 7.068c-.181.371-.332.758-.417 1.173h-7.202c-.465-2.278-2.485-3.999-4.899-3.999-2.757 0-5 2.243-5 5s2.243 5 5 5c1.252 0 2.384-.479 3.262-1.242l3.59 2.742-3.59 2.742c-.878-.763-2.01-1.242-3.262-1.242-2.757 0-5 2.243-5 5s2.243 5 5 5c1.252 0 2.384-.479 3.262-1.242l3.59 2.742-3.59 2.742c-.878-.763-2.01-1.242-3.262-1.242-2.757 0-5 2.243-5 5s2.243 5 5 5c2.414 0 4.434-1.721 4.899-4h7.202c.085.415.236.802.417 1.173l-9.256 7.068c-.878-.762-2.01-1.241-3.262-1.241-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5c0-.782-.196-1.513-.518-2.173l9.256-7.068c.878.762 2.01 1.241 3.262 1.241 2.414 0 4.434-1.721 4.899-4h5.101v2c0 1.654 1.346 3 3 3s3-1.346 3-3h1.586l11.707 11.707c.187.188.442.293.707.293h2.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-1.77l-11.707-11.707c-.187-.188-.442-.293-.707-.293h-2v-3h4.586l7.707 7.707c.187.188.442.293.707.293h3.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-2.77l-7.707-7.707c-.187-.188-.442-.293-.707-.293h-5v-3h8.586l3.707 3.707c.187.188.442.293.707.293h3.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-2.77l-3.707-3.707c-.187-.188-.442-.293-.707-.293h-9v-3h16.184c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-16.184v-3h9c.265 0 .52-.105.707-.293l3.707-3.707h2.77c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-3.184c-.265 0-.52.105-.707.293l-3.707 3.707h-8.586v-3h5c.265 0 .52-.105.707-.293l7.707-7.707h2.77c.414 1.161 1.514 2 2.816 2 1.654 0 3-1.346 3-3s-1.346-3-3-3c-1.302 0-2.402.839-2.816 2h-3.184c-.265 0-.52.105-.707.293l-7.707 7.707h-4.586v-3zm17-14c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm0 54c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm0-9c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm0-9c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm0-9c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm0-9c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm0-9c.551 0 1 .448 1 1s-.449 1-1 1-1-.448-1-1 .449-1 1-1zm-30.101 7h5.101v11h-5.101c-.465-2.279-2.484-4-4.899-4-1.252 0-2.384.479-3.262 1.242l-3.59-2.742 3.59-2.742c.878.763 2.01 1.242 3.262 1.242 2.414 0 4.434-1.721 4.899-4zm-7.899 12c0-1.654 1.346-3 3-3s3 1.346 3 3-1.346 3-3 3-3-1.346-3-3zm3-16c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm-17-7c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0 13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm4.482-.827c.181-.371.332-.758.417-1.173h7.202c.085.415.236.802.417 1.173l-4.018 3.069zm8.036 8.654c-.181.371-.332.758-.417 1.173h-7.202c-.085-.415-.236-.802-.417-1.173l4.018-3.068zm-12.518 5.173c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm4.482-.827c.181-.371.332-.758.417-1.173h7.202c.085.415.236.802.417 1.173l-4.018 3.069zm7.619 9.827h-7.202c-.085-.415-.236-.802-.417-1.173l4.018-3.068 4.018 3.068c-.181.371-.332.758-.417 1.173zm-12.101 4c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0 13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm17-13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm4.899-4c-.465-2.279-2.484-4-4.899-4-1.252 0-2.384.479-3.262 1.242l-3.59-2.742 3.59-2.742c.878.763 2.01 1.242 3.262 1.242 2.414 0 4.434-1.721 4.899-4h5.101v11zm9.101 4c0 .552-.449 1-1 1s-1-.448-1-1v-33c0-.552.449-1 1-1s1 .448 1 1z";
+
+
+      icons.rbin =
+            "M417.689,75.654c-1.711-1.709-3.901-2.568-6.563-2.568h-88.224L302.917,25.41c-2.854-7.044-7.994-13.04-15.413-17.989\
+			C280.078,2.473,272.556,0,264.945,0h-91.363c-7.611,0-15.131,2.473-22.554,7.421c-7.424,4.949-12.563,10.944-15.419,17.989\
+			l-19.985,47.676h-88.22c-2.667,0-4.853,0.859-6.567,2.568c-1.709,1.713-2.568,3.903-2.568,6.567v18.274\
+			c0,2.664,0.855,4.854,2.568,6.564c1.714,1.712,3.904,2.568,6.567,2.568h27.406v271.8c0,15.803,4.473,29.266,13.418,40.398\
+			c8.947,11.139,19.701,16.703,32.264,16.703h237.542c12.566,0,23.319-5.756,32.265-17.268c8.945-11.52,13.415-25.174,13.415-40.971\
+			V109.627h27.411c2.662,0,4.853-0.856,6.563-2.568c1.708-1.709,2.57-3.9,2.57-6.564V82.221\
+			C420.26,79.557,419.397,77.367,417.689,75.654z M169.301,39.678c1.331-1.712,2.95-2.762,4.853-3.14h90.504\
+			c1.903,0.381,3.525,1.43,4.854,3.14l13.709,33.404H155.311L169.301,39.678z M347.173,380.291c0,4.186-0.664,8.042-1.999,11.561\
+			c-1.334,3.518-2.717,6.088-4.141,7.706c-1.431,1.622-2.423,2.427-2.998,2.427H100.493c-0.571,0-1.565-0.805-2.996-2.427\
+			c-1.429-1.618-2.81-4.188-4.143-7.706c-1.331-3.519-1.997-7.379-1.997-11.561V109.627h255.815V380.291z\
+			M137.04,347.172h18.271c2.667,0,4.858-0.855,6.567-2.567c1.709-1.718,2.568-3.901,2.568-6.57V173.581\
+			c0-2.663-0.859-4.853-2.568-6.567c-1.714-1.709-3.899-2.565-6.567-2.565H137.04c-2.667,0-4.854,0.855-6.567,2.565\
+			c-1.711,1.714-2.568,3.904-2.568,6.567v164.454c0,2.669,0.854,4.853,2.568,6.57C132.186,346.316,134.373,347.172,137.04,347.172z\
+			M210.129,347.172h18.271c2.666,0,4.856-0.855,6.564-2.567c1.718-1.718,2.569-3.901,2.569-6.57V173.581\
+			c0-2.663-0.852-4.853-2.569-6.567c-1.708-1.709-3.898-2.565-6.564-2.565h-18.271c-2.664,0-4.854,0.855-6.567,2.565\
+			c-1.714,1.714-2.568,3.904-2.568,6.567v164.454c0,2.669,0.854,4.853,2.568,6.57C205.274,346.316,207.465,347.172,210.129,347.172z\
+			M283.22,347.172h18.268c2.669,0,4.859-0.855,6.57-2.567c1.711-1.718,2.562-3.901,2.562-6.57V173.581\
+			c0-2.663-0.852-4.853-2.562-6.567c-1.711-1.709-3.901-2.565-6.57-2.565H283.22c-2.67,0-4.853,0.855-6.571,2.565\
+			c-1.711,1.714-2.566,3.904-2.566,6.567v164.454c0,2.669,0.855,4.853,2.566,6.57C278.367,346.316,280.55,347.172,283.22,347.172z"
+
+        
+      icons.telegram =
+        "m504.09375 11.859375c-6.253906-7.648437-15.621094-11.859375-26.378906-11.859375-5.847656 0-12.042969 1.230469-18.410156 3.664062l-433.398438 165.441407c-23 8.777343-26.097656 21.949219-25.8984375 29.019531s4.0390625 20.046875 27.4999995 27.511719c.140626.042969.28125.085937.421876.125l89.898437 25.726562 48.617187 139.023438c6.628907 18.953125 21.507813 30.726562 38.835938 30.726562 10.925781 0 21.671875-4.578125 31.078125-13.234375l55.605469-51.199218 80.652344 64.941406c.007812.007812.019531.011718.027343.019531l.765625.617187c.070313.054688.144532.113282.214844.167969 8.964844 6.953125 18.75 10.625 28.308594 10.628907h.003906c18.675781 0 33.546875-13.824219 37.878906-35.214844l71.011719-350.640625c2.851563-14.074219.460937-26.667969-6.734375-35.464844zm-356.191406 234.742187 173.441406-88.605468-107.996094 114.753906c-1.769531 1.878906-3.023437 4.179688-3.640625 6.683594l-20.824219 84.351562zm68.132812 139.332032c-.71875.660156-1.441406 1.25-2.164062 1.792968l19.320312-78.25 35.144532 28.300782zm265.390625-344.566406-71.011719 350.644531c-.683593 3.355469-2.867187 11.164062-8.480468 11.164062-2.773438 0-6.257813-1.511719-9.824219-4.257812l-91.390625-73.585938c-.011719-.011719-.027344-.023437-.042969-.03125l-54.378906-43.789062 156.175781-165.949219c5-5.3125 5.453125-13.449219 1.074219-19.285156-4.382813-5.835938-12.324219-7.671875-18.820313-4.351563l-256.867187 131.226563-91.121094-26.070313 433.265625-165.390625c3.660156-1.398437 6.214844-1.691406 7.710938-1.691406.917968 0 2.550781.109375 3.15625.855469.796875.972656 1.8125 4.289062.554687 10.511719zm0 0"
+
+      icons.pyrolysis =
+        "F M226.46,198.625v-75.5h-87.936v-19.391h-14.304V92.319h-5.079l-3.724-82.777H91.766l-3.724,82.777h-6.18v11.415H68.535\
+        V92.319h-5.079L59.731,9.542H36.08l-3.724,82.777h-6.18v11.415H11.872v94.891H0v35.167h243.333v-35.167H226.46z M61.355,191.792h-28\
+        v-69.333h28V191.792z M117.041,191.792h-28v-69.333h28V191.792z M168.46,198.625h-29.936v-17.5h29.936V198.625z M206.46,198.625h-18\
+        v-37.5h-49.936v-18h67.936V198.625z";
+
+      icons.fractionation =
+        "F M224.609,218.045l-5.24-173.376h9.172V18.297h-9.969L218.019,0h-32.956l-0.553,18.297h-9.969v26.372h9.171l-2.475,81.878\
+        h-39.196l-1.833-52.987h8.998V47.188h-9.91l-0.633-18.297h-32.913l-0.633,18.297h-9.911V73.56h8.999l-1.833,52.987H62.081\
+        l-0.974-24.097h8.767V76.079h-9.833l-0.74-18.298H26.446l-0.739,18.298h-9.832v26.371h8.766L19.97,218.045H3.041v26.371h238.333\
+        v-26.371z  M144.536,198.667h34.522l-0.586,19.378h-33.267L144.536,198.667z M143.624,172.296l-0.67-19.378h37.487\
+        l-0.586,19.378H143.624z M100.792,172.296H63.93l-0.783-19.378h38.315L100.792,172.296z M99.88,198.667l-0.67,19.378h-33.43\
+        l-0.783-19.378H99.88z";
+
+      icons.gasprocessing =
+        "F M242.179,212.635V58.634h-80.936v40.877h-13.465l-1.351-33.828h5.284V45.247h-6.1l-0.415-10.382h6.515V14.431h-46.927\
+      v20.435h6.515l-0.415,10.382h-6.1v20.436h5.284l-2.8,70.125H96.186V95.007H10.642v117.628H0v25.755h252.82v-25.755H242.179z\
+      M73.501,135.808H51.714v76.827H33.327v-94.942h40.174V135.808z M137.797,213.516h-19.099v-88h19.099V213.516z M219.494,212.635\
+      h-18.316v-51.411h18.316V212.635z M219.494,138.539h-18.316V99.511h-17.25V81.319h35.566V138.539z";
+
+      icons.polymerization =
+        "F M399.748,237.029 L363.965,174.401 345.094,174.401 343.113,155.463 326.566,155.463 322.797,29.385 290.486,29.385\
+        286.715,155.463 270.17,155.463 261.634,237.029 242.029,237.029 242.029,190.314 192.029,190.314 192.029,230.587 109.84,187.329\
+        109.84,230.486 27.84,187.329 27.84,237.029 0,237.029 0,394.674 424.059,394.674 424.059,237.029z";
+
+      icons.finishedgas =
+        "F M422.504,346.229v-68.306h-16.678v-24.856c0-21.863-16.199-39.935-37.254-42.882v-0.798\
+        c0-26.702-21.723-48.426-48.426-48.426h-1.609c-26.699,0-48.426,21.724-48.426,48.426v87.633h-23.641v-93.169\
+        c0-6.083-3.248-11.394-8.096-14.333c5.662-1.667,9.799-6.896,9.799-13.098c0-7.544-6.117-13.661-13.662-13.661h-10.981v-12.727h-17\
+        v12.727h-10.984c-7.545,0-13.66,6.116-13.66,13.661c0,6.202,4.137,11.431,9.799,13.098c-4.848,2.94-8.098,8.25-8.098,14.333v93.169\
+        h-23v-85.596c0-4.458-3.613-8.071-8.07-8.071h-16.412v-87.591c0-16.03-13.041-29.071-29.07-29.071v-1.267\
+        c0-23.608-19.139-42.748-42.748-42.748S21.54,61.817,21.54,85.425v260.805H0v55.139h444.045v-55.139H422.504z M286.256,209.387\
+        c0-17.801,14.48-32.284,32.281-32.284h1.609c17.803,0,32.285,14.483,32.285,32.284v1.559\
+        c-19.059,4.545-33.232,21.673-33.232,42.124v24.855h-16.676v19.098h-16.27v-87.635H286.256z M302.525,313.162v33.067h-16.27\
+        v-33.067H302.525z M270.113,313.162v33.067h-23.641v-33.067H270.113z M144.447,219.496v85.596c0,4.458,3.613,8.071,8.07,8.071\
+        h31.07v33.068h-47.482V219.496H144.447z M107.035,102.834c7.129,0,12.93,5.8,12.93,12.929v87.591h-12.93V102.834z M107.035,219.496\
+        h12.93v126.733h-12.93V219.496z";
+
+
+      var $ = go.GraphObject.make;  // for conciseness in defining templates
+      myDiagram = $(go.Diagram, "myDiagramDiv",  // create a Diagram for the DIV HTML element
+        {
+          maxSelectionCount: 1, // users can select only one part at a time
+          "toolManager.hoverDelay": 10,  // how quickly tooltips are shown
+          initialAutoScale: go.Diagram.Uniform,  // scale to show all of the contents
+          "ChangedSelection": onSelectionChanged, // view additional information
+        });
+
+      function infoString(obj) {
+        var part = obj.part;
+        if (part instanceof go.Adornment) part = part.adornedPart;
+        var msg = "";
+        if (part instanceof go.Link) {
+          msg = "";
+        } else if (part instanceof go.Node) {
+          msg = part.data.text + ":\n\n" + part.data.description;
+        }
+        return msg;
+      }
+
+      // A data binding conversion function. Given an name, return the Geometry.
+      // If there is only a string, replace it with a Geometry object, which can be shared by multiple Shapes.
+      function geoFunc(geoname) {
+        var geo = icons[geoname];
+        if (typeof geo === "string") {
+          geo = icons[geoname] = go.Geometry.parse(geo, true);
+        }
+        return geo;
+      }
+
+      myDiagram.nodeTemplate =
+        $(go.Node, "Spot",
+          {
+            locationObjectName: 'main',
+            locationSpot: go.Spot.Center,
+            toolTip:
+              $("ToolTip",
+                $(go.TextBlock, { margin: 4, width: 140 },
+                  new go.Binding("text", "", infoString).ofObject())
+              )
+          },
+          new go.Binding("location", "pos", go.Point.parse).makeTwoWay(go.Point.stringify),
+          // The main element of the Spot panel is a vertical panel housing an optional icon,
+          // plus a rectangle that acts as the port
+          $(go.Panel, "Vertical",
+            $(go.Shape, {
+              name: 'icon',
+              width: 1, height: 1,
+              stroke: null, strokeWidth: 0,
+              fill: colors.blue
+            },
+              new go.Binding("fill", "color", function(c) { return colors[c]; }),
+              new go.Binding("width", "iconWidth"),
+              new go.Binding("height", "iconHeight"),
+              new go.Binding("geometry", "icon", geoFunc)),
+            $(go.Shape, {
+              name: 'main',
+              width: 40, height: 40,
+              margin: new go.Margin(-1, 0, 0, 0),
+              portId: "",
+              stroke: null, strokeWidth: 0,
+              fill: colors.blue
+            },
+              new go.Binding("fill", "color", function(c) { return colors[c]; }),
+              new go.Binding("width", "portWidth"),
+              new go.Binding("height", "portHeight"))
+          ),
+
+          $(go.TextBlock, {
+            font: "Bold 14px Lato, sans-serif",
+            textAlign: "center",
+            margin: 3,
+            maxSize: new go.Size(100, NaN),
+            alignment: go.Spot.TopCenter,
+            alignmentFocus: go.Spot.BottomCenter
+          },
+            new go.Binding("text"))
+
+        );
+
+      // Some links need a custom to or from spot
+      function spotConverter(dir) {
+        if (dir === "left") return go.Spot.LeftSide;
+        if (dir === "right") return go.Spot.RightSide;
+        if (dir === "top") return go.Spot.TopSide;
+        if (dir === "bottom") return go.Spot.BottomSide;
+        if (dir === "rightsingle") return go.Spot.Right;
+      }
+
+      myDiagram.linkTemplate =
+        $(go.Link, {
+          toShortLength: -2,
+          fromShortLength: -2,
+          layerName: "Background",
+          routing: go.Link.Orthogonal,
+          corner: 15,
+          fromSpot: go.Spot.RightSide,
+          toSpot: go.Spot.LeftSide
+        },
+          // make sure links come in from the proper direction and go out appropriately
+          new go.Binding("fromSpot", "fromSpot", function(d) { return spotConverter(d); }),
+          new go.Binding("toSpot", "toSpot", function(d) { return spotConverter(d); }),
+
+          new go.Binding("points").makeTwoWay(),
+          // mark each Shape to get the link geometry with isPanelMain: true
+          $(go.Shape, { isPanelMain: true, stroke: colors.lightblue, strokeWidth: 10 },
+            new go.Binding("stroke", "color", function(c) { return colors[c]; })),
+          $(go.Shape, { isPanelMain: true, stroke: "white", strokeWidth: 3, name: "PIPE", strokeDashArray: [20, 40] })
+        );
+
+      myDiagram.model = go.Model.fromJson(document.getElementById("mySavedModel").value);
+      loop();  // animate some flow through the pipes
+    }
+
+    var opacity = 1;
+    var down = true;
+    function loop() {
+      var diagram = myDiagram;
+      setTimeout(function() {
+        var oldskips = diagram.skipsUndoManager;
+        diagram.skipsUndoManager = true;
+        diagram.links.each(function(link) {
+          var shape = link.findObject("PIPE");
+          var off = shape.strokeDashOffset - 3;
+          // animate (move) the stroke dash
+          shape.strokeDashOffset = (off <= 0) ? 60 : off;
+          // animte (strobe) the opacity:
+          if (down) opacity = opacity - 0.01;
+          else opacity = opacity + 0.003;
+          if (opacity <= 0) { down = !down; opacity = 0; }
+          if (opacity > 1) { down = !down; opacity = 1; }
+          shape.opacity = opacity;
+        });
+        diagram.skipsUndoManager = oldskips;
+        loop();
+      }, 60);
+    }
+
+    function onSelectionChanged(e) {
+      var node = e.diagram.selection.first();
+      if (!(node instanceof go.Node)) return;
+      var data = node.data;
+      var image = document.getElementById('Image');
+      var title = document.getElementById('Title');
+      var description = document.getElementById('Description');
+
+      if (data.imgsrc) {
+        image.src = data.imgsrc;
+        image.alt = data.caption;
+      } else {
+        image.src = "";
+        image.alt = "";
+      }
+      title.textContent = data.text;
+      description.textContent = data.description;
+
+    }
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
-<body>
+
+
+
+
+
+
+<body onload="init()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -252,27 +578,101 @@ background-position: 10px 12px;
         </ul>
         </p>
 
+<div id="sample">
+  <div style="width:100%">
+      <div id="myDiagramDiv" style="border: solid 1px black; width:70%; height:550px; display: inline-block; vertical-align: top"></div>
+      <div id="infobox" style="display: inline-block; vertical-align: top;">
+        <img id="Image" width="216" alt="" src=""/>
+        <h3 id="Title"></h3>
+        <p id="Description">Select a node to see more information.</p>
+      </div>
+  </div>
+  <div>
 
 
-        <p>Per adesso sono nella fase di "Reperimento dei dati", come fonti per prendere i dati sto usando:
-        <br><br>
-        Webscraping 41 000 foto 
-        <br><br>
-        O creato 3 bot su Telegram per ricevere foto che adesso sponsorizzereró tra amici e conoscenti e pubblicità online. Non so stabilire quante foto mi invieranno ma conto di arrivare minimo al migliaio
-        <br>
-        Per la plastica:<br>
-        <a href="https://t.me/Plastica_inviafoto_bot">https://t.me/Plastica_inviafoto_bot</a>
-        <br><br>
-        Per la carta:<br>
-        <a href="https://t.me/Carta_inviafoto_bot">https://t.me/Carta_inviafoto_bot</a>
-        <br><br>
-        Per il vetro:<br>
-        <a href="https://t.me/Vetro_inviafoto_bot">https://t.me/Vetro_inviafoto_bot</a>
-        <br><br>
-        E infine sono riuscito ad creare il cestino "robot" e il software di registrazione dei dati e conto di riuscire a registrare intorno ai 3000 oggetti (1000 di carta 1000 di vetro e 1000 di plastica) ho ancora un problema sul motore che fa girare il macchinario ma conto di risolverò e comunque non influisce ne con la parte di riconoscimento ne con la parte di registrazione dei dati 
-        <br><br>
-        Quindi in definitiva conto di avere intorno alle 45 000 foto dei differenti tipi di rifiuti e 3000 dati strutturati per fare ensemble learning tra i due tipi di modelli.</p>
-
+<textarea id="mySavedModel" style="width: 200px; height: 400px;display:none;">
+{ "class": "go.GraphLinksModel",
+  "nodeDataArray": [
+{
+  "key":1, "pos":"-180 -57", "icon":"Web", "iconWidth": 40, "iconHeight": 40, "portHeight": 20,
+  "text":"Web\nScraping",
+  "description": "Tra le tante possibili soluzioni si è deciso di utilizzare la tecnica di Web Scraping chiamata HTML Parsing ossia una deserializzazione delle pagine HTML. Questo processo riceve il codice HTML non elaborato, lo interpreta e genera dal codice una struttura ad albero DOM (Document Object Model). Con questa tecnica si sono raccolte 41042 immagini divise in 129 categorie",
+  "caption":"Web Scraping",
+  "imgsrc":"http://webdata-scraping.com/media/2016/04/web_scraping_spider.png"
+},
+{
+  "key":2, "pos":"-180 100", "icon":"telegram", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"Telegram\nChat bot",
+  "description": "Il Bot implementato in questa sezione ha come funzione quella di ricevere immagini per categoria di rifiuto, salvarle e restituire a colui che ha inviato l'immagine un messaggio di ringraziamento. Con questa tecnica di raccolta dei dati si sono potote raccogliere 1348 foto dei differenti tipi di rifiuti. ",
+  "caption":"Chatbot Telegram",
+  "imgsrc":"https://gioditcom.files.wordpress.com/2017/04/telegram-marketing.png"
+},
+{
+  "key":3, "pos":"-180 250", "icon":"rbin", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"Automatic\nRecycling\nBin",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://images-na.ssl-images-amazon.com/images/I/51nYpnkWBdL._SL500_AC_SS350_.jpg"
+},
+{
+  "key":4, "pos":"-80 -57", "icon":"SVM", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"SVM\nrbf or linear",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
+},
+{
+  "key":5, "pos":"-80 100", "icon":"cnn", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"CNN",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://www.extremetech.com/wp-content/uploads/2015/10/neural-networks-3.jpg"
+},
+{
+  "key":6, "pos":"-80 200", "icon":"cnn", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"CNN",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://www.extremetech.com/wp-content/uploads/2015/10/neural-networks-3.jpg"
+},
+{
+  "key":7, "pos":"-80 300", "icon":"SVM", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"Boosting",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
+},
+{
+  "key":8, "pos":"200 0", "icon":"telegram", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"Telgram application",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://gioditcom.files.wordpress.com/2017/04/telegram-marketing.png"
+},
+{
+  "key":9, "pos":"180 230", "icon":"rbin", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"Automatic Recycling bin application",
+  "description": "descrizione",
+  "caption":"title",
+  "imgsrc":"https://images-na.ssl-images-amazon.com/images/I/51nYpnkWBdL._SL500_AC_SS350_.jpg"
+}
+],
+  "linkDataArray": [
+{"from":1, "to":4 },
+{"from":2, "to":5, "label": "APG" },
+{"from":3, "to":6 },
+{"from":3, "to":7, "toSpot":"bottom" },
+{"from":4, "to":8 },
+{"from":5, "to":8 },
+{"from":6, "to":8 },
+{"from":4, "to":9, "fromSpot":"rightsingle", "color":"orange"  },
+{"from":5, "to":9, "fromSpot":"rightsingle", "color":"orange" },
+{"from":6, "to":9, "fromSpot":"rightsingle", "color":"orange" },
+{"from":7, "to":9, "fromSpot":"rightsingle", "color":"orange" }
+ ]}
+    </textarea>
+  </div>
+</div>
 <br><br><center>
       <button class="button" onClick="window.open('LATEX/TESI_SACCAGGI_GIACOMO.pdf');">APRI TESI (Working in progress)</button></center><br><br>
       <button class="button" onClick="window.open('https://github.com/GiacomoSaccaggi/Recycling-bin');">Scarica tutto il progetto (Working in progress)</button></center><br><br>
