@@ -1,7 +1,7 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {chapter}{Introduzione}{1}{chapter*.2}% 
-\contentsline {chapter}{\numberline {1}Reperimento dei dati}{5}{chapter.1}% 
+\contentsline {chapter}{\numberline {1}Raccolta dei dati}{5}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Struttura del lavoro}{5}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Come differenziare}{6}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Web Scraping}{7}{section.1.3}% 
@@ -14,31 +14,35 @@
 \contentsline {subsection}{\numberline {1.5.1}Meccanica}{14}{subsection.1.5.1}% 
 \contentsline {subsection}{\numberline {1.5.2}Robotica}{18}{subsection.1.5.2}% 
 \contentsline {subsection}{\numberline {1.5.3}Softwaristica}{26}{subsection.1.5.3}% 
-\contentsline {chapter}{\numberline {2}Addestramento train e modelli}{29}{chapter.2}% 
+\contentsline {chapter}{\numberline {2}Modellizzazione e addestramento}{29}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Descrizione tipologie di dati}{29}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Dati Strutturati}{31}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Spiegazione teorica dei modelli utilizzati}{31}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Applicazione dei modelli}{31}{subsection.2.2.2}% 
-\contentsline {section}{\numberline {2.3}Dati non strutturati}{31}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Spiegazione teorica dei modelli utilizzati}{31}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Applicazione dei modelli}{31}{subsection.2.3.2}% 
-\contentsline {chapter}{\numberline {3}Verifica test, confronto dei modelli}{32}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Confronto modelli}{32}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Ensemble Learning}{32}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Spiegazione teorica dei modelli utilizzati}{32}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Applicazione dei modelli}{32}{subsection.3.2.2}% 
-\contentsline {section}{\numberline {3.3}Esempi pratici di applicazioni}{32}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Bot di Telegram}{32}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Cestino}{32}{subsection.3.3.2}% 
-\contentsline {chapter}{Conclusioni}{33}{chapter*.3}% 
-\contentsline {chapter}{\numberline {A}Codici}{34}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Reperimento dei dati}{34}{section.Alph1.1}% 
-\contentsline {subsection}{\numberline {A.1.1}Codice Web Scraping (R)}{34}{subsection.Alph1.1.1}% 
-\contentsline {subsection}{\numberline {A.1.2}Codice Bot Telegram per salvare i dati (Python)}{38}{subsection.Alph1.1.2}% 
-\contentsline {subsection}{\numberline {A.1.3}Codice Arduino (C++)}{39}{subsection.Alph1.1.3}% 
-\contentsline {subsection}{\numberline {A.1.4}Codice software per salvare i dati (VB.NET)}{43}{subsection.Alph1.1.4}% 
-\contentsline {section}{\numberline {A.2}Addestramento dei modelli}{45}{section.Alph1.2}% 
-\contentsline {subsection}{\numberline {A.2.1}Codice modelli (Python)}{45}{subsection.Alph1.2.1}% 
-\contentsline {section}{\numberline {A.3}Applicazioni}{46}{section.Alph1.3}% 
-\contentsline {subsection}{\numberline {A.3.1}Codice software per differenziare (VB.NET)}{46}{subsection.Alph1.3.1}% 
-\contentsline {subsection}{\numberline {A.3.2}Codice Bot Telegram per differenziare (Python)}{46}{subsection.Alph1.3.2}% 
+\contentsline {section}{\numberline {2.2}Dati Strutturati}{35}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Gradient boosting algorithm (GBM)}{35}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Multi-Layer Perceptron (MLP)}{39}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Risultati}{45}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Dati non strutturati}{48}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Convolutional Neural Network (CNN)}{48}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Residual Neural Network (ResNet)}{53}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Risultati}{59}{subsection.2.3.3}% 
+\contentsline {chapter}{\numberline {3}Confronto dei modelli}{61}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Confronto modelli}{61}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Ensemble Learning}{61}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Spiegazione teorica dei modelli utilizzati}{61}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Applicazione dei modelli}{61}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Esempi pratici di applicazioni}{61}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Bot di Telegram}{61}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Cestino}{61}{subsection.3.3.2}% 
+\contentsline {chapter}{Conclusioni}{62}{chapter*.3}% 
+\contentsline {chapter}{\numberline {A}Codici}{63}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Reperimento dei dati}{63}{section.Alph1.1}% 
+\contentsline {subsection}{\numberline {A.1.1}Web Scraping (R)}{63}{subsection.Alph1.1.1}% 
+\contentsline {subsection}{\numberline {A.1.2}Bot Telegram per salvare i dati (Python)}{67}{subsection.Alph1.1.2}% 
+\contentsline {subsection}{\numberline {A.1.3}Codice Arduino (C++)}{68}{subsection.Alph1.1.3}% 
+\contentsline {subsection}{\numberline {A.1.4}Software per salvare i dati (VB.NET)}{72}{subsection.Alph1.1.4}% 
+\contentsline {section}{\numberline {A.2}Addestramento dei modelli}{86}{section.Alph1.2}% 
+\contentsline {subsection}{\numberline {A.2.1}Gradient boosting algorithm (Python)}{86}{subsection.Alph1.2.1}% 
+\contentsline {subsection}{\numberline {A.2.2}Multi-Layer Perceptron (Python) }{87}{subsection.Alph1.2.2}% 
+\contentsline {subsection}{\numberline {A.2.3}Residual Neural Network (Python)}{87}{subsection.Alph1.2.3}% 
+\contentsline {section}{\numberline {A.3}Applicazioni}{91}{section.Alph1.3}% 
+\contentsline {subsection}{\numberline {A.3.1}Software per differenziare (VB.NET)}{91}{subsection.Alph1.3.1}% 
+\contentsline {subsection}{\numberline {A.3.2}Bot Telegram per differenziare (Python)}{92}{subsection.Alph1.3.2}% 
