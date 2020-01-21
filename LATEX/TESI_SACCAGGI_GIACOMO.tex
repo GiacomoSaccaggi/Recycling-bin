@@ -848,7 +848,7 @@ Le immagini digitali monocromatiche sono rappresentate come matrici bidimensiona
 
 \begin{figure}[H]
 	\center
-	\includegraphics[width=300px]{pixel.png}
+	\includegraphics[width=200px]{pixel1.png}
 	\caption{Immagine divisa in matrice}
 \end{figure}
 
@@ -1512,10 +1512,10 @@ Codici per l'implementazione nell'Appendice A sezione [A.2.3]
 		\begin{tabular}{l|c|c|c|r} 
 			& carta   & indifferenziata & plastica  & vetro \\
 			\hline
-			carta &   &   &  &   \\
-			indifferenziata    &  &  &   &  \\
-			plastica   &    &   &   & \\
-			vetro      &   &   &   & \\
+			carta & 78  &  13 & 52 & 8  \\
+			indifferenziata    & 1 & 274 & 51  & 12 \\
+			plastica   & 0   &3   &396   & 2\\
+			vetro      &  0 &  1 &  9 & 100 \\
 		\end{tabular}
 	\end{center}
 \end{table}
@@ -1532,14 +1532,14 @@ $$ $$
 		\begin{tabular}{l|c|c|c|r} 
 			& precision   & recall & f1-score  & support \\
 			\hline
-			carta &       &         &     &     \\
-			indifferenziata &        &     &       &  \\
-			plastica   &       &       &       &  \\
-			vetro      &     &     &   &       \\
+			carta &    0.99   &     0.52    &   0.68  &   151  \\
+			indifferenziata &   0.94     &  0.81   &  0.87     & 338 \\
+			plastica   &   0.78    &   0.99    &  0.87     &  401\\
+			vetro      &  0.82   &  0.91   & 0.86  &   110    \\
 			\hline
-			accuracy             & & &               &      \\
-			macro avg    &      &       &     &    \\
-			weighted avg    &      &      &      &    \\
+			accuracy             & & &          0.85     &    1000  \\
+			macro avg    &   0.88   &   0.81    &   0.82  & 1000   \\
+			weighted avg    &   0.87   &   0.85   &    0.84  &  1000  \\
 		\end{tabular}
 	\end{center}
 \end{table}
@@ -1561,10 +1561,10 @@ Codici per l'implementazione nell'Appendice A sezione [A.2.3]
 		\begin{tabular}{l|c|c|c|r} 
 			& carta   & indifferenziata & plastica  & vetro \\
 			\hline
-			carta &   &   &  &   \\
-			indifferenziata    &  &  &   &  \\
-			plastica   &    &   &   & \\
-			vetro      &   &   &   & \\
+			carta &  142 &  132 & 21 & 2  \\
+			indifferenziata    & 0 & 139  & 0  & 0 \\
+			plastica   & 0   & 0  & 297  & 0 \\
+			vetro      &  0 & 51  & 6  & 210 \\
 		\end{tabular}
 	\end{center}
 \end{table}
@@ -1581,14 +1581,14 @@ $$ $$
 		\begin{tabular}{l|c|c|c|r} 
 			& precision   & recall & f1-score  & support \\
 			\hline
-			carta &       &         &     &     \\
-			indifferenziata &        &     &       &  \\
-			plastica   &       &       &       &  \\
-			vetro      &     &     &   &       \\
+			carta &    1	   &  0.48       &  0.66   & 197    \\
+			indifferenziata &   0.43     &  1   &  0.6     & 139 \\
+			plastica   &   0.92    &     1  &    0.96   & 297 \\
+			vetro      &  0.99   &  0.79   & 0.88  &     267  \\
 			\hline
-			accuracy             & & &               &      \\
-			macro avg    &      &       &     &    \\
-			weighted avg    &      &      &      &    \\
+			accuracy             & & &         0.79      &   1000   \\
+			macro avg    &  0.83    &   0.82    & 0.77    &  1000  \\
+			weighted avg    &   0.89   &   0.79   &   0.79   &   1000 \\
 		\end{tabular}
 	\end{center}
 \end{table}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  21 JAN 2020 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  21 JAN 2020 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,7 +468,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...e {3}Confronto dei modelli}{61}{chapter.3}
+l.27 ...e {3}Confronto dei modelli}{62}{chapter.3}
                                                   % [1
 
 ])
@@ -822,11 +822,11 @@ l.847
                                                   \fi \fi 
 l.847 
       ]
-<pixel.png, id=619, 1387.584pt x 679.338pt>
-File: pixel.png Graphic file (type png)
-<use pixel.png>
-Package pdftex.def Info: pixel.png  used on input line 851.
-(pdftex.def)             Requested size: 301.1261pt x 147.42311pt.
+<pixel1.png, id=619, 514.3215pt x 502.2765pt>
+File: pixel1.png Graphic file (type png)
+<use pixel1.png>
+Package pdftex.def Info: pixel1.png  used on input line 851.
+(pdftex.def)             Requested size: 200.75073pt x 196.04799pt.
 <RGB.png, id=620, 661.87276pt x 398.6895pt>
 File: RGB.png Graphic file (type png)
 <use RGB.png>
@@ -837,14 +837,14 @@ Package pdftex.def Info: RGB.png  used on input line 861.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.864 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2.3}) has been already used, duplicate ignored
+l.863 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.864 
-       <./pixel.png>]
+l.863 \end{figure}
+                   <./pixel1.png>]
 <test.png, id=628, 1927.2pt x 963.6pt>
 File: test.png Graphic file (type png)
 <use test.png>
@@ -1468,10 +1468,14 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2799.
 
 Package rerunfilecheck Info: File `TESI_SACCAGGI_GIACOMO.out' has not changed.
 (rerunfilecheck)             Checksum: 85188FB59BEA6DEC8A630A5C36834D16;3362.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  16259 strings out of 492623
- 227890 string characters out of 6133290
+ 227895 string characters out of 6133290
  489156 words of memory out of 5000000
  18605 multiletter control sequences out of 15000+600000
  11523 words of font info for 43 fonts, out of 8000000 for 9000
@@ -1491,7 +1495,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist
 e1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on TESI_SACCAGGI_GIACOMO.pdf (98 pages, 9123768 bytes).
+Output written on TESI_SACCAGGI_GIACOMO.pdf (98 pages, 9114428 bytes).
 PDF statistics:
  2320 PDF objects out of 2487 (max. 8388607)
  2108 compressed objects within 22 object streams
