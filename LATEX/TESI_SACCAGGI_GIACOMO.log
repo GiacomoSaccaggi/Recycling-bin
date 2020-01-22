@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  21 JAN 2020 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  23 JAN 2020 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -754,57 +754,57 @@ Package pdftex.def Info: form3.png  used on input line 715.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.718 \chapter
+l.735 \chapter
               {Modellizzazione e addestramento}pdfTeX warning (ext4): destinati
 on with the same identifier (name{figure.1.15}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.718 \chapter
+l.735 \chapter
               {Modellizzazione e addestramento} <./formcam.png> <./form3.png>]
 Capitolo 2.
 [29
 
 ]
-Overfull \hbox (31.29855pt too wide) in paragraph at lines 740--761
+Overfull \hbox (31.29855pt too wide) in paragraph at lines 758--779
  [] 
  []
 
 <train1.png, id=595, 1927.2pt x 963.6pt>
 File: train1.png Graphic file (type png)
 <use train1.png>
-Package pdftex.def Info: train1.png  used on input line 767.
+Package pdftex.def Info: train1.png  used on input line 785.
 (pdftex.def)             Requested size: 390.0pt x 194.9956pt.
 [30pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.770 
+l.788 
       ]
 <train2.png, id=601, 1927.2pt x 963.6pt>
 File: train2.png Graphic file (type png)
 <use train2.png>
-Package pdftex.def Info: train2.png  used on input line 776.
+Package pdftex.def Info: train2.png  used on input line 794.
 (pdftex.def)             Requested size: 390.0pt x 194.9956pt.
 <legenda.png, id=602, 463.7325pt x 354.123pt>
 File: legenda.png Graphic file (type png)
 <use legenda.png>
-Package pdftex.def Info: legenda.png  used on input line 777.
+Package pdftex.def Info: legenda.png  used on input line 795.
 (pdftex.def)             Requested size: 60.22522pt x 45.98897pt.
  [31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.782 
+l.800 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.782 
+l.800 
        <./train1.png> <./train2.png> <./legenda.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -814,106 +814,106 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.847 
+l.865 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.847 
+l.865 
       ]
 <pixel1.png, id=619, 514.3215pt x 502.2765pt>
 File: pixel1.png Graphic file (type png)
 <use pixel1.png>
-Package pdftex.def Info: pixel1.png  used on input line 851.
+Package pdftex.def Info: pixel1.png  used on input line 869.
 (pdftex.def)             Requested size: 200.75073pt x 196.04799pt.
 <RGB.png, id=620, 661.87276pt x 398.6895pt>
 File: RGB.png Graphic file (type png)
 <use RGB.png>
-Package pdftex.def Info: RGB.png  used on input line 861.
+Package pdftex.def Info: RGB.png  used on input line 879.
 (pdftex.def)             Requested size: 301.1261pt x 181.39183pt.
  [33pdfTeX warning (ext4): destination with the same identifier (name{table.2.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.863 \end{figure}
+l.881 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.863 \end{figure}
+l.881 \end{figure}
                    <./pixel1.png>]
 <test.png, id=628, 1927.2pt x 963.6pt>
 File: test.png Graphic file (type png)
 <use test.png>
-Package pdftex.def Info: test.png  used on input line 889.
+Package pdftex.def Info: test.png  used on input line 909.
 (pdftex.def)             Requested size: 301.1261pt x 150.56213pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.892 
+l.912 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.892 
+l.912 
        <./RGB.png>] [35pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.2.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.919 
+l.938 
        <./test.png>]
 <albero.png, id=641, 871.45575pt x 226.446pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
-Package pdftex.def Info: albero.png  used on input line 924.
+Package pdftex.def Info: albero.png  used on input line 943.
 (pdftex.def)             Requested size: 301.1261pt x 78.24834pt.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 936.
+LaTeX Warning: Command \textendash invalid in math mode on input line 955.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 939.
+LaTeX Warning: Command \textendash invalid in math mode on input line 958.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 939.
+LaTeX Warning: Command \textendash invalid in math mode on input line 958.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 943.
+LaTeX Warning: Command \textendash invalid in math mode on input line 964.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 943.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 947.
+LaTeX Warning: Command \textendash invalid in math mode on input line 964.
 
 [36pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.947 $$\Delta G(S_1) = 0.49 Ð 0.48 = 0.01 $$
-                                              <./albero.png>]
+l.964 ...\frac{5}{9}\bigg)^2\bigg]\bigg\} = 0.45$$
+                                                   <./albero.png>]
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 948.
+LaTeX Warning: Command \textendash invalid in math mode on input line 968.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 969.
 
 [37] [38] [39]
 <sigmoide.png, id=668, 510.10574pt x 178.266pt>
 File: sigmoide.png Graphic file (type png)
 <use sigmoide.png>
-Package pdftex.def Info: sigmoide.png  used on input line 1037.
+Package pdftex.def Info: sigmoide.png  used on input line 1054.
 (pdftex.def)             Requested size: 100.37537pt x 35.0759pt.
 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1047 	 \]
+l.1064 	 \]
            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -924,17 +924,17 @@ my insertion and my current dilemma will both disappear.
 <gradino.png, id=669, 494.44725pt x 181.8795pt>
 File: gradino.png Graphic file (type png)
 <use gradino.png>
-Package pdftex.def Info: gradino.png  used on input line 1051.
+Package pdftex.def Info: gradino.png  used on input line 1068.
 (pdftex.def)             Requested size: 100.37537pt x 36.92197pt.
 <tangiper.png, id=670, 495.65175pt x 219.82124pt>
 File: tangiper.png Graphic file (type png)
 <use tangiper.png>
-Package pdftex.def Info: tangiper.png  used on input line 1059.
+Package pdftex.def Info: tangiper.png  used on input line 1076.
 (pdftex.def)             Requested size: 100.37537pt x 44.51355pt.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1070 	 \]
+l.1087 	 \]
            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -945,57 +945,57 @@ my insertion and my current dilemma will both disappear.
 <rampa.png, id=671, 489.62926pt x 220.4235pt>
 File: rampa.png Graphic file (type png)
 <use rampa.png>
-Package pdftex.def Info: rampa.png  used on input line 1074.
+Package pdftex.def Info: rampa.png  used on input line 1091.
 (pdftex.def)             Requested size: 100.37537pt x 45.1871pt.
 [40pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1077 
+l.1094 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1077 
+l.1094 
        pdfTeX warning (ext4): destination with the same identifier (name{figure
 .2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1077 
+l.1094 
         <./sigmoide.png> <./gradino.png> <./tangiper.png>]
 <nn.png, id=682, 661.87276pt x 398.6895pt>
 File: nn.png Graphic file (type png)
 <use nn.png>
-Package pdftex.def Info: nn.png  used on input line 1094.
+Package pdftex.def Info: nn.png  used on input line 1111.
 (pdftex.def)             Requested size: 301.1261pt x 181.39183pt.
  [41pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1107 	\item [4.]
+l.1124 	\item [4.]
                    Foward-propagation:pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.2.11}) has been already used, duplicate ignored
 
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1107 	\item [4.]
+l.1124 	\item [4.]
                    Foward-propagation: <./rampa.png> <./nn.png>]
-Overfull \hbox (2.38731pt too wide) detected at line 1117
+Overfull \hbox (2.38731pt too wide) detected at line 1134
 [] \OT1/cmr/m/n/12 = [][][] =
  []
 
 
-Overfull \hbox (2.38731pt too wide) detected at line 1118
+Overfull \hbox (2.38731pt too wide) detected at line 1135
 [] \OT1/cmr/m/n/12 = [][][] =
  []
 
 
-Overfull \hbox (2.38731pt too wide) detected at line 1119
+Overfull \hbox (2.38731pt too wide) detected at line 1136
 [] \OT1/cmr/m/n/12 = [][][] =
  []
 
@@ -1003,29 +1003,29 @@ Overfull \hbox (2.38731pt too wide) detected at line 1119
 <deeplearning.png, id=694, 591.20876pt x 284.06125pt>
 File: deeplearning.png Graphic file (type png)
 <use deeplearning.png>
-Package pdftex.def Info: deeplearning.png  used on input line 1139.
+Package pdftex.def Info: deeplearning.png  used on input line 1156.
 (pdftex.def)             Requested size: 301.1261pt x 144.68726pt.
  [43]
 <percettrone.png, id=699, 501.072pt x 252.945pt>
 File: percettrone.png Graphic file (type png)
 <use percettrone.png>
-Package pdftex.def Info: percettrone.png  used on input line 1148.
+Package pdftex.def Info: percettrone.png  used on input line 1165.
 (pdftex.def)             Requested size: 301.1261pt x 152.01132pt.
  [44pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1158 $$
+l.1175 $$
           f(x_i) =pdfTeX warning (ext4): destination with the same identifier (
 name{figure.2.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1158 $$
+l.1175 $$
           f(x_i) = <./deeplearning.png> <./percettrone.png>]
 ! Undefined control sequence.
-l.1160 x_i,  & \text{se } \, x_i \gt
+l.1177 x_i,  & \text{se } \, x_i \gt
                                      0 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1034,41 +1034,44 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1167.
+LaTeX Warning: Command \b invalid in math mode on input line 1184.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1169.
+LaTeX Warning: Command \b invalid in math mode on input line 1186.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1171.
+LaTeX Warning: Command \b invalid in math mode on input line 1188.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1173.
+LaTeX Warning: Command \b invalid in math mode on input line 1190.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1175.
+LaTeX Warning: Command \b invalid in math mode on input line 1192.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1179.
+LaTeX Warning: Command \b invalid in math mode on input line 1196.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1181.
+LaTeX Warning: Command \b invalid in math mode on input line 1198.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1183.
+LaTeX Warning: Command \b invalid in math mode on input line 1200.
 
 <ultrasuoni2.png, id=709, 593.96906pt x 362.10281pt>
 File: ultrasuoni2.png Graphic file (type png)
 <use ultrasuoni2.png>
-Package pdftex.def Info: ultrasuoni2.png  used on input line 1208.
-(pdftex.def)             Requested size: 200.75073pt x 122.38399pt.
+Package pdftex.def Info: ultrasuoni2.png  used on input line 1225.
+(pdftex.def)             Requested size: 301.1261pt x 183.58151pt.
 [45pdfTeX warning (ext4): destination with the same identifier (name{table.2.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1211 
+l.1228 
        ]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1077,232 +1080,191 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1266 C
-        odici per l'implementazione nell'Appendice A sezione [A.2.2]pdfTeX warn
-ing (ext4): destination with the same identifier (name{table.2.7}) has been alr
-eady used, duplicate ignored
+l.1284 $$ $$
+             <./ultrasuoni2.png>]
+<mynet.png, id=722, 708.246pt x 504.08325pt>
+File: mynet.png Graphic file (type png)
+<use mynet.png>
+Package pdftex.def Info: mynet.png  used on input line 1294.
+(pdftex.def)             Requested size: 390.0pt x 277.58507pt.
+ [47pdfTeX warning (ext4): destination with the same identifier (name{table.2.7
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1266 C
-        odici per l'implementazione nell'Appendice A sezione [A.2.2] <./ultrasu
-oni2.png>]
-<mynet.png, id=723, 708.246pt x 504.08325pt>
-File: mynet.png Graphic file (type png)
-<use mynet.png>
-Package pdftex.def Info: mynet.png  used on input line 1272.
-(pdftex.def)             Requested size: 331.50238pt x 235.95pt.
+l.1297 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+2.8}) has been already used, duplicate ignored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1297 
+       ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{table.2.8}
-) has been already used, duplicate ignored
+[48pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1294 $$ $$
-            pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.2.15}) has been already used, duplicate ignored
+l.1349 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1294 $$ $$
-             <./mynet.png>] [48pdfTeX warning (ext4): destination with the same
- identifier (name{table.2.9}) has been already used, duplicate ignored
+l.1349 
+        <./mynet.png>] [49pdfTeX warning (ext4): destination with the same iden
+tifier (name{table.2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1333 	\item A
-               pprendimento tramite retropropagazione: durante il training u...
-pdfTeX warning (ext4): destination with the same identifier (name{table.2.10}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1333 	\item A
-               pprendimento tramite retropropagazione: durante il training u...
-]
-<filtroconv.png, id=737, 366.168pt x 199.947pt>
+l.1360 
+       ]
+<filtroconv.png, id=741, 366.168pt x 199.947pt>
 File: filtroconv.png Graphic file (type png)
 <use filtroconv.png>
-Package pdftex.def Info: filtroconv.png  used on input line 1347.
+Package pdftex.def Info: filtroconv.png  used on input line 1368.
 (pdftex.def)             Requested size: 301.1261pt x 164.43353pt.
- [49]
-<conv2dpaddingsame.png, id=742, 235.47975pt x 239.09325pt>
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1376 	\item I
+               l numero di filtri convoluzionali: le CNN possono avere decin...
+ <./filtroconv.png>]
+<conv2dpaddingsame.png, id=749, 235.47975pt x 239.09325pt>
 File: conv2dpaddingsame.png Graphic file (type png)
 <use conv2dpaddingsame.png>
-Package pdftex.def Info: conv2dpaddingsame.png  used on input line 1363.
+Package pdftex.def Info: conv2dpaddingsame.png  used on input line 1384.
 (pdftex.def)             Requested size: 150.56305pt x 152.87686pt.
-<conv2dpaddingvalid.png, id=743, 221.628pt x 224.63925pt>
+<conv2dpaddingvalid.png, id=750, 221.628pt x 224.63925pt>
 File: conv2dpaddingvalid.png Graphic file (type png)
 <use conv2dpaddingvalid.png>
-Package pdftex.def Info: conv2dpaddingvalid.png  used on input line 1364.
+Package pdftex.def Info: conv2dpaddingvalid.png  used on input line 1385.
 (pdftex.def)             Requested size: 150.56305pt x 152.60869pt.
 
-Underfull \hbox (badness 1389) in paragraph at lines 1365--1365
+Underfull \hbox (badness 1389) in paragraph at lines 1386--1386
 []\OT1/cmr/m/n/12 Figura 2.17: []Esempio Pad-ding: a si-ni-stra ap-pli-ca-zio-n
 e di un fil-tro
  []
 
-[50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-6}) has been already used, duplicate ignored
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1367 \end{itemize}
-                     <./filtroconv.png>] [51pdfTeX warning (ext4): destination 
-with the same identifier (name{figure.2.17}) has been already used, duplicate i
-gnored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1388 \end{itemize}
-                     <./conv2dpaddingsame.png> <./conv2dpaddingvalid.png>]
-<pooling.png, id=759, 460.72125pt x 212.59425pt>
+l.1394 $$I \in \mathbb{R}^{H \times W \times C}$$
+                                                  <./conv2dpaddingsame.png> <./
+conv2dpaddingvalid.png>]
+<pooling.png, id=758, 460.72125pt x 212.59425pt>
 File: pooling.png Graphic file (type png)
 <use pooling.png>
-Package pdftex.def Info: pooling.png  used on input line 1402.
+Package pdftex.def Info: pooling.png  used on input line 1423.
 (pdftex.def)             Requested size: 301.1261pt x 138.95018pt.
-
-[52pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-8}) has been already used, duplicate ignored
+ [52] [53pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.2.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1410 $$ \mu_B = \frac{1}{m} \sum_{i=1}^m x_i $$
-                                                  <./pooling.png>]
-<resnetmodel.png, id=766, 377.41pt x 220.825pt>
+l.1449 
+        <./pooling.png>]
+<resnetmodel.png, id=770, 377.41pt x 220.825pt>
 File: resnetmodel.png Graphic file (type png)
 <use resnetmodel.png>
-Package pdftex.def Info: resnetmodel.png  used on input line 1434.
+Package pdftex.def Info: resnetmodel.png  used on input line 1455.
 (pdftex.def)             Requested size: 250.93842pt x 146.82655pt.
- [53]
-<resnetex.png, id=771, 491.8375pt x 210.7875pt>
-File: resnetex.png Graphic file (type png)
-<use resnetex.png>
-Package pdftex.def Info: resnetex.png  used on input line 1454.
-(pdftex.def)             Requested size: 301.1261pt x 129.05942pt.
-
-[54pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-9}) has been already used, duplicate ignored
+ [54pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1457 
+l.1461 
         <./resnetmodel.png (PNG copy)>]
-<resnetstr1.png, id=777, 807.015pt x 1320.132pt>
-File: resnetstr1.png Graphic file (type png)
-<use resnetstr1.png>
-Package pdftex.def Info: resnetstr1.png  used on input line 1479.
-(pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
+<resnetex.png, id=776, 491.8375pt x 210.7875pt>
+File: resnetex.png Graphic file (type png)
+<use resnetex.png>
+Package pdftex.def Info: resnetex.png  used on input line 1477.
+(pdftex.def)             Requested size: 390.0pt x 167.1507pt.
  [55pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1482 
-        <./resnetex.png>]
-<resnetstr2.png, id=784, 807.015pt x 1320.132pt>
+l.1483 $$A_3 = relu(W_2 \space A_2 + b_2)$$
+                                            <./resnetex.png>]
+<resnetstr1.png, id=783, 807.015pt x 1320.132pt>
+File: resnetstr1.png Graphic file (type png)
+<use resnetstr1.png>
+Package pdftex.def Info: resnetstr1.png  used on input line 1504.
+(pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
+ [56]
+<resnetstr2.png, id=789, 807.015pt x 1320.132pt>
 File: resnetstr2.png Graphic file (type png)
 <use resnetstr2.png>
-Package pdftex.def Info: resnetstr2.png  used on input line 1486.
+Package pdftex.def Info: resnetstr2.png  used on input line 1511.
 (pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [57pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1489 
+l.1514 
         <./resnetstr1.png>]
-<resnetstr3.png, id=791, 801.59476pt x 1346.02875pt>
+<resnetstr3.png, id=795, 801.59476pt x 1346.02875pt>
 File: resnetstr3.png Graphic file (type png)
 <use resnetstr3.png>
-Package pdftex.def Info: resnetstr3.png  used on input line 1493.
+Package pdftex.def Info: resnetstr3.png  used on input line 1518.
 (pdftex.def)             Requested size: 301.1261pt x 505.66324pt.
- [57pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [58pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1496 
-        <./resnetstr2.png>] [58pdfTeX warning (ext4): destination with the same
+l.1521 
+        <./resnetstr2.png>] [59pdfTeX warning (ext4): destination with the same
  identifier (name{figure.2.23}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1503 C
+l.1528 C
         odici per l'implementazione nell'Appendice A sezione [A.2.3] <./resnets
-tr3.png>] [59pdfTeX warning (ext4): destination with the same identifier (name{
+tr3.png>] [60pdfTeX warning (ext4): destination with the same identifier (name{
 table.2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1547 \clearpage
+l.1572 \clearpage
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{table.2.12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1547 \clearpage
-                 ] [60
+l.1572 \clearpage
+                 ] [61
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.13}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1601 \chapter
+l.1626 \chapter
                {Confronto dei modelli}pdfTeX warning (ext4): destination with t
 he same identifier (name{table.2.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1601 \chapter
+l.1626 \chapter
                {Confronto dei modelli}]
 Capitolo 3.
-[61
+[62
 
-] [62
+] [63
 
 ]
 Appendice A.
-
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1694--1695
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][] 
- []
-
-
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 1699--1700
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
- 
- []
-
-[63
-
-]
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 1704--1705
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1709--1710
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][] 
- []
-
-
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1714--1715
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][] 
- []
-
 
 Overfull \hbox (49.19952pt too wide) in paragraph at lines 1719--1720
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -1311,45 +1273,25 @@ Overfull \hbox (49.19952pt too wide) in paragraph at lines 1719--1720
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1724--1725
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 1724--1725
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][] 
+ 
+ []
+
+[64
+
+]
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 1729--1730
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1724--1725
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][]  
- []
-
-
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1729--1730
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][] 
- []
-
-
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1729--1730
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][]  
- []
-
-[64]
 Overfull \hbox (49.19952pt too wide) in paragraph at lines 1734--1735
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
- []
-
-
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1734--1735
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][]  
  []
 
 
@@ -1360,24 +1302,10 @@ Overfull \hbox (49.19952pt too wide) in paragraph at lines 1739--1740
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1739--1740
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][]  
- []
-
-
 Overfull \hbox (49.19952pt too wide) in paragraph at lines 1744--1745
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
- []
-
-
-Overfull \hbox (17.46133pt too wide) in paragraph at lines 1744--1745
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][]  
  []
 
 
@@ -1388,7 +1316,7 @@ Overfull \hbox (49.19952pt too wide) in paragraph at lines 1749--1750
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1749--1750
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1749--1750
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
@@ -1416,7 +1344,7 @@ Overfull \hbox (49.19952pt too wide) in paragraph at lines 1759--1760
  []
 
 
-Overfull \hbox (34.7074pt too wide) in paragraph at lines 1759--1760
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1759--1760
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
@@ -1430,7 +1358,7 @@ Overfull \hbox (49.19952pt too wide) in paragraph at lines 1764--1765
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1764--1765
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1764--1765
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
@@ -1444,38 +1372,104 @@ Overfull \hbox (49.19952pt too wide) in paragraph at lines 1769--1770
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1769--1770
+Overfull \hbox (17.46133pt too wide) in paragraph at lines 1769--1770
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
-[66] [67] [68] [69] [70] [71]
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 2021--2022
+
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1774--1775
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][] 
+ []
+
+
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1774--1775
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1779--1780
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][] 
+ []
+
+
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1779--1780
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+[66]
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1784--1785
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][] 
+ []
+
+
+Overfull \hbox (34.7074pt too wide) in paragraph at lines 1784--1785
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1789--1790
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][] 
+ []
+
+
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1789--1790
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1794--1795
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][] 
+ []
+
+
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1794--1795
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+[67] [68] [69] [70] [71] [72]
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 2046--2047
 [][][][][][][][][][][][][][][][] 
  []
 
-[72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]
-[87] [88] [89] [90] [91] [92]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2799.
- [93
+[73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87]
+[88] [89] [90] [91] [92] [93]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2824.
+ [94
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2799.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2824.
  (./TESI_SACCAGGI_GIACOMO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2799.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2799.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2824.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2824.
 
 Package rerunfilecheck Info: File `TESI_SACCAGGI_GIACOMO.out' has not changed.
 (rerunfilecheck)             Checksum: 85188FB59BEA6DEC8A630A5C36834D16;3362.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 16259 strings out of 492623
- 227895 string characters out of 6133290
+ 16260 strings out of 492623
+ 227902 string characters out of 6133290
  489156 words of memory out of 5000000
  18605 multiletter control sequences out of 15000+600000
  11523 words of font info for 43 fonts, out of 8000000 for 9000
@@ -1495,10 +1489,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist
 e1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on TESI_SACCAGGI_GIACOMO.pdf (98 pages, 9114428 bytes).
+Output written on TESI_SACCAGGI_GIACOMO.pdf (99 pages, 9114919 bytes).
 PDF statistics:
- 2320 PDF objects out of 2487 (max. 8388607)
- 2108 compressed objects within 22 object streams
- 1369 named destinations out of 1440 (max. 500000)
+ 2324 PDF objects out of 2487 (max. 8388607)
+ 2111 compressed objects within 22 object streams
+ 1370 named destinations out of 1440 (max. 500000)
  584 words of extra memory for PDF output out of 10000 (max. 10000000)
 
