@@ -22,11 +22,11 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Convolutional Neural Network \(CNN\)}{section.2.3}% 22
 \BOOKMARK [2][-]{subsection.2.3.2}{Residual Neural Network \(ResNet\)}{section.2.3}% 23
 \BOOKMARK [2][-]{subsection.2.3.3}{Risultati}{section.2.3}% 24
-\BOOKMARK [0][-]{chapter.3}{Confronto dei modelli}{}% 25
+\BOOKMARK [0][-]{chapter.3}{Performance e previsioni}{}% 25
 \BOOKMARK [1][-]{section.3.1}{Confronto modelli}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.2}{Ensemble Learning}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.2.1}{Spiegazione teorica dei modelli utilizzati}{section.3.2}% 28
-\BOOKMARK [2][-]{subsection.3.2.2}{Applicazione dei modelli}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Modelli Stacking}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{Risultati}{section.3.2}% 29
 \BOOKMARK [1][-]{section.3.3}{Esempi pratici di applicazioni}{chapter.3}% 30
 \BOOKMARK [2][-]{subsection.3.3.1}{Bot di Telegram}{section.3.3}% 31
 \BOOKMARK [2][-]{subsection.3.3.2}{Cestino}{section.3.3}% 32

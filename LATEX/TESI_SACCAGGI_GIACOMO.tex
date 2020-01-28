@@ -1623,26 +1623,69 @@ $$ $$
 
 
 
-\chapter{Confronto dei modelli}
+\chapter{Performance e previsioni}
 
-Verifica test, confronto dei modelli (specificità vs accuratezza) e Ensemble Learning
 
 \section{Confronto modelli}
+
+
+- ricordare che si è fatto un secondo validation set
+
+- risultati dei 4 modelli
+
 
 
 \section{Ensemble Learning}
 
 
-\subsection{Spiegazione teorica dei modelli utilizzati}
+\subsection{Modelli Stacking}
 
 
-Staked regression algorithm
+I metodi di ensemble vengono comunemente utilizzati per migliorare la precisione predittiva combinando le previsioni di più modelli di apprendimento automatico. Quando questi metodi vengono ideati per l'idea era quella di combinare i cosiddetti predittori "deboli" (Breiman Leo, "Bagging Predictors" (1996)). Tuttavia, un approccio più moderno è quello di creare un insieme di una collezione ben scelta di modelli forti ma diversi (Van der Laan, Polley e Hubbard 2007).
 
-\subsection{Applicazione dei modelli}
+---capire se mettere---
+La costruzione di potenti modelli di ensemble ha molti parallelismi con la creazione di team di persone di successo nel mondo degli affari, della scienza, della politica e dello sport. Ogni membro del team fornisce un contributo significativo inoltre le debolezze e le distorsioni individuali sono compensate dai punti di forza degli altri membri.
+---capire se mettere---
 
-Utilizzerei modelli Staked:
+Il tipo più semplice di ensemble è la media non ponderata delle previsioni dei modelli che formano una serie di modelli.  In una media non ponderata, ogni modello assume lo stesso peso quando viene costruito un modello di ensemble.
+Più in generale, si può pensare di utilizzare le medie ponderate cosi da poter conferire più peso a quei modelli  migliori. Ma un approccio ancora migliore potrebbe essere quello di stimare i pesi in modo più intelligente usando un altro livello di stima attraverso un algoritmo di classificazione. Questo approccio è chiamato stacking dei modelli.
 
-Staked regression algorithm
+Lo stacking dei modelli è un metodo di ensemble efficiente in cui le previsioni, generate utilizzando  algoritmi di machine learning, vengono utilizzate come input in un algoritmo di apprendimento di secondo livello. Questo algoritmo di secondo livello viene addestrato per combinare in modo ottimale le previsioni del modello per formare una nuova serie di previsioni. Ad esempio, quando la regressione lineare viene utilizzata come modellazione di secondo livello, stima questi pesi minimizzando gli errori minimi quadrati. Tuttavia, la modellazione del secondo livello non è limitata ai soli modelli lineari; la relazione tra i predittori può essere più complessa, aprendo le porte all'impiego di altri algoritmi di apprendimento automatico.
+
+L'overfitting è un problema particolarmente importante nello stacking dei modelli, perché vengono combinati tanti predittori che prevedono tutti lo stesso target questo può essere parzialmente causato dalla collinearità tra i predittori.
+Una possibile soluzione a questo problema è quella di generare una serie diversificata di modelli con vari metodi (come alberi decisionali, reti neurali e/o altri metodi) oppure utilizzare diversi tipi di dati così da cercare di inserire nel modello finale informazioni nuove non presenti nei modelli precedenti.
+
+L'applicazione di modelli sovrapposti ai problemi dei big data nel mondo reale può produrre una maggiore accuratezza e robustezza delle previsioni rispetto ai singoli modelli. L'approccio dello stacking dei modelli sposta l'obbiettivo della modellizzazione dalla ricerca del modello migliore a quello di trovare una raccolta di modelli complementari davvero validi.
+Naturalmente, questo metodo comporta costi computazionali aggiuntivi sia perché è necessario addestrare un gran numero di modelli sia perché è necessario utilizzare la convalida incrociata per evitare un eccesso di adattamento. 
+
+L'algoritmo per creare un modello a più livelli con il metodo stacking è costituito da tre fasi:
+
+
+\begin{itemize}
+	\item Impostare l'ensemble:
+	\begin{itemize}
+		\item Specificare un elenco di $L$ Base Learner (con un insieme specifico di parametri del modello).
+		\item Specificare un meta-algoritmo di apprendimento.
+	\end{itemize}
+	\item Creare l'ensemble:
+	\begin{itemize}
+	\item Addestrare ciascuno degli $L$ Base Learner sul training set $Y=F(X)$.
+	\item Eseguire il training del meta-algoritmo di apprendimento sui dati di livello 1 $Y=F(Z) \space con \space Z=F(X)$. Il "modello di ensemble", quindi, sarà costituito dagli $L$ modelli di apprendimento di base e il modello di stacking che combina i modelli precedenti.
+	\end{itemize}
+	\item Prevedere nuovi dati:
+	\begin{itemize}
+		\item Per generare previsioni dell'insieme, si generano innanzitutto le previsioni dai Base Learner.
+		\item Si inseriscono tali previsioni nello modello di Ensemble per generare la previsione dell'insieme.
+	\end{itemize}
+\end{itemize}
+
+
+\subsection{Risultati}
+
+- spiegare modello di regressione e funzione di perdità per aumentare al massimo la specificità dell'accuratezza chissene
+
+
+risultati Staked regression algorithm
 
 \section{Esempi pratici di applicazioni}
 
@@ -1651,7 +1694,26 @@ Staked regression algorithm
 \subsection{Bot di Telegram}
 
 
+spiegare idea
+
+tempi
+
+
 \subsection{Cestino}
+
+spiegare idea
+
+funzionamento 
+
+problema con il motore
+
+tempi
+
+
+
+
+
+
 
 
 
@@ -1663,20 +1725,19 @@ Staked regression algorithm
 
 
 
-- pregi del lavoro
+- pregi del lavoro buoni risultati dei modelli utilizzo di modelli nuovi
 
-- punti critici (umido) (robotica- ambiente non completamente isolato e non completamente stabile)
+- punti critici (umido) (robotica- ambiente non completamente isolato e non completamente stabile, problema con il motore)
 
 - possibili miglioramenti (qui soffermarsi un po')
 
--- con frequenza dei rifiuti approccio bayesiano (potrebbe essere miglioramento)
+-- con resnet 34 o + o inception 3 o 4 miglioramento dei modelli
 
 -- Reinforced learning (apprendere dagli errori)
 
 -- Amazon Web Services
 
 -- Lettura bar code
-Scrivere conclusioni sull'efficacia del modello
 
 \baselineskip 16pt
 

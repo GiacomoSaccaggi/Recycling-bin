@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  23 JAN 2020 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  28 JAN 2020 01:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -468,7 +468,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...e {3}Confronto dei modelli}{62}{chapter.3}
+l.27 ...3}Performance e previsioni}{62}{chapter.3}
                                                   % [1
 
 ])
@@ -487,11 +487,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [1
 
 ]
-<separate-wastesystems-eu.png, id=267, 523.20468pt x 342.5297pt>
+<separate-wastesystems-eu.png, id=267, 418.56375pt x 274.02374pt>
 File: separate-wastesystems-eu.png Graphic file (type png)
 <use separate-wastesystems-eu.png>
 Package pdftex.def Info: separate-wastesystems-eu.png  used on input line 161.
-(pdftex.def)             Requested size: 301.1261pt x 197.14119pt.
+(pdftex.def)             Requested size: 301.1261pt x 197.13805pt.
  [2pdfTeX warning (ext4): destination with the same identifier (name{figure.0.1
 }) has been already used, duplicate ignored
 
@@ -1251,226 +1251,227 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1626 \chapter
-               {Confronto dei modelli}pdfTeX warning (ext4): destination with t
-he same identifier (name{table.2.14}) has been already used, duplicate ignored
+               {Performance e previsioni}pdfTeX warning (ext4): destination wit
+h the same identifier (name{table.2.14}) has been already used, duplicate ignor
+ed
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1626 \chapter
-               {Confronto dei modelli}]
+               {Performance e previsioni}]
 Capitolo 3.
 [62
 
-] [63
+] [63] [64] [65
 
 ]
 Appendice A.
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1719--1720
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1780--1781
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 1724--1725
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 1785--1786
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  
  []
 
-[64
+[66
 
 ]
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 1729--1730
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 1790--1791
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1734--1735
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1795--1796
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1739--1740
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1800--1801
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1744--1745
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1805--1806
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1749--1750
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1810--1811
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1749--1750
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1810--1811
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1754--1755
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1815--1816
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1754--1755
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1815--1816
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
-[65]
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1759--1760
+[67]
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1820--1821
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1759--1760
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1820--1821
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1764--1765
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1825--1826
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1764--1765
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1825--1826
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1769--1770
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1830--1831
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (17.46133pt too wide) in paragraph at lines 1769--1770
+Overfull \hbox (17.46133pt too wide) in paragraph at lines 1830--1831
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1774--1775
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1835--1836
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1774--1775
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1835--1836
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1779--1780
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1840--1841
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1779--1780
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1840--1841
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
-[66]
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1784--1785
+[68]
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1845--1846
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (34.7074pt too wide) in paragraph at lines 1784--1785
+Overfull \hbox (34.7074pt too wide) in paragraph at lines 1845--1846
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1789--1790
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1850--1851
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1789--1790
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 1850--1851
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1794--1795
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1855--1856
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1794--1795
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 1855--1856
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
-[67] [68] [69] [70] [71] [72]
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 2046--2047
+[69] [70] [71] [72] [73] [74]
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 2107--2108
 [][][][][][][][][][][][][][][][] 
  []
 
-[73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87]
-[88] [89] [90] [91] [92] [93]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2824.
- [94
+[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
+[90] [91] [92] [93] [94] [95]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2885.
+ [96
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2824.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2885.
  (./TESI_SACCAGGI_GIACOMO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2824.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2824.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2885.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2885.
 
 Package rerunfilecheck Info: File `TESI_SACCAGGI_GIACOMO.out' has not changed.
-(rerunfilecheck)             Checksum: 85188FB59BEA6DEC8A630A5C36834D16;3362.
+(rerunfilecheck)             Checksum: C20CE09A357EC93E5EF31DC99BE07CE2;3324.
  ) 
 Here is how much of TeX's memory you used:
- 16260 strings out of 492623
- 227902 string characters out of 6133290
- 489156 words of memory out of 5000000
+ 16262 strings out of 492623
+ 227916 string characters out of 6133290
+ 489157 words of memory out of 5000000
  18605 multiletter control sequences out of 15000+600000
  11523 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1489,10 +1490,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist
 e1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on TESI_SACCAGGI_GIACOMO.pdf (99 pages, 9114919 bytes).
+Output written on TESI_SACCAGGI_GIACOMO.pdf (101 pages, 9114182 bytes).
 PDF statistics:
- 2324 PDF objects out of 2487 (max. 8388607)
- 2111 compressed objects within 22 object streams
- 1370 named destinations out of 1440 (max. 500000)
+ 2332 PDF objects out of 2487 (max. 8388607)
+ 2117 compressed objects within 22 object streams
+ 1372 named destinations out of 1440 (max. 500000)
  584 words of extra memory for PDF output out of 10000 (max. 10000000)
 
