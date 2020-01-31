@@ -31,11 +31,11 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Bot di Telegram}{section.3.3}% 31
 \BOOKMARK [2][-]{subsection.3.3.2}{Cestino}{section.3.3}% 32
 \BOOKMARK [0][-]{chapter*.3}{Conclusioni}{}% 33
-\BOOKMARK [0][-]{appendix.Alph1}{Codici}{}% 34
+\BOOKMARK [0][-]{appendix.Alph1}{Script di programmazione}{}% 34
 \BOOKMARK [1][-]{section.Alph1.1}{Reperimento dei dati}{appendix.Alph1}% 35
 \BOOKMARK [2][-]{subsection.Alph1.1.1}{Web Scraping \(R\)}{section.Alph1.1}% 36
 \BOOKMARK [2][-]{subsection.Alph1.1.2}{Bot Telegram per salvare i dati \(Python\)}{section.Alph1.1}% 37
-\BOOKMARK [2][-]{subsection.Alph1.1.3}{Codice Arduino \(C++\)}{section.Alph1.1}% 38
+\BOOKMARK [2][-]{subsection.Alph1.1.3}{Arduino \(C++\)}{section.Alph1.1}% 38
 \BOOKMARK [2][-]{subsection.Alph1.1.4}{Software per salvare i dati \(VB.NET\)}{section.Alph1.1}% 39
 \BOOKMARK [1][-]{section.Alph1.2}{Addestramento dei modelli}{appendix.Alph1}% 40
 \BOOKMARK [2][-]{subsection.Alph1.2.1}{Gradient boosting algorithm \(Python\)}{section.Alph1.2}% 41
