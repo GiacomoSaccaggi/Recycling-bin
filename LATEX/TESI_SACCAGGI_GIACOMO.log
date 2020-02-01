@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  31 JAN 2020 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.19)  1 FEB 2020 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -444,7 +444,7 @@ LaTeX Info: Redefining \nameref on input line 60.
 \openout3 = `TESI_SACCAGGI_GIACOMO.out'.
 
 \c@lstlisting=\count136
-<logo.jpg, id=188, 284.5029pt x 306.9066pt>
+<logo.jpg, id=192, 284.5029pt x 306.9066pt>
 File: logo.jpg Graphic file (type jpg)
 <use logo.jpg>
 Package pdftex.def Info: logo.jpg  used on input line 96.
@@ -472,7 +472,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...3}Performance e previsioni}{63}{chapter.3}
+l.27 ...3}Performance e previsioni}{62}{chapter.3}
                                                   % [1
 
 ])
@@ -491,7 +491,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [1
 
 ]
-<separate-wastesystems-eu.png, id=267, 418.56375pt x 274.02374pt>
+<separate-wastesystems-eu.png, id=272, 418.56375pt x 274.02374pt>
 File: separate-wastesystems-eu.png Graphic file (type png)
 <use separate-wastesystems-eu.png>
 Package pdftex.def Info: separate-wastesystems-eu.png  used on input line 162.
@@ -503,7 +503,7 @@ Package pdftex.def Info: separate-wastesystems-eu.png  used on input line 162.
                                                   \fi \fi 
 l.168 
        <./separate-wastesystems-eu.png>]
-<economiacircolare.jpg, id=279, 1003.75pt x 941.5175pt>
+<economiacircolare.jpg, id=284, 1003.75pt x 941.5175pt>
 File: economiacircolare.jpg Graphic file (type jpg)
 <use economiacircolare.jpg>
 Package pdftex.def Info: economiacircolare.jpg  used on input line 172.
@@ -526,7 +526,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.262 \caption
+l.264 \caption
               {Script di programmazione 1.1: Deserializzazione delle pagine ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -535,7 +535,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.262 \caption
+l.264 \caption
               {Script di programmazione 1.1: Deserializzazione delle pagine ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -546,7 +546,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.262 \caption
+l.264 \caption
               {Script di programmazione 1.1: Deserializzazione delle pagine ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -570,8 +570,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 \caption
-              {Script di programmazione 1.2: Individuare gli attributi nella...
+l.276 \caption
+              {Script di programmazione 1.2: Attributi nella struttura ad al...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -579,8 +579,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.272 \caption
-              {Script di programmazione 1.2: Individuare gli attributi nella...
+l.276 \caption
+              {Script di programmazione 1.2: Attributi nella struttura ad al...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -590,8 +590,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.272 \caption
-              {Script di programmazione 1.2: Individuare gli attributi nella...
+l.276 \caption
+              {Script di programmazione 1.2: Attributi nella struttura ad al...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -605,7 +605,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.283 \caption
+l.289 \caption
               {Script di programmazione 1.3: Scaricare immagini}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -613,7 +613,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.283 \caption
+l.289 \caption
               {Script di programmazione 1.3: Scaricare immagini}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -624,7 +624,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.283 \caption
+l.289 \caption
               {Script di programmazione 1.3: Scaricare immagini}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -632,21 +632,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[9] [10]
-Underfull \hbox (badness 6220) in paragraph at lines 312--313
+[9]
+Underfull \hbox (badness 6220) in paragraph at lines 316--317
 []\OT1/cmr/m/n/12 ``contenitori in po-li-sti-ro-lo", ``po-li-sti-ro-lo", ``va-s
 chet-te
  []
 
 
-Overfull \hbox (35.50146pt too wide) in paragraph at lines 303--320
+Overfull \hbox (35.50146pt too wide) in paragraph at lines 307--324
  [] 
  []
 
-[11
-
-]
-Overfull \hbox (35.50146pt too wide) in paragraph at lines 328--337
+[10]
+Overfull \hbox (35.50146pt too wide) in paragraph at lines 332--341
  [] 
  []
 
@@ -657,7 +655,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.347 \caption
+l.353 \caption
               {Script di programmazione 1.4: Web Scraping}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -665,7 +663,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.347 \caption
+l.353 \caption
               {Script di programmazione 1.4: Web Scraping}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -676,7 +674,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.347 \caption
+l.353 \caption
               {Script di programmazione 1.4: Web Scraping}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -685,27 +683,27 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (18.15683pt too wide) in paragraph at lines 349--350
+Overfull \hbox (18.15683pt too wide) in paragraph at lines 355--356
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][] 
  []
 
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 353--354
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 359--360
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 357--358
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 363--364
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[12
+[11
 
-] [13
+] [12
 
 ]
 
@@ -715,7 +713,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.392 \caption
+l.399 \caption
               {Script di programmazione 1.5: Scaricare foto da chatbot di Te...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -724,7 +722,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.392 \caption
+l.399 \caption
               {Script di programmazione 1.5: Scaricare foto da chatbot di Te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -735,7 +733,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.392 \caption
+l.399 \caption
               {Script di programmazione 1.5: Scaricare foto da chatbot di Te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -746,91 +744,91 @@ and I'll forget about whatever was undefined.
 (c:/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-<bot_telegram.jpg, id=358, 184.89075pt x 130.086pt>
+<bot_telegram.jpg, id=359, 184.89075pt x 130.086pt>
 File: bot_telegram.jpg Graphic file (type jpg)
 <use bot_telegram.jpg>
-Package pdftex.def Info: bot_telegram.jpg  used on input line 404.
+Package pdftex.def Info: bot_telegram.jpg  used on input line 411.
 (pdftex.def)             Requested size: 351.31378pt x 247.1977pt.
- [14pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.409 
+l.416 
        <./bot_telegram.jpg>]
 <strutturasotto1.png, id=369, 532.08788pt x 474.27188pt>
 File: strutturasotto1.png Graphic file (type png)
 <use strutturasotto1.png>
-Package pdftex.def Info: strutturasotto1.png  used on input line 426.
+Package pdftex.def Info: strutturasotto1.png  used on input line 433.
 (pdftex.def)             Requested size: 390.0pt x 347.634pt.
- [15]
-<fotostrutturasotto3modificatafiltro.jpg, id=374, 255.354pt x 264.08662pt>
+ [14]
+<fotostrutturasotto3modificatafiltro.jpg, id=375, 255.354pt x 264.08662pt>
 File: fotostrutturasotto3modificatafiltro.jpg Graphic file (type jpg)
 <use fotostrutturasotto3modificatafiltro.jpg>
 Package pdftex.def Info: fotostrutturasotto3modificatafiltro.jpg  used on input
- line 434.
+ line 441.
 (pdftex.def)             Requested size: 390.0pt x 403.35005pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.437 
-       <./strutturasotto1.png>] [17pdfTeX warning (ext4): destination with the 
+l.444 
+       <./strutturasotto1.png>] [16pdfTeX warning (ext4): destination with the 
 same identifier (name{figure.1.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.440 
+l.447 
        <./fotostrutturasotto3modificatafiltro.jpg>]
-<strutturasopra1.png, id=386, 486.31688pt x 353.82187pt>
+<strutturasopra1.png, id=387, 486.31688pt x 353.82187pt>
 File: strutturasopra1.png Graphic file (type png)
 <use strutturasopra1.png>
-Package pdftex.def Info: strutturasopra1.png  used on input line 445.
+Package pdftex.def Info: strutturasopra1.png  used on input line 452.
 (pdftex.def)             Requested size: 390.0pt x 283.74353pt.
-<fotostrutturasopramodificatafiltro.jpg, id=387, 385.44pt x 289.08pt>
+<fotostrutturasopramodificatafiltro.jpg, id=388, 385.44pt x 289.08pt>
 File: fotostrutturasopramodificatafiltro.jpg Graphic file (type jpg)
 <use fotostrutturasopramodificatafiltro.jpg>
 Package pdftex.def Info: fotostrutturasopramodificatafiltro.jpg  used on input 
-line 451.
+line 458.
 (pdftex.def)             Requested size: 390.0pt x 292.4978pt.
- [18pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.454 
+l.461 
        <./strutturasopra1.png>]
-<arduinomega.jpg, id=397, 1104.125pt x 725.71124pt>
+<arduinomega.jpg, id=398, 1104.125pt x 725.71124pt>
 File: arduinomega.jpg Graphic file (type jpg)
 <use arduinomega.jpg>
-Package pdftex.def Info: arduinomega.jpg  used on input line 468.
+Package pdftex.def Info: arduinomega.jpg  used on input line 475.
 (pdftex.def)             Requested size: 390.0pt x 256.33923pt.
- [19pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.471 
-       <./fotostrutturasopramodificatafiltro.jpg>] [20pdfTeX warning (ext4): de
+l.478 
+       <./fotostrutturasopramodificatafiltro.jpg>] [19pdfTeX warning (ext4): de
 stination with the same identifier (name{figure.1.6}) has been already used, du
 plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.493 
+l.500 
        <./arduinomega.jpg>]
 <fotoresistenza.png, id=414, 450.18187pt x 286.06876pt>
 File: fotoresistenza.png Graphic file (type png)
 <use fotoresistenza.png>
-Package pdftex.def Info: fotoresistenza.png  used on input line 510.
+Package pdftex.def Info: fotoresistenza.png  used on input line 517.
 (pdftex.def)             Requested size: 100.37537pt x 63.78214pt.
- [21pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.514 \clearpage
+l.521 \clearpage
                  <./fotoresistenza.png>]
 
 ! LaTeX Error: \caption outside float.
@@ -839,7 +837,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.517 \caption
+l.526 \caption
               {Script di programmazione 1.6: Fotoresistenza}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -847,7 +845,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.517 \caption
+l.526 \caption
               {Script di programmazione 1.6: Fotoresistenza}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -858,7 +856,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.517 \caption
+l.526 \caption
               {Script di programmazione 1.6: Fotoresistenza}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -875,12 +873,14 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 (c:/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 )
-<ultrasonic.png, id=421, 674.52pt x 433.62pt>
+<ultrasonic.png, id=422, 674.52pt x 433.62pt>
 File: ultrasonic.png Graphic file (type png)
 <use ultrasonic.png>
-Package pdftex.def Info: ultrasonic.png  used on input line 546.
+Package pdftex.def Info: ultrasonic.png  used on input line 555.
 (pdftex.def)             Requested size: 100.37537pt x 64.5241pt.
+ [21
 
+]
 
 ! LaTeX Error: \caption outside float.
 
@@ -888,7 +888,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.549 \caption
+l.561 \caption
               {Script di programmazione 1.7: HC-SR04}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -896,7 +896,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.549 \caption
+l.561 \caption
               {Script di programmazione 1.7: HC-SR04}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -907,7 +907,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.549 \caption
+l.561 \caption
               {Script di programmazione 1.7: HC-SR04}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -915,20 +915,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[22
-
-]
-<peso.png, id=444, 639.89063pt x 484.81125pt>
+<peso.png, id=445, 639.89063pt x 484.81125pt>
 File: peso.png Graphic file (type png)
 <use peso.png>
-Package pdftex.def Info: peso.png  used on input line 584.
+Package pdftex.def Info: peso.png  used on input line 596.
 (pdftex.def)             Requested size: 100.37537pt x 76.04747pt.
- [23pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-8}) has been already used, duplicate ignored
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.1.8
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.586 \end{figure}
+l.598 \end{figure}
                    <./ultrasonic.png>]
 
 ! LaTeX Error: \caption outside float.
@@ -937,7 +934,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.587 \caption
+l.602 \caption
               {Script di programmazione 1.8: HX711}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -945,7 +942,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.587 \caption
+l.602 \caption
               {Script di programmazione 1.8: HX711}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -956,7 +953,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.587 \caption
+l.602 \caption
               {Script di programmazione 1.8: HX711}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -964,17 +961,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.1.9
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.1.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.604 void 
-           loop() { <./peso.png>]
-<colorsensor.jpg, id=496, 501.875pt x 376.40625pt>
+l.616 	Serial.
+              begin(9600); <./peso.png>]
+<colorsensor.jpg, id=495, 501.875pt x 376.40625pt>
 File: colorsensor.jpg Graphic file (type jpg)
 <use colorsensor.jpg>
-Package pdftex.def Info: colorsensor.jpg  used on input line 616.
+Package pdftex.def Info: colorsensor.jpg  used on input line 631.
 (pdftex.def)             Requested size: 100.37537pt x 75.2799pt.
 
 
@@ -984,7 +981,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.619 \caption
+l.637 \caption
               {Script di programmazione 1.9: TCS3200}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -992,7 +989,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.619 \caption
+l.637 \caption
               {Script di programmazione 1.9: TCS3200}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1003,7 +1000,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.619 \caption
+l.637 \caption
               {Script di programmazione 1.9: TCS3200}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1011,207 +1008,209 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.637 	//
-         Setting Green filtered photodiodes to be read <./colorsensor.jpg>]
-[26]
-<schemacollegamento.png, id=568, 895.84688pt x 575.14874pt>
+l.651 	Serial.
+              print(frequency);  //frequenza del colore rosso <./colorsensor.jp
+g>] [25]
+<schemacollegamento.png, id=563, 895.84688pt x 575.14874pt>
 File: schemacollegamento.png Graphic file (type png)
 <use schemacollegamento.png>
-Package pdftex.def Info: schemacollegamento.png  used on input line 682.
+Package pdftex.def Info: schemacollegamento.png  used on input line 697.
 (pdftex.def)             Requested size: 390.0pt x 250.38075pt.
-<form1nuova.png, id=569, 1156.32pt x 650.43pt>
+<form1nuova.png, id=564, 1156.32pt x 650.43pt>
 File: form1nuova.png Graphic file (type png)
 <use form1nuova.png>
-Package pdftex.def Info: form1nuova.png  used on input line 700.
+Package pdftex.def Info: form1nuova.png  used on input line 715.
 (pdftex.def)             Requested size: 281.05103pt x 158.09134pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-11}) has been already used, duplicate ignored
+ [26
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1.11})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.702 \end{figure}
+l.717 \end{figure}
                    <./schemacollegamento.png>]
-<form2nuova.png, id=576, 1156.32pt x 650.43pt>
+<form2nuova.png, id=572, 1156.32pt x 650.43pt>
 File: form2nuova.png Graphic file (type png)
 <use form2nuova.png>
-Package pdftex.def Info: form2nuova.png  used on input line 706.
+Package pdftex.def Info: form2nuova.png  used on input line 721.
 (pdftex.def)             Requested size: 281.05103pt x 158.09134pt.
-<formwebcam.png, id=577, 364.36125pt x 195.129pt>
+<formwebcam.png, id=573, 364.36125pt x 195.129pt>
 File: formwebcam.png Graphic file (type png)
 <use formwebcam.png>
-Package pdftex.def Info: formwebcam.png  used on input line 711.
+Package pdftex.def Info: formwebcam.png  used on input line 726.
 (pdftex.def)             Requested size: 301.1261pt x 161.26923pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.714 
+l.729 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.714 
-       <./form1nuova.png> <./form2nuova.png>] [29pdfTeX warning (ext4): destina
+l.729 
+       <./form1nuova.png> <./form2nuova.png>] [28pdfTeX warning (ext4): destina
 tion with the same identifier (name{figure.1.14}) has been already used, duplic
 ate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.730 \chapter
+l.743 \chapter
               {Modellizzazione e addestramento} <./formwebcam.png>]
 Capitolo 2.
-[30
+[29
 
 ]
-Overfull \hbox (31.29855pt too wide) in paragraph at lines 753--774
+Overfull \hbox (31.29855pt too wide) in paragraph at lines 766--787
  [] 
  []
 
-<train1.png, id=596, 1927.2pt x 963.6pt>
+<train1.png, id=592, 1927.2pt x 963.6pt>
 File: train1.png Graphic file (type png)
 <use train1.png>
-Package pdftex.def Info: train1.png  used on input line 780.
+Package pdftex.def Info: train1.png  used on input line 793.
 (pdftex.def)             Requested size: 351.31378pt x 175.64601pt.
-[31pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
+[30pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.782 \end{figure}
+l.795 \end{figure}
                   ]
-<train2nuovo.png, id=602, 1156.32pt x 578.16pt>
+<train2nuovo.png, id=598, 1156.32pt x 578.16pt>
 File: train2nuovo.png Graphic file (type png)
 <use train2nuovo.png>
-Package pdftex.def Info: train2nuovo.png  used on input line 789.
+Package pdftex.def Info: train2nuovo.png  used on input line 802.
 (pdftex.def)             Requested size: 351.31378pt x 175.65483pt.
- [32pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.794 
+l.807 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.794 
+l.807 
        <./train1.png> <./train2nuovo.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}
+[32pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.859 
+l.872 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.859 
+l.872 
       ]
-<pixel1.png, id=618, 514.3215pt x 502.2765pt>
+<pixel1.png, id=614, 514.3215pt x 502.2765pt>
 File: pixel1.png Graphic file (type png)
 <use pixel1.png>
-Package pdftex.def Info: pixel1.png  used on input line 863.
+Package pdftex.def Info: pixel1.png  used on input line 876.
 (pdftex.def)             Requested size: 200.75073pt x 196.04799pt.
- [34pdfTeX warning (ext4): destination with the same identifier (name{table.2.4
+ [33pdfTeX warning (ext4): destination with the same identifier (name{table.2.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.869 
+l.882 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.869 
+l.882 
        <./pixel1.png>]
-<RGB.png, id=626, 661.87276pt x 398.6895pt>
+<RGB.png, id=622, 661.87276pt x 398.6895pt>
 File: RGB.png Graphic file (type png)
 <use RGB.png>
-Package pdftex.def Info: RGB.png  used on input line 873.
+Package pdftex.def Info: RGB.png  used on input line 886.
 (pdftex.def)             Requested size: 301.1261pt x 181.39183pt.
-<test.png, id=627, 1927.2pt x 963.6pt>
+<test.png, id=623, 1927.2pt x 963.6pt>
 File: test.png Graphic file (type png)
 <use test.png>
-Package pdftex.def Info: test.png  used on input line 903.
+Package pdftex.def Info: test.png  used on input line 916.
 (pdftex.def)             Requested size: 301.1261pt x 150.56213pt.
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.906 
+l.919 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.906 
-       <./RGB.png>] [36pdfTeX warning (ext4): destination with the same identif
+l.919 
+       <./RGB.png>] [35pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.2.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.932 
+l.945 
        <./test.png>]
-<albero.png, id=642, 871.45575pt x 226.446pt>
+<albero.png, id=638, 871.45575pt x 226.446pt>
 File: albero.png Graphic file (type png)
 <use albero.png>
-Package pdftex.def Info: albero.png  used on input line 937.
+Package pdftex.def Info: albero.png  used on input line 950.
 (pdftex.def)             Requested size: 301.1261pt x 78.24834pt.
 
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 949.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 952.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 952.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 958.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 958.
-
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.958 ...\frac{5}{9}\bigg)^2\bigg]\bigg\} = 0.45$$
-                                                   <./albero.png>]
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 962.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 963.
+LaTeX Warning: Command \textendash invalid in math mode on input line 965.
 
-[38] [39] [40]
-<sigmoide.png, id=671, 510.10574pt x 178.266pt>
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 965.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 971.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 971.
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.971 ...\frac{5}{9}\bigg)^2\bigg]\bigg\} = 0.45$$
+                                                   <./albero.png>]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 975.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 976.
+
+[37] [38] [39]
+<sigmoide.png, id=667, 510.10574pt x 178.266pt>
 File: sigmoide.png Graphic file (type png)
 <use sigmoide.png>
-Package pdftex.def Info: sigmoide.png  used on input line 1048.
+Package pdftex.def Info: sigmoide.png  used on input line 1061.
 (pdftex.def)             Requested size: 100.37537pt x 35.0759pt.
 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1058 	 \]
+l.1071 	 \]
            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1219,33 +1218,33 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<gradino.png, id=672, 494.44725pt x 181.8795pt>
+<gradino.png, id=668, 494.44725pt x 181.8795pt>
 File: gradino.png Graphic file (type png)
 <use gradino.png>
-Package pdftex.def Info: gradino.png  used on input line 1062.
+Package pdftex.def Info: gradino.png  used on input line 1075.
 (pdftex.def)             Requested size: 100.37537pt x 36.92197pt.
-<tangiper.png, id=673, 495.65175pt x 219.82124pt>
+<tangiper.png, id=669, 495.65175pt x 219.82124pt>
 File: tangiper.png Graphic file (type png)
 <use tangiper.png>
-Package pdftex.def Info: tangiper.png  used on input line 1070.
+Package pdftex.def Info: tangiper.png  used on input line 1083.
 (pdftex.def)             Requested size: 100.37537pt x 44.51355pt.
-[41pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1073 	 \item R
+l.1086 	 \item R
                 ampapdfTeX warning (ext4): destination with the same identifier
  (name{figure.2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1073 	 \item R
+l.1086 	 \item R
                 ampa <./sigmoide.png> <./gradino.png>]
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1081 	 \]
+l.1094 	 \]
            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1253,79 +1252,79 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<rampa.png, id=682, 489.62926pt x 220.4235pt>
+<rampa.png, id=678, 489.62926pt x 220.4235pt>
 File: rampa.png Graphic file (type png)
 <use rampa.png>
-Package pdftex.def Info: rampa.png  used on input line 1085.
+Package pdftex.def Info: rampa.png  used on input line 1098.
 (pdftex.def)             Requested size: 100.37537pt x 45.1871pt.
-<nn.png, id=683, 661.87276pt x 398.6895pt>
+<nn.png, id=679, 661.87276pt x 398.6895pt>
 File: nn.png Graphic file (type png)
 <use nn.png>
-Package pdftex.def Info: nn.png  used on input line 1105.
+Package pdftex.def Info: nn.png  used on input line 1118.
 (pdftex.def)             Requested size: 301.1261pt x 181.39183pt.
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.2.9
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1114 	\item [1.]
+l.1127 	\item [1.]
                    Scelgo un Learning Rate ($lr$) e un numero di replicazion...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.10})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1114 	\item [1.]
+l.1127 	\item [1.]
                    Scelgo un Learning Rate ($lr$) e un numero di replicazion...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.11})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1114 	\item [1.]
+l.1127 	\item [1.]
                    Scelgo un Learning Rate ($lr$) e un numero di replicazion...
  <./tangiper.png> <./rampa.png> <./nn.png>]
-Overfull \hbox (2.38731pt too wide) detected at line 1128
+Overfull \hbox (2.38731pt too wide) detected at line 1141
 [] \OT1/cmr/m/n/12 = [][][] =
  []
 
 
-Overfull \hbox (2.38731pt too wide) detected at line 1129
+Overfull \hbox (2.38731pt too wide) detected at line 1142
 [] \OT1/cmr/m/n/12 = [][][] =
  []
 
 
-Overfull \hbox (2.38731pt too wide) detected at line 1130
+Overfull \hbox (2.38731pt too wide) detected at line 1143
 [] \OT1/cmr/m/n/12 = [][][] =
  []
 
-[43]
-<deeplearning.png, id=697, 591.20876pt x 284.06125pt>
+[42]
+<deeplearning.png, id=693, 591.20876pt x 284.06125pt>
 File: deeplearning.png Graphic file (type png)
 <use deeplearning.png>
-Package pdftex.def Info: deeplearning.png  used on input line 1150.
+Package pdftex.def Info: deeplearning.png  used on input line 1163.
 (pdftex.def)             Requested size: 301.1261pt x 144.68726pt.
- [44]
-<percettrone.png, id=703, 501.072pt x 252.945pt>
+ [43]
+<percettrone.png, id=698, 501.072pt x 252.945pt>
 File: percettrone.png Graphic file (type png)
 <use percettrone.png>
-Package pdftex.def Info: percettrone.png  used on input line 1159.
+Package pdftex.def Info: percettrone.png  used on input line 1172.
 (pdftex.def)             Requested size: 301.1261pt x 152.01132pt.
- [45pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1169 $$
+l.1182 $$
           Rel(x_i) =pdfTeX warning (ext4): destination with the same identifier
  (name{figure.2.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1169 $$
+l.1182 $$
           Rel(x_i) = <./deeplearning.png> <./percettrone.png>]
 ! Undefined control sequence.
-l.1171 x_i,  & \text{se } \, x_i \gt
+l.1184 x_i,  & \text{se } \, x_i \gt
                                      0 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1334,252 +1333,282 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1178.
+LaTeX Warning: Command \b invalid in math mode on input line 1191.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1180.
+LaTeX Warning: Command \b invalid in math mode on input line 1193.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1182.
+LaTeX Warning: Command \b invalid in math mode on input line 1195.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1184.
+LaTeX Warning: Command \b invalid in math mode on input line 1197.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1186.
+LaTeX Warning: Command \b invalid in math mode on input line 1199.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1190.
+LaTeX Warning: Command \b invalid in math mode on input line 1203.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1192.
+LaTeX Warning: Command \b invalid in math mode on input line 1205.
 
 
-LaTeX Warning: Command \b invalid in math mode on input line 1194.
+LaTeX Warning: Command \b invalid in math mode on input line 1207.
 
-[46] [47]
-<mynet.png, id=721, 708.246pt x 504.08325pt>
+[45]
+<CONFMATRIX.png, id=712, 757.02824pt x 260.172pt>
+File: CONFMATRIX.png Graphic file (type png)
+<use CONFMATRIX.png>
+Package pdftex.def Info: CONFMATRIX.png  used on input line 1223.
+(pdftex.def)             Requested size: 200.75073pt x 68.99287pt.
+
+Overfull \hbox (153.18138pt too wide) in paragraph at lines 1227--1228
+[]\OT1/cmr/m/n/12 Alcune mi-su-re di sin-te-si so-no re-la-ti-ve al-le clas-si 
+i-esime ($\OML/cmm/m/it/12 i \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/
+12 Carta; Indifferenziata; Plastica; Vetro\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ) 
+
+ []
+
+[46pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1242 \clearpage
+                  <./CONFMATRIX.png>]
+<mynet.png, id=720, 708.246pt x 504.08325pt>
 File: mynet.png Graphic file (type png)
 <use mynet.png>
-Package pdftex.def Info: mynet.png  used on input line 1290.
+Package pdftex.def Info: mynet.png  used on input line 1303.
 (pdftex.def)             Requested size: 390.0pt x 277.58507pt.
- [48
+ [47
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.6}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1293 
+l.1306 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 2.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1293 
+l.1306 
        ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-4}) has been already used, duplicate ignored
+[48pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1345 
+l.1358 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
 2.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1345 
-        <./mynet.png>] [50pdfTeX warning (ext4): destination with the same iden
+l.1358 
+        <./mynet.png>] [49pdfTeX warning (ext4): destination with the same iden
 tifier (name{table.2.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1356 
+l.1369 
        ]
-<filtroconv.png, id=741, 366.168pt x 199.947pt>
+<filtroconv.png, id=739, 366.168pt x 199.947pt>
 File: filtroconv.png Graphic file (type png)
 <use filtroconv.png>
-Package pdftex.def Info: filtroconv.png  used on input line 1364.
+Package pdftex.def Info: filtroconv.png  used on input line 1377.
 (pdftex.def)             Requested size: 301.1261pt x 164.43353pt.
- [51pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-15}) has been already used, duplicate ignored
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1372 	\item I
+l.1385 	\item I
                l numero di filtri convoluzionali: le CNN possono avere decin...
  <./filtroconv.png>]
-<conv2dpaddingsame.png, id=748, 235.47975pt x 239.09325pt>
+<conv2dpaddingsame.png, id=747, 235.47975pt x 239.09325pt>
 File: conv2dpaddingsame.png Graphic file (type png)
 <use conv2dpaddingsame.png>
-Package pdftex.def Info: conv2dpaddingsame.png  used on input line 1380.
+Package pdftex.def Info: conv2dpaddingsame.png  used on input line 1393.
 (pdftex.def)             Requested size: 150.56305pt x 152.87686pt.
-<conv2dpaddingvalid.png, id=749, 221.628pt x 224.63925pt>
+<conv2dpaddingvalid.png, id=748, 221.628pt x 224.63925pt>
 File: conv2dpaddingvalid.png Graphic file (type png)
 <use conv2dpaddingvalid.png>
-Package pdftex.def Info: conv2dpaddingvalid.png  used on input line 1381.
+Package pdftex.def Info: conv2dpaddingvalid.png  used on input line 1394.
 (pdftex.def)             Requested size: 150.56305pt x 152.60869pt.
 
-Underfull \hbox (badness 1389) in paragraph at lines 1382--1382
-[]\OT1/cmr/m/n/12 Figura 2.16: []Esempio Pad-ding: a si-ni-stra ap-pli-ca-zio-n
+Underfull \hbox (badness 1389) in paragraph at lines 1395--1395
+[]\OT1/cmr/m/n/12 Figura 2.17: []Esempio Pad-ding: a si-ni-stra ap-pli-ca-zio-n
 e di un fil-tro
  []
 
-[52pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
-6}) has been already used, duplicate ignored
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1390 $
+l.1403 $
         $I \in \mathbb{R}^{H \times W \times C}$$ <./conv2dpaddingsame.png> <./
-conv2dpaddingvalid.png>] [53]
-<pooling.png, id=762, 460.72125pt x 212.59425pt>
+conv2dpaddingvalid.png>] [52]
+<pooling.png, id=761, 460.72125pt x 212.59425pt>
 File: pooling.png Graphic file (type png)
 <use pooling.png>
-Package pdftex.def Info: pooling.png  used on input line 1419.
+Package pdftex.def Info: pooling.png  used on input line 1432.
 (pdftex.def)             Requested size: 301.1261pt x 138.95018pt.
- [54pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1440 \subsection
-                  {Residual Neural Network (ResNet)} <./pooling.png>]
-<resnetmodel.png, id=770, 377.41pt x 220.825pt>
-File: resnetmodel.png Graphic file (type png)
-<use resnetmodel.png>
-Package pdftex.def Info: resnetmodel.png  used on input line 1451.
-(pdftex.def)             Requested size: 250.93842pt x 146.82655pt.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1457 
-        <./resnetmodel.png (PNG copy)>]
-<resnetex.png, id=777, 491.8375pt x 210.7875pt>
-File: resnetex.png Graphic file (type png)
-<use resnetex.png>
-Package pdftex.def Info: resnetex.png  used on input line 1467.
-(pdftex.def)             Requested size: 350.99762pt x 150.4321pt.
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+l.1453 \subsection
+                  {Residual Neural Network (ResNet)} <./pooling.png>]
+<resnetmodel.png, id=769, 377.41pt x 220.825pt>
+File: resnetmodel.png Graphic file (type png)
+<use resnetmodel.png>
+Package pdftex.def Info: resnetmodel.png  used on input line 1464.
+(pdftex.def)             Requested size: 250.93842pt x 146.82655pt.
+ [54pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1473 $$A_3 = relu(W_2 \space A_2 + b_2)$$
-                                            <./resnetex.png>]
-<resnetstr1.png, id=785, 807.015pt x 1320.132pt>
-File: resnetstr1.png Graphic file (type png)
-<use resnetstr1.png>
-Package pdftex.def Info: resnetstr1.png  used on input line 1494.
-(pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
- [57]
-<resnetstr2.png, id=790, 807.015pt x 1320.132pt>
-File: resnetstr2.png Graphic file (type png)
-<use resnetstr2.png>
-Package pdftex.def Info: resnetstr2.png  used on input line 1501.
-(pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
- [58pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+l.1470 
+        <./resnetmodel.png (PNG copy)>]
+<resnetex.png, id=776, 491.8375pt x 210.7875pt>
+File: resnetex.png Graphic file (type png)
+<use resnetex.png>
+Package pdftex.def Info: resnetex.png  used on input line 1480.
+(pdftex.def)             Requested size: 350.99762pt x 150.4321pt.
+ [55pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 20}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1504 
-        <./resnetstr1.png>]
-<resnetstr3.png, id=796, 801.59476pt x 1346.02875pt>
-File: resnetstr3.png Graphic file (type png)
-<use resnetstr3.png>
-Package pdftex.def Info: resnetstr3.png  used on input line 1508.
-(pdftex.def)             Requested size: 301.1261pt x 505.66324pt.
- [59pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+l.1486 $$A_3 = relu(W_2 \space A_2 + b_2)$$
+                                            <./resnetex.png>]
+<resnetstr1.png, id=783, 807.015pt x 1320.132pt>
+File: resnetstr1.png Graphic file (type png)
+<use resnetstr1.png>
+Package pdftex.def Info: resnetstr1.png  used on input line 1507.
+(pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
+ [56]
+<resnetstr2.png, id=789, 807.015pt x 1320.132pt>
+File: resnetstr2.png Graphic file (type png)
+<use resnetstr2.png>
+Package pdftex.def Info: resnetstr2.png  used on input line 1514.
+(pdftex.def)             Requested size: 301.1261pt x 492.59077pt.
+ [57pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 21}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1511 
-        <./resnetstr2.png>] [60pdfTeX warning (ext4): destination with the same
- identifier (name{figure.2.22}) has been already used, duplicate ignored
+l.1517 
+        <./resnetstr1.png>]
+<resnetstr3.png, id=795, 801.59476pt x 1346.02875pt>
+File: resnetstr3.png Graphic file (type png)
+<use resnetstr3.png>
+Package pdftex.def Info: resnetstr3.png  used on input line 1521.
+(pdftex.def)             Requested size: 301.1261pt x 505.66324pt.
+ [58pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1518 S
+l.1524 
+        <./resnetstr2.png>] [59pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.2.23}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1531 S
         cript per l'implementazione nell'Appendice A sezione [A.2.3] <./resnets
-tr3.png>] [61pdfTeX warning (ext4): destination with the same identifier (name{
+tr3.png>] [60pdfTeX warning (ext4): destination with the same identifier (name{
 table.2.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1562 \clearpage
+l.1575 \clearpage
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{table.2.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1562 \clearpage
-                 ] [62
+l.1575 \clearpage
+                 ] [61
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.12}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1616 \chapter
+l.1629 \chapter
                {Performance e previsioni}pdfTeX warning (ext4): destination wit
 h the same identifier (name{table.2.13}) has been already used, duplicate ignor
 ed
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1616 \chapter
+l.1629 \chapter
                {Performance e previsioni}]
 Capitolo 3.
-[63
+[62
 
 ]
-Overfull \hbox (41.19794pt too wide) in paragraph at lines 1634--1648
+Overfull \hbox (41.19794pt too wide) in paragraph at lines 1647--1661
  [] 
  []
 
 
-Overfull \hbox (50.58093pt too wide) in paragraph at lines 1659--1673
+Overfull \hbox (50.58093pt too wide) in paragraph at lines 1672--1686
  [] 
  []
 
-[64pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
+[63pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1679 L
+l.1692 L
         e ResNet addestrate sui dati non strutturati reagiscono in modo diff...
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1679 L
+l.1692 L
         e ResNet addestrate sui dati non strutturati reagiscono in modo diff...
-] [65] [66]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[67pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1780 \clearpage
-                 ] [68pdfTeX warning (ext4): destination with the same identifi
-er (name{table.3.4}) has been already used, duplicate ignored
+] [64] [65]
+<KNN.jpg, id=838, 698.40756pt x 389.89362pt>
+File: KNN.jpg Graphic file (type jpg)
+<use KNN.jpg>
+Package pdftex.def Info: KNN.jpg  used on input line 1759.
+(pdftex.def)             Requested size: 301.1261pt x 168.10909pt.
+ [66] [67pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1780 \clearpage
+l.1776 \clearpage
+                  <./KNN.jpg>] [68
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1824 \clearpage
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{table.3.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1824 \clearpage
                  ] [69
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.3.5}) h
@@ -1587,38 +1616,40 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1849 f
-        unzionamentopdfTeX warning (ext4): destination with the same identifier
- (name{table.3.6}) has been already used, duplicate ignored
+l.1876 \clearpage
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{table.3.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1849 f
-        unzionamento]
-<form3.png, id=857, 522.15076pt x 345.08925pt>
+l.1876 \clearpage
+                 ]
+<form3.png, id=862, 522.15076pt x 345.08925pt>
 File: form3.png Graphic file (type png)
 <use form3.png>
-Package pdftex.def Info: form3.png  used on input line 1860.
+Package pdftex.def Info: form3.png  used on input line 1909.
 (pdftex.def)             Requested size: 301.1261pt x 199.01979pt.
- [70pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-1}) has been already used, duplicate ignored
+ [70
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1870 \chapter
+l.1919 \chapter
                *{Conclusioni} <./form3.png>] [71
 
 ]
 Appendice A.
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1930--1931
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1981--1982
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 1935--1936
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 1986--1987
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  
@@ -1627,207 +1658,207 @@ Overfull \hbox (31.95346pt too wide) in paragraph at lines 1935--1936
 [72
 
 ]
-Overfull \hbox (31.95346pt too wide) in paragraph at lines 1940--1941
+Overfull \hbox (31.95346pt too wide) in paragraph at lines 1991--1992
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1945--1946
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 1996--1997
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1950--1951
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2001--2002
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1955--1956
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2006--2007
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1960--1961
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2011--2012
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1960--1961
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 2011--2012
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1965--1966
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2016--2017
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1965--1966
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 2016--2017
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 [73]
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1970--1971
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2021--2022
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1970--1971
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 2021--2022
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1975--1976
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2026--2027
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 1975--1976
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 2026--2027
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1980--1981
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2031--2032
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (17.46133pt too wide) in paragraph at lines 1980--1981
+Overfull \hbox (17.46133pt too wide) in paragraph at lines 2031--2032
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1985--1986
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2036--2037
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1985--1986
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 2036--2037
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1990--1991
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2041--2042
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 1990--1991
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 2041--2042
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 [74]
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 1995--1996
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2046--2047
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (34.7074pt too wide) in paragraph at lines 1995--1996
+Overfull \hbox (34.7074pt too wide) in paragraph at lines 2046--2047
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 2000--2001
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2051--2052
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (23.21002pt too wide) in paragraph at lines 2000--2001
+Overfull \hbox (23.21002pt too wide) in paragraph at lines 2051--2052
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 
-Overfull \hbox (49.19952pt too wide) in paragraph at lines 2005--2006
+Overfull \hbox (49.19952pt too wide) in paragraph at lines 2056--2057
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (28.95871pt too wide) in paragraph at lines 2005--2006
+Overfull \hbox (28.95871pt too wide) in paragraph at lines 2056--2057
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][]  
  []
 
 [75] [76] [77] [78] [79] [80]
-Overfull \hbox (0.91077pt too wide) in paragraph at lines 2257--2258
+Overfull \hbox (0.91077pt too wide) in paragraph at lines 2308--2309
 [][][][][][][][][][][][][][][][] 
  []
 
 [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95]
-[96] [97] [98] [99] [100] [101] [102
+[96] [97] [98] [99] [100
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.chiave10
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.3038 \bibitem{chiave13}
+l.3031 \bibitem{chiave13}
                           Saining Xie - Ross Girshick - Piotr Dollˆr - Zhuow...
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3044.
- [103]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3044.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3041.
+ [101]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3041.
  (./TESI_SACCAGGI_GIACOMO.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3044.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3044.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3041.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3041.
 
 Package rerunfilecheck Info: File `TESI_SACCAGGI_GIACOMO.out' has not changed.
-(rerunfilecheck)             Checksum: A610622E8D37BD3275694DCADA09872F;3335.
+(rerunfilecheck)             Checksum: D2522B02A6676FDEB21806B996622416;3434.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16284 strings out of 492623
- 228164 string characters out of 6133290
- 489732 words of memory out of 5000000
- 18610 multiletter control sequences out of 15000+600000
+ 16238 strings out of 492623
+ 227444 string characters out of 6133290
+ 489697 words of memory out of 5000000
+ 18627 multiletter control sequences out of 15000+600000
  11523 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,11n,99p,1125b,2000s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1845,10 +1876,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist
 e1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on TESI_SACCAGGI_GIACOMO.pdf (108 pages, 12117761 bytes).
+Output written on TESI_SACCAGGI_GIACOMO.pdf (106 pages, 12397085 bytes).
 PDF statistics:
- 2375 PDF objects out of 2487 (max. 8388607)
- 2157 compressed objects within 22 object streams
- 1391 named destinations out of 1440 (max. 500000)
- 574 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2297 PDF objects out of 2487 (max. 8388607)
+ 2079 compressed objects within 21 object streams
+ 1326 named destinations out of 1440 (max. 500000)
+ 592 words of extra memory for PDF output out of 10000 (max. 10000000)
 
