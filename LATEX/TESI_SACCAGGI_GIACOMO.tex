@@ -690,7 +690,7 @@ int readColor() {
 
 \clearpage
 
-Lo schema di collegamento del cestino finale è visualizzabile in Figura 1.11, in aggiunta a questo sistema è collegato un motore DC 12 V controllato con un pin digitale e collegato ad un Power Supply 12V 10mA installato per fare ruotare la struttura superiore
+Lo schema di collegamento del cestino finale è visualizzabile in Figura 1.11, in aggiunta a questo sistema è collegato un motore DC 12 V controllato con un pin digitale e collegato ad un Power Supply 12V 10mA installato per fare ruotare la struttura superiore.
 
 \begin{figure}[H]
 	\center
@@ -708,7 +708,7 @@ Lo schema di collegamento del cestino finale è visualizzabile in Figura 1.11, in
 In questo capitolo non si andranno ad analizzare i codici nello specifico in quanto molto lunghi e poco utili ai fini della tesi lasciando gli script commentati nell'Appendice A sezione [A.1.4] e [A.3.1], ma si spiegheranno le funzioni che il software deve svolgere.
 
 Il programma si è deciso di chiamarlo \virgolette{Recycling bin} ed è strutturato in 3 pagine.
-La prima pagina denominata \virgolette{Form1:Home}, grazie a due pulsanti posizionati nella parte sinistra della schermate, serve per indirizzare l'utente verso la funzione di addestramento e reperimento dei dati o la sezione di riconoscimento e analisi dei dati, che si vedrà in modo approfondito nel capitolo 3, si è deciso inoltre di aggiungere, nella parte di destra, delle istruzioni così da rendere più chiaro l'utilizzo del software e lo scopo del progetto.
+La prima pagina denominata \virgolette{Form1:Home}, grazie a due pulsanti posizionati nella parte sinistra della schermate, serve per indirizzare l'utente verso la funzione di addestramento e reperimento dei dati o la sezione di riconoscimento e analisi dei dati, che si vedrà in modo approfondito nel Capitolo 3. Si è deciso inoltre di aggiungere, nella parte di destra, delle istruzioni così da rendere più chiaro l'utilizzo del software e lo scopo del progetto.
 
 \begin{figure}[H]
 	\center
@@ -996,7 +996,7 @@ Il GBM costruisce con gli alberi di classificazione dei modelli adattando ripetu
 
 
 \begin{itemize}
-	\item [1.] Si inizializza un albero che non esegue divisioni e che per ogni classe restituisce una probabilità associata pari a zero 0 $\hat{f}^0(x)=0$, si decide un $B \gg 0$ e il parametro di restringimento (shrinkage parameter) $\lambda>0$ in modo arbitrario;
+	\item [1.] Si inizializza un albero che non esegue divisioni e che per ogni classe restituisce una probabilità associata pari a zero $\hat{f}^0(x)=0$, si decide un $B \gg 0$ e il parametro di restringimento (shrinkage parameter) $\lambda>0$ in modo arbitrario;
 	
 	\item [2.] Si reiterano i seguenti punti per $b=1,2,\ldots, B$ volte:
 	
@@ -1180,8 +1180,7 @@ $$s(x) = \max(0, x)$$
 
 Può essere utilizzata dai neuroni come qualsiasi altra funzione di attivazione, il principale motivo per cui viene utilizzata è dovuto alla sua semplicità di calcolo ed efficienza computazionale rispetto alle funzioni di attivazione più classiche come il sigmoide e la tangente iperbolica, senza fare una differenza significativa per l'accuratezza di generalizzazione. Questa funzione deriva dalla Rel  quando $a_i=0$:
 $$ Rel(x_i) =
-\begin{cases}
-x_i,  & \text{se } \, x_i \gt 0 \\
+\begin{cases}x_i,  & \text{se } \, x_i \gt 0 \\
 a_ix_i, & \text{se } \, x_i \le 0
 \end{cases} $$
 
@@ -1220,34 +1219,48 @@ Nel valutare i differenti modelli per tutto il lavoro utilizzeremo le metriche c
 
 \begin{figure}[H]
 	\center
-	\includegraphics[width=200px]{CONFMATRIX.png}
+	\includegraphics[width=400px]{CONFMATRIX.png}
 	\caption{Matrice di confuione per problema di classificazione bivariato}
 \end{figure}
 
-Alcune misure di sintesi sono relative alle classi i-esime ($i=\{Carta, Indifferenziata, Plastica, Vetro \}$)
 
 La ``Precision" corrisponde alla misura in valori percentuali di quanti dati l'algoritmo di classificazione riesce a prevedere sul totale di quelli che vengono osservati:
 
-$$Precision= \frac{\mbox{True Positive}_i}{\mbox{Support}_i}$$
+$$Precision_i = \frac{\mbox{True Positive}_i}{\mbox{Support}_i}$$
+
+$$i=\{Carta, Indifferenziata, Plastica, Vetro \}$$
+
+
+$$ $$
 
 Il ``Recall" è il valore percentuale di quante previsioni si rivelano giuste rispetto al totale:
 
-$$Recall= \frac{\mbox{True Positive}_i}{\mbox{Prediction}_i}$$
+$$Recall_i = \frac{\mbox{True Positive}_i}{\mbox{Prediction}_i}$$
 
-La metrica ``f1-score" è una misura di sintesi tra le due metriche precedenti ed indica quanto un modello previsivo riesca a prevedere in modo accurato una determinata classe 
+$$i=\{Carta, Indifferenziata, Plastica, Vetro \}$$
+
+
+$$ $$
+
+La metrica ``f1-score" è una misura di sintesi tra le due metriche precedenti ed indica quanto un modello riesca a prevedere in modo accurato una determinata classe:
 
 $$\mbox{f1-score}_i= 2 \space * \space \frac{\mbox{Precision}_i \mbox{* Recall}_i}{\mbox{Precision}_i \mbox{+ Recall}_i} $$
 
-L'accuratezza corrisponde alla media degli ``f1-score" e viene reputata una buona metrica per poter confrontare in termini generali due modelli. Per essere più precisi si sono aggiunte anche due medie delle misure singole per ogni classe di rifiuto, la prima è una media semplice mentre la seconda una media ponderata in base alla quantità di elementi della classe corrispondente della misura presenti nel campione.
-\clearpage
+$$i=\{Carta, Indifferenziata, Plastica, Vetro \}$$
 
+
+$$ $$
+
+L'accuratezza corrisponde alla media degli ``f1-score" e viene reputata una buona metrica per poter confrontare in termini generali due modelli. Per essere più precisi si sono aggiunte anche due medie delle misure singole per ogni classe di rifiuto, la prima è una media semplice mentre la seconda una media ponderata in base alla quantità di elementi della classe corrispondente della misura presenti nel campione.
+
+
+$$ $$
 
 \textbf{Modello: GradientBoostingClassifier}
 
 Script per l'implementazione nell'Appendice A sezione [A.2.1]
 
 Nello specificare il modello si sono dovuti scegliere i parametri di tuning visti in precedenza. Si è scelto come predittore l'albero di classificazione, un learning rate pari a 0.2, un numero di predittori pari a 500 ed una lunghezza massima di split pari a tre livelli. 
-
 
 
 $$ $$
@@ -1268,7 +1281,7 @@ $$ $$
 		\end{tabular}
 	\end{center}
 \end{table}
-
+\clearpage
 \begin{table}[h!]
 	\begin{center}
 		\caption{Classification Report GBM}
@@ -1291,6 +1304,7 @@ weighted avg     &  0.96  &    0.96   &   0.96   &    500\\
 \end{table}
 
 
+$$ $$
 
 \textbf{Modello: MLP}
 
@@ -1298,13 +1312,8 @@ Script per l'implementazione nell'Appendice A sezione [A.2.2]
 
 Si è deciso di creare 11 Layers di cui i 9 Hidden Layers di dimensione (40, 40, 40, 80, 80, 80, 40, 40, 40):
 
-\begin{figure}[H]
-	\center
-	\includegraphics[width=\textwidth]{mynet.png}
-	\caption{MLPClassifier}
-\end{figure}
-
 $$ $$
+
 \begin{table}[h!]
 	\begin{center}
 		\caption{Confusion matrixt MLP}
@@ -1345,6 +1354,13 @@ weighted avg    &   0.85   &   0.84   &   0.85   &    500\\
 \end{table}
 
 
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{mynet.png}
+	\caption{MLPClassifier}
+\end{figure}
+
+\clearpage
 
 \section{Dati non strutturati}
 
@@ -1421,9 +1437,12 @@ Nelle CNN la funzione di attivazione più comune è la ReLU, questo perchè assicur
 Un attributo comune nelle reti neurali convoluzionali è quello del Pooling, esemplificato in Figura 2.18. Il pooling avviene normalmente dopo che le mappe delle funzionalità sono state passate tramite la funzione di attivazione ReLU. L'obiettivo del pooling è ridurre le dimensioni della matrice dell'immagine senza perdita di informazioni. A sua volta, questa operazione, riduce la quantità di elaborazione richiesta, risparmiando tempo e risorse nella fase di formazione. Le varietà di pooling più comuni sono:
 
 \begin{itemize}
-	\item Max Pooling: Accetta il valore massimo in pixel all'interno del filtro. $$ y_{ijk} = \max \{ y_{i'j'k} : i \leq i' < i+p, \space \space j \leq j' < j + p \} $$
+	\item Max Pooling: Accetta il valore massimo in pixel all'interno del filtro. $$ y_{ijk} = \max \{ y_{i'j'k} : i \leq i' < i+p, \space \space j \leq j' < j + p \} $$ 
+	$$ $$
 	\item Average pooling: Prende il valore medio dei pixel all'interno del filtro. $$ y_{ijk} = mean \{ y_{i'j'k} : i \leq i' < i+p,  \space \space  j \leq j' < j + p \} $$
+	$$ $$
 	\item Sum Pooling: Somma i valori dei pixel all'interno del filtro. $$ y_{ijk} = sum \{ y_{i'j'k} : i \leq i' < i+p,  \space \space j \leq j' < j + p \} $$
+	$$ $$
 \end{itemize}
 
 
@@ -1436,10 +1455,14 @@ Un attributo comune nelle reti neurali convoluzionali è quello del Pooling, esem
 
 Un altro importante elemento costitutivo della CNN è la normalizzazione (normalization batch). Per aumentare la stabilità di una rete neurale si sottrae dai valori in input la loro media batch e successivamente si dividono per la deviazione standard. La normalizzazione viene, di norma, attuata prima di un livello di attivazione ed è utilizzata per velocizzare il processo di riduzione al minimo la funzione di perdita.
 
+$$ $$
 
 $$ \mu_B = \frac{1}{m} \sum_{i=1}^m x_i $$
 
+
+
 $$ \sigma_B^2 = \frac{1}{m} \sum_{i=1}^m (x_i-\mu_B)^2$$
+
 
 
 $$ \hat{x_i} = \frac{x_i - \mu_B}{\sqrt{\sigma^2_B + \epsilon}} $$
@@ -1447,6 +1470,8 @@ $$ \hat{x_i} = \frac{x_i - \mu_B}{\sqrt{\sigma^2_B + \epsilon}} $$
 
 
 $$ y_i = \gamma \hat x_i + \beta == BN_{\gamma,\beta}(x_i) $$
+
+$$ $$
 
 L'offset $\beta$ e lo scale factor $\gamma$ sono parametri apprendibili che vengono aggiornati nella back-propagation come fossero normali pesi. Se si imposta la $\gamma$ come 1 e $\beta$ come 0 l'intero processo è solo standardizzazione.
 
@@ -1458,10 +1483,12 @@ Con l'aumento dell'utilizzo di questi modelli ci si è accorti che all'aumentare 
 
 Per affrontare questi problemi, gli autori dell'architettura ResNet hanno avuto l'idea di saltare delle connessioni con l'ipotesi che gli strati più profondi dovrebbero essere in grado di imparare qualcosa di uguale agli strati meno profondi. Una possibile soluzione è la copia delle attivazioni da livelli più superficiali e l'impostazione di livelli aggiuntivi nella mappatura delle identità. Queste connessioni baypassano le connessioni intermedie come mostrato in Figura 2.19.
 
+$$ $$
+
 
 \begin{figure}[H]
 	\center
-	\includegraphics[width=250px]{resnetmodel.png}
+	\includegraphics[width=0.9\textwidth]{resnetmodel.png}
 	\caption{Block Residual}
 \end{figure}
 
@@ -1633,9 +1660,45 @@ $$ $$
 \section{Confronto modelli}
 
 
-L'obbiettivo di questa parte del progetto è quello di combinare i modelli del capitolo precedente attraverso modelli creati con lo scopo di combinare le previsioni per ottenere un accuratezza più elevata. In particolare, si vuole creare un modello che possa combinare gli algoritmi ResNet addestrati su immagini per creare poi una applicazione che possa dalla foto del rifiuto individuare la classe corrispondente ad esso; inoltre, si vuole costruire un modello che possa combinare dati strutturati e foto per riuscire a sfruttare tutte le informazioni ricavate da questo studio.
+Mi è sembrato interessante valutare come i modelli creati nel capitolo precedente possano essere combinati.
 
-Come spiegato nel Capitolo 2.1 per poter pensare di riuscire a combinare modelli creati su basi di dati strutturati insieme a modelli che analizzano immagini era importante creare un dataset che potesse contenere entrambe le informazioni nel crearlo con l'intento di validare gli algoritmi in condizioni differenti si è deciso di cambiare la posizione del cestino così da tentare di valutare e correggere quanto le informazioni prese ed analizzate dal GBM e dalla MLP fossero dipendenti dall'ambiente che circonda il cestino; inoltre, si è deciso per il 50\% degli oggetti di registrarli nel cestino ma di inserire le foto fatte con il bot cosi da valutare come le ResNet si comportassero in ambienti differenti. Innanzitutto occorre valutare le performance dei modelli su questi nuovi dati. Una volta valutate le perfomance sarà obbiettivo delle sezioni seguenti trovare un modo per poter mischiare questi risultati per ottenere delle prestazioni migliori. Sul dataset strutturato sono state eseguite le stesse operazioni di preprocessing attuate nel Capitolo 2.3 sul dataset originale.
+queto surplus mi ha permesso di produrre un lavoro innovativo confrontano le vecchie metoologie con metodi innovativi che devono ancora dimostrare tutta la loro validità
+
+
+(da unire con quello sopra)
+L'obbiettivo di questa parte del progetto è quello di combinare i modelli del capitolo precedente attraverso modelli creati con lo scopo di combinare le previsioni per ottenere un accuratezza più elevata. 
+
+
+
+(togliere)
+In particolare, si vuole creare un modello che possa combinare gli algoritmi ResNet addestrati su immagini per creare poi una applicazione che possa dalla foto del rifiuto individuare la classe corrispondente ad esso. inoltre, si vuole costruire un modello che possa combinare dati strutturati e foto per riuscire a sfruttare tutte le informazioni ricavate da questo studio.
+
+
+
+ci è sembrato interessante crere due modelli: (ad elenco)
+il primo ...
+il seccondo ...
+
+
+La scelta operativa è stata quella di creare un dataset che contenga le informazioni struttarte  non....
+
+(da unire sopra)
+Come spiegato nel Capitolo 2.1 per poter pensare di riuscire a combinare modelli creati su basi di dati strutturati insieme a modelli che analizzano immagini era importante creare un dataset che potesse contenere entrambe le informazioni. 
+
+
+
+
+
+L'obbiettivo è quello di valutare gli algoritmi in condizioni ambientali differenti cambiando la posizione del cestino così da tentare di valutare e correggere quanto le informazioni prese ed analizzate dal GBM e dalla MLP fossero dipendenti dall'ambiente esterno.
+
+
+Un ulteriore scelta è stata quella
+; inoltre, si è deciso per il 50\% degli oggetti di registrarli nel cestino ma di inserire le foto fatte con il bot cosi da valutare come le ResNet si comportassero in ambienti differenti. 
+
+
+fatte queste premesse ho iniziato a valutare le performance dei modelli su questi nuovi dati. Una volta valutate le prestazioni sarà obbiettivo delle sezioni seguenti trovare un modo per poter mischiare questi risultati per ottenere un accuratezza maggire.
+
+Sul dataset strutturato sono state eseguite le stesse operazioni di preprocessing attuate nel Capitolo 2.3 sul dataset originale.
 
 
 \begin{table}[h!]
@@ -1687,7 +1750,7 @@ Come spiegato nel Capitolo 2.1 per poter pensare di riuscire a combinare modelli
 \end{table}
 
 
-Come si può notare dai risultati sul nuovo Validation Set c'è un abbassamento dell'accuratezza globale dovuta dal cambio di ambiente. Per quanto riguarda i dati strutturati si può osservare in Tabella 3.1 come la MLP non riesca a prevedere in modo accurato, infatti abbiamo un abbassamento dell'accuratezza di 32 punti percentuale, anche se non in modo così ampio, anche il Gradient Boosting Algorithm non reagisce in modo flessibile al cambiamento dell'ambiente infatti l'accuratezza cala fino a 0.71.
+Come si può notare dai risultati sul nuovo Validation Set c'è un abbassamento dell'accuratezza globale dovuta al cambio di ambiente. Per quanto riguarda i dati strutturati si può osservare in Tabella 3.1 come la MLP non riesca a prevedere in modo accurato, infatti abbiamo un abbassamento dell'accuratezza di 32 punti percentuale, anche se non in modo così ampio, anche il Gradient Boosting Algorithm non reagisce in modo flessibile al cambiamento dell'ambiente infatti l'accuratezza cala fino a 0.71.
 
 Le ResNet addestrate sui dati non strutturati reagiscono in modo differente. Come era preventivabile il Modello addestrato sulle foto raccolte dal WEB ha un abbassamento dell'accuratezza di previsione importante dovuto alla poca specificità delle foto; mentre la ResNet addestrata sulle foto fatte ad hoc per il progetto reagisce in modo molto accurato anche oltre le aspettative. Dalla performance di questa ultima rete si può intuire quanto queste tipologie di modelli siano potenti anche con una quantità più ridotte di dati.
 
@@ -1696,21 +1759,27 @@ Le ResNet addestrate sui dati non strutturati reagiscono in modo differente. Com
 
 \subsection{Modelli Stacking}
 
-
-I metodi di ensemble vengono comunemente utilizzati per migliorare la precisione predittiva combinando le previsioni di più modelli di apprendimento automatico. Quando questi metodi vengono ideati per l'idea era quella di combinare i cosiddetti predittori ``deboli" (Breiman Leo, ``Bagging Predictors"; 1996). Tuttavia, un approccio più moderno è quello di creare un insieme di una collezione ben scelta di modelli forti ma diversi (Van der Laan, Polley e Hubbard; 2007).
+Ho cercato di migliorare la previsione applicando dei metodi di ensemble.
+I metodi di ensemble vengono comunemente utilizzati per migliorare la precisione predittiva combinando le previsioni di più modelli di apprendimento automatico. Quando questi metodi furono ideati, l'idea era quella di combinare i cosiddetti predittori ``deboli" (Breiman Leo, ``Bagging Predictors"; 1996). Tuttavia, un approccio più moderno è quello di creare un insieme di una collezione ben scelta di modelli forti ma diversi (Van der Laan, Polley e Hubbard; 2007).
 
 
 Con tutte le differenze del caso, la costruzione di potenti modelli di ensemble ha molti parallelismi con la creazione di team di persone esperte in diversi settori (nel mondo degli affari, della scienza, della politica, dello sport, ecc.). Nel cooperare per un progetto ogni membro del team fornisce un contributo significativo e le debolezze e le distorsioni individuali vengono compensate dai punti di forza degli altri membri, così è per i modelli di Ensemble che sfruttano Stronger Learner.
 
-Il tipo più semplice di ensemble è la media non ponderata delle previsioni dei modelli che formano una serie di modelli.  In una media non ponderata, ogni modello assume lo stesso peso quando viene costruito un modello di ensemble.
-Più in generale, si può pensare di utilizzare le medie ponderate così da poter conferire più peso a quei modelli  migliori. Ma un approccio ancora migliore potrebbe essere quello di stimare i pesi in modo più intelligente usando un altro livello di stima attraverso un algoritmo di classificazione. Questo approccio è chiamato stacking dei modelli.
+Il tipo più semplice di ensemble è la media non ponderata delle previsioni dei modelli che formano una serie di strumenti di indagine.  Nella costruzione di un modello di ensembl con una media non ponderata, ogni modello assume lo stesso peso.
+Più in generale, si può pensare di utilizzare le medie ponderate così da poter conferire più peso a quei modelli  migliori. Un approccio più performante potrebbe essere quello di stimare i pesi usando un altro livello di stima attraverso un algoritmo di classificazione. Questo approccio è chiamato stacking dei modelli.
 
-Lo stacking dei modelli è un metodo di ensemble efficiente in cui le previsioni, generate utilizzando  algoritmi di machine learning, vengono utilizzate come input in un algoritmo di apprendimento di secondo livello. Questo algoritmo di secondo livello viene addestrato per combinare in modo ottimale le previsioni del modello per formare una nuova serie di previsioni. Ad esempio, quando la regressione lineare viene utilizzata come modellazione di secondo livello, stima questi pesi minimizzando gli errori minimi quadrati. Tuttavia, la modellazione del secondo livello non è limitata ai soli modelli lineari; la relazione tra i predittori può essere più complessa, aprendo le porte all'impiego di altri algoritmi di apprendimento automatico.
+Lo stacking dei modelli è un metodo di ensemble efficiente in cui le previsioni, generate utilizzando  algoritmi di machine learning, vengono utilizzate come input in un modello di apprendimento di secondo livello. Questo algoritmo di secondo livello viene addestrato per combinare in modo ottimale le previsioni formando una nuova serie di previsioni. Ad esempio, quando la regressione lineare viene utilizzata come modellazione di secondo livello, il modelllo stima questi pesi minimizzando gli errori quadrati. 
+
+
+
+
+Tuttavia, la modellazione del secondo livello non è limitata ai soli modelli lineari; la relazione tra i predittori può essere più complessa, aprendo le porte all'impiego di altri algoritmi di apprendimento automatico.
+
 
 L'overfitting è un problema particolarmente importante nello stacking dei modelli, perché vengono combinati tanti predittori che prevedono tutti lo stesso target questo può essere parzialmente causato dalla collinearità tra i predittori.
 Una possibile soluzione a questo problema è quella di generare delle serie diversificate di modelli utilizzando vari metodi (come alberi decisionali, reti neurali e/o altri metodi) oppure utilizzare diversi tipi di dati così da cercare di inserire nel modello finale informazioni nuove non presenti nei modelli precedenti.
 
-L'applicazione di modelli sovrapposti ai problemi dei Big Data può produrre una maggiore accuratezza e robustezza delle previsioni rispetto ai singoli modelli. L'approccio dello stacking dei modelli sposta l'obbiettivo dalla modellizzazione e dalla ricerca del modello migliore a quello di trovare una raccolta di modelli complementari validi.
+L'applicazione di modelli sovrapposti ai problemi dei Big Data può produrre una maggiore accuratezza e robustezza delle previsioni rispetto ai singoli modelli. L'approccio dello stacking dei modelli sposta l'obbiettivo dalla modellizzazione e dalla ricerca del modello migliore a quello di trovare una raccolta di modelli complementariamente validi.
 Naturalmente, questo metodo comporta costi computazionali aggiuntivi sia perché è necessario addestrare un gran numero di modelli sia perché spesso risulta necessario utilizzare la convalida incrociata per evitare un eccesso di adattamento. 
 
 L'algoritmo per creare un modello a più livelli con il metodo stacking è costituito da tre fasi:
@@ -1737,20 +1806,21 @@ L'algoritmo per creare un modello a più livelli con il metodo stacking è costitu
 
 \subsection{Risultati}
 
-Il meta-algoritmo scelto in questa parte del progetto corrisponde al K-nearest neighbors (KNN), questo può essere utilizzato sia per problemi predittivi di classificazione che di regressione. Tuttavia, è più ampiamente utilizzato nei problemi di classificazione per il suo approccio semplice che gli permette di non fare assunzioni circa la struttura delle variabili.
+Il meta-algoritmo scelto in questa parte del progetto è il K-nearest neighbors (KNN), questo può essere utilizzato sia per problemi predittivi di classificazione che di regressione. Tuttavia, è comunemente utilizzato nei problemi di classificazione per il suo approccio semplice che gli permette di non fare assunzioni circa la struttura delle variabili.
 
 
 
-L'intuizione alla base dell'algoritmo KNN è quella di calcolare la distanza di un nuovo punto di dati a tutti gli altri punti nel training e selezionare quindi i punti dati K-più vicini, dove $K$ può essere qualsiasi numero intero. Infine l'algoritmo assegna il punto dati alla classe a cui appartiene la maggior parte dei punti compresi nell'intervallo dei $K$ più vicini.
+L'intuizione alla base dell'algoritmo KNN è quella di calcolare la distanza di un nuovo punto da tutti gli altri punti nel training e selezionare quindi i punti K più vicini al mio obbiettivo. Infine l'algoritmo assegna il punto alla classe a cui appartiene la maggior parte dei punti compresi nell'intervallo dei $K$ più vicini.
 
 Quindi i parametri di tuning del modello risultano essere la misura di distanza adottata e il numero dei $K$ punti da selezionare per classificare.
 \begin{itemize}
 	\item Le misure di distanza possono essere di qualsiasi tipo anche se solitamente si utilizzano quella Euclidea, di Manhattan o di Minkowski.
-	\item Il parametro $K$ può essere scelto a priori in modo arbitrario oppure attraverso tecniche di validazione come Cross Validation.
+	\item Il parametro $K$ può essere qualsiasi numero intero. Questo parametro può essere scelto a priori in modo arbitrario oppure attraverso tecniche di validazione come Cross Validation.
 \end{itemize}
  
+Ho verificato la validità di questo modello in un semplice esempio. 
 
-Con l'aiuto di un semplice esempio si andrà a comprendere la validità di questo modello. Si supponga di disporre di un set di dati con due variabili, che quando viene tracciato, è simile a quello in Figura 3.1. Lo scopo è quello di classificare un nuovo punto dati con ``$X$" in classe ``$Verde$" o ``$Rosso$". Supponiamo di fissare il valore di K uguale a 3. L'algoritmo KNN inizia calcolando la distanza del punto X da tutti i punti e, come mostrato in Figura 3.1 nell'immagine di sinistra, trova i $K=3$ punti più vicini con la distanza minima rispetto al punto $X$.
+Si supponga di disporre di un set di dati con due variabili, che quando viene tracciato, è simile a quello in Figura 3.1. Lo scopo è quello di classificare un nuovo punto rappresentato da ``$X$" in classe ``$Verde$" o ``$Rosso$". Supponiamo di fissare il valore di K uguale a 3. L'algoritmo KNN inizia calcolando la distanza del punto X da tutti i punti e, come mostrato in Figura 3.1 nell'immagine di sinistra, trova i $K=3$ punti più vicini con la distanza minima rispetto al punto $X$.
 
 
 
@@ -1760,9 +1830,9 @@ Con l'aiuto di un semplice esempio si andrà a comprendere la validità di questo 
 	\caption{Esempio K-nearest neighbors (KNN)}
 \end{figure}
 
-Il passaggio finale dell'algoritmo KNN consiste nell'assegnare un nuovo punto alla classe a cui appartiene la maggior parte dei $K=3$ punti più vicini. Dalla figura precedente possiamo vedere che due dei tre punti più vicini appartengono alla classe ``$Verde$" mentre uno appartiene alla classe ``$Rosso$". Pertanto il nuovo punto dati verrà classificato come ``$Verde$". Questo procedimento viene reiterato per ogni punto, come mostrato in Figura 3.1 nell'immagine di destra, così da riuscire a classificare operando una divisione del piano.
+Il passaggio finale dell'algoritmo KNN consiste nell'assegnare un nuovo punto alla classe a cui appartiene la maggior parte dei $K=3$ punti più vicini. Dalla figura precedente possiamo vedere che due dei tre punti più vicini appartengono alla classe ``$Verde$" mentre uno appartiene alla classe ``$Rosso$". Pertanto il nuovo punto verrà classificato come ``$Verde$". Questo procedimento viene reiterato per ogni punto, come mostrato in Figura 3.1 nell'immagine di destra, così da riuscire a classificare operando una divisione del piano.
 
-Per costruire il modello si è diviso il set in train e test data successivamente si è utilizzata una k-fold cross validation con $k=5$ per stimare il parametro $K$ dell'algoritmo sul training set che poi è stato utilizzato per stimare i valori di test. Come misura di distanza si è utilizzata la ``distanza di Minkowski" con $p=2$, la quale per una serie di punti monodimensionali $p_x= \{p_{x,1}, ... ,p_{x,n}\} $ rispetto ad un punto $q_x$ risulta essere:
+Per costruire il modello si è diviso il set in train e test data. Successivamente si è utilizzata una k-fold cross validation con $k=5$ per stimare il parametro $K$ dell'algoritmo sul training set che poi è stato utilizzato per stimare i valori di test. Come misura di distanza si è utilizzata la ``distanza di Minkowski" con $p=2$, la quale per una serie di punti monodimensionali $p_x= \{p_{x,1}, ... ,p_{x,n}\} $ rispetto ad un punto $q_x$ risulta essere:
 
 
 
@@ -1882,9 +1952,23 @@ $$ $$
 \subsection{Bot di Telegram}
 
 
-spiegare idea
 
-tempi
+La prima applicazione che si è pensato di implementare constiste in un Chatot per la famosa applicazione di messaggistica, Telegram. L'idea dietro questa applicazione era quella di costruire una chat nella quale si potevano inviare delle foto di oggetti da buttare in pattumiera e nella chat di Telegram veniva retituito indietro la classe corrispondente all'oggetto insieme alla sua probabilità.
+
+Per implementare questa idea è stato necessario disporre un server che ricevesse la foto e, utilizzando gli algoritmi creati in precedenza, fosse in grado di analizzarla e restituire nella chat la categoria di rifiuto predetta.
+
+Per progammare questo bot, come per quello relativo al Capitolo 1.4, si è utilizzata la libreria di Python ``Telepot" grazie alla quale si possono inviare e riceve (GET e POST request nel linguaggio PHP) richieste al server direttamente dalla chat. Nello specifico abbiamo utilizzato questo pacchetto per riconoscere il contenuto del messaggio, se esso fosse un immagine allora il server doveva salvarla per poi reimportarla trasformandola in dimensione 32 x 32 pixel, ed una vota epurata dalle diffeerenti medie di training veniva analizzata erestituite le probabilità una volta restituite le probabilità queste sono inserite nel modello di ensemble, nello specifico quello che combina le due resnET che rstituiva la classe prevista. una volta prevista questa classe viene reinviata all'utente. 
+
+
+Quindi lo schema di implementazione risulta:
+
+
+
+Schema con codici
+
+
+
+
 
 
 \subsection{Cestino}
@@ -2975,8 +3059,43 @@ def resnet(input_shape, depth, num_classes=10): #per l'addestramento della resne
 
 \tiny
 \begin{lstlisting}[language=Python]
-num(0).
-num(s(X)) :- num(X).
+
+import pandas as pd
+df = pd.read_excel('DIRECTORY_PATH\\df_ensamble.xlsx')
+
+
+
+X = df.drop('Output',1)
+y = df['Output']
+
+# dividing X, y into train and test data
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
+
+# training a KNN classifier
+from sklearn.metrics import confusion_matrix
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+import numpy as np
+from sklearn.model_selection import GridSearchCV
+#create new a knn model
+knn2 = KNeighborsClassifier()
+#create a dictionary of all values we want to test for n_neighbors
+param_grid = {'n_neighbors': np.arange(1, 25)}
+#use gridsearch to test all values for n_neighbors
+knn_gscv = GridSearchCV(knn2, param_grid, cv=5)
+#fit model to data
+knn_gscv.fit(X_train, y_train)
+#check top performing n_neighbors value
+knn_gscv.best_params_
+#check mean score for the top performing value of n_neighbors
+knn_gscv.best_score_
+
+knn_gscv.best_estimator_
+
+
+knn_gscv.cv_results_
+
+
 \end{lstlisting}
 \normalsize
 
@@ -2997,8 +3116,43 @@ num(s(X)) :- num(X).
 
 \tiny
 \begin{lstlisting}[language=Python]
-num(0).
-num(s(X)) :- num(X).
+import telepot
+from datetime import datetime
+import time
+
+# caricare i modelli
+
+
+
+
+
+# impostare la funzione per fare ensemble dei modelli e per prevedere
+
+
+
+
+# impostare la funzione per rispondere alla foto
+
+def rispondi(msg):
+	content_type, chat_type, chat_id = telepot.glance(msg)
+	if content_type == 'photo':
+		bot.download_file(msg['photo'][1]['file_id'], 'dati/image'+ str(datetime.now())[0:19] +'.png')
+		
+		#qui in mezzo analizzare
+		
+		bot.sendMessage(chat_id, 'Thanks for send me the photo! See you soon!')
+		
+	
+	
+	bot =telepot.Bot('###---TOKEN---###')
+	bot.message_loop(rispondi)
+	
+
+
+print 'I am listening ...'
+
+while 1:
+time.sleep(10)
 \end{lstlisting}
 \normalsize
 
