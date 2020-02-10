@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-<title>ML e statistic</title>
+<title>La raccolta differenziata</title>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147261423-1"></script>
@@ -538,9 +538,9 @@ background-position: 10px 12px;
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading" >
-                        <h2>Progetto di tesi</h2>
+                        <h2>La raccolta differenziata, un problema di classificazione</h2>
                         <hr class="small">
-                        <h5>Working in progress</h5>
+                        <h5>Modelli previsionali e applicazioni</h5>
                     </div>
                 </div>
             </div>
@@ -551,14 +551,10 @@ background-position: 10px 12px;
             
         <br>
         <p>
-        Il riciclo è un processo di conversione che trasforma i rifiuti in nuovi materiali, oggetti o sostanze del tutto differenti dai rifiuti d’origine.
+        Il sistema industriale odierno sta migrando sempre più verso materie prime riciclate. In questo contesto il riciclo e la raccolta differenziata ricoprono un’importanza cruciale. L’obbiettivo di questo lavoro vuole essere quello di affrontare il problema della raccolta differenziata con un approccio scientifico e proporre alcune idee e soluzioni di come il Data Science possa essere d’aiuto nel riuscire a migliorare lo sfruttamento delle risorse. Le domande della ricerca, quindi, sono due: “Come si può analizzare la raccolta differenziata come un problema di classificazione statistica?” e “Quali applicazioni potrebbero essere implementate con l’utilizzo dei modelli previsionali?”.
+
         <br>
-        La raccolta differenziata è il processo mediante il quale i rifiuti vengono separati in diversi elementi. Questa procedura è essenziale affinchè le aziende che si occupano di riciclo possano operare nel settore. 
-        <br>
-        Un'economia circolare è un sistema economico volto a eliminare gli sprechi e l'uso continuo delle risorse. I sistemi circolari impiegano il riutilizzo, la condivisione, la riparazione, il rinnovo, la rigenerazione e il riciclaggio per creare un sistema a circuito chiuso, riducendo al minimo l'uso di input di risorse e la creazione di rifiuti, inquinamento ed emissioni di carbonio. L'economia circolare mira a mantenere i prodotti, le attrezzature e le infrastrutture in uso più a lungo rispetto invece alla classica economia lineare che si basa sull'utilizzo di risorse sempre nuove e l'eliminazione di quelle vecchie.
-        <br>
-        L'obbiettivo di questo lavoro non vuole essere quello di proporre un metodo di risoluzione definitivo di tutti i problemi relativi alla raccolta differenziata bensì quello di proporre alcune idee di come la statistica possa essere d'aiuto nel riuscire a migliorare lo sfruttamento delle risorse.
-        A livello statistico questo si declina in un problema di classificazione; durante il lavoro si andranno a sfruttare sia dati strutturati che dati non strutturati sfruttando algoritmi di Deep Learning per riuscire a classificare in modo accurato i differenti tipi di rifiuti.
+        Per rispondere a tali domande si è deciso di reperire i dati per poter classificare i rifiuti utilizzando tre strategie: Web Scraping, programmazione di un Chatbot di Telegram e infine progettazione e costruzione con tecnologie Arduino di un cestino che potesse registrare i dati dei rifiuti. Una volta ultimata la fase di raccolta dei dati si è deciso di utilizzare algoritmi di Deep Learning e Machine Learning per classificare nel modo migliore i rifiuti, successivamente questi modelli sono stati combinati tramite meccanismi di Ensemble Learning così da trovare un previsore migliore, con il quale si sono costruite due applicazioni: un Chatbot che dalle foto riconoscesse la tipologia di rifiuto e un cestino di raccolta differenziata automatica.
         <br>
         Per affrontare questo problema si è deciso di strutturare il lavoro come segue:
         <br><br>
@@ -590,13 +586,15 @@ background-position: 10px 12px;
                 <li>Descrizione tipologie di dati</li>
                 <li>Dati strutturati</li>
                 <ul>
-                    <li>Spiegazione teorica dei modelli utlizzati</li>
-                    <li>Applicazione dei modelli</li>
+                    <li>Gradient Boosting Machine (GBM)</li>
+                    <li>Multi-Layer Perceptron (MLP)</li>
+                    <li>Risultati</li>
                 </ul>
                 <li>Dati non strutturati</li>
                 <ul>
-                    <li>Spiegazione teorica dei modelli utlizzati</li>
-                    <li>Applicazione dei modelli</li>
+                    <li>Convolutional Neural Network (CNN)</li>
+                    <li>Residual Neural Network (ResNet)</li>
+                    <li>Risultati</li>
                 </ul>
             </ul>
             <li>Verifica test, confronto dei modelli</li>
@@ -604,18 +602,26 @@ background-position: 10px 12px;
                 <li>Confronto dei modelli</li>
                 <li>Ensemble earning</li>
                 <ul>
-                    <li>Spiegazione teorica dei modelli utlizzati</li>
-                    <li>Applicazione dei modelli</li>
+                    <li>Modelli di Stacking</li>
+                    <li>Risultati</li>
                 </ul>
-                <li>Esempi pratici di applicazioni</li>
+                <li>Applicazioni</li>
                 <ul>
                     <li>Bot di telegram</li>
-                    <li>Cestino</li>
+                    <li>Sistema automatico di raccolta differenziata</li>
                 </ul>
             </ul>
             <li>Conclusioni</li>
         </ul>
         </p>
+
+
+<h3>Conclusioni</h3>
+
+
+<p>
+La finalità del presente studio è stata l'utilizzo della classificazione statistica come chiave di lettura per analizzare il problema della raccolta differenziata con lo scopo di valutare quali applicazioni possano essere implementate con l’utilizzo dei modelli previsionali. A tal fine, è stata condotta un'indagine quantitativa sfruttando diversi metodi di raccolta. Le differenti modalità di reperimento dei dati hanno portato ad un risultato più accurato e completo nella fase di stima dei modelli. Successivamente sfruttando diversi algoritmi di Machine Learning si è stati in grado di progettare due applicazioni utili per la raccolta differenziata.</p>
+
 
 <div id="sample">
   <div style="width:100%">
@@ -649,49 +655,49 @@ background-position: 10px 12px;
 {
   "key":3, "pos":"-180 250", "icon":"rbin", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"Automatic\nRecycling\nBin",
-  "description": "descrizione",
+  "description": "Come ultima fonte per reperire i dati si è deciso di costruire un cestino così da poter raccogliere anche dati di tipo strutturato sui rifiuti. La scelta di questa terza modalità di raccolta di informazioni da avere un dataset molto preciso circa le diverse tipologie di rifiuto. Nel costruire il cestino si è dovuto progettare un lavoro di tipo “meccanico” per far si che il cestino funzionasse dal punto di vista strutturale; di tipo “robotico” in quanto questo cestino doveva essere in grado di muoversi e inviare i dati ricevuti dai sensori al computer; e, infine, di tipo “softwaristico” in quanto si è dovuto programmare un software che fosse in grado di ricevere e salvare i dati inviati dal cestino.",
   "caption":"title",
   "imgsrc":"https://images-na.ssl-images-amazon.com/images/I/51nYpnkWBdL._SL500_AC_SS350_.jpg"
 },
 {
   "key":4, "pos":"-80 -57", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"ResNet1",
-  "description": "descrizione",
+  "description": "La ResNet è un'architettura CNN di Microsoft Research ideata da Kaiming He, Xiangyu Zhang, Shaoqing Ren e Jian Sun. Questa architettura è nata nel 2015 e ha vinto il concorso ImageNet 2015.",
   "caption":"title",
   "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
 },
 {
   "key":5, "pos":"-80 170", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"Resnet2",
-  "description": "descrizione",
+  "description": "La ResNet è un'architettura CNN di Microsoft Research ideata da Kaiming He, Xiangyu Zhang, Shaoqing Ren e Jian Sun. Questa architettura è nata nel 2015 e ha vinto il concorso ImageNet 2015.",
   "caption":"title",
-  "imgsrc":"https://www.extremetech.com/wp-content/uploads/2015/10/neural-networks-3.jpg"
+  "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
 },
 {
   "key":7, "pos":"-80 300", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
-  "text":"Boosting",
-  "description": "descrizione",
+  "text":"GBM",
+  "description": "Il Gradient Boosting è una implementazione dell'algoritmo di Boosting, dal quale eredita la logica di costruzione di uno Strong Learner. I modelli che vengono utilizzati sono, generalmente, alberi decisionali e il suo scopo è quello di minimizzare una generica funzione di costo. Questo algoritmo inizia ad addestrare un weak learner sul training data e successivamente questo viene nuovamente adattato dando un peso (importanza) maggiore alle osservazioni classificate in modo errato grazie ad un parametro di restringimento. Questo processo viene ripetuto finché non viene raggiunta una regola di arresto.",
   "caption":"title",
   "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
 },
 {
   "key":10, "pos":"-80 400", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"MLP",
-  "description": "descrizione",
+  "description": "Una Multi-Layers Perceptron net (MLP) combina diversi livelli di elaborazione, utilizzando neuroni artificiali. È formata da un layer di input, uno o più layers nascosti e un layer di output. I livelli sono interconnessi tramite nodi o neuroni, con ogni layer che utilizza l'output del layer precedente come input.",
   "caption":"title",
   "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
 },
 {
   "key":8, "pos":"200 0", "icon":"telegram", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"Telgram application",
-  "description": "descrizione",
+  "description": "La prima applicazione che si è presa in esame è l'implementare di un Chatbot. Il software che si è utilizzato come piattaforma è l'applicazione di messaggistica, Telegram. La realizzazione consiste in un programma che è in grado di riceve in input delle foto e di restituire come output la categoria di rifiuto corrispondente dell'oggetto presente nell'immagine.",
   "caption":"title",
   "imgsrc":"https://gioditcom.files.wordpress.com/2017/04/telegram-marketing.png"
 },
 {
   "key":9, "pos":"180 230", "icon":"rbin", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"Automatic Recycling bin application",
-  "description": "descrizione",
+  "description": "La seconda applicazione che si è presa in esame consiste in un cestino in grado di fare la raccolta differenziata in automatico.",
   "caption":"title",
   "imgsrc":"https://images-na.ssl-images-amazon.com/images/I/51nYpnkWBdL._SL500_AC_SS350_.jpg"
 }
@@ -710,8 +716,10 @@ background-position: 10px 12px;
  ]}
     </textarea>
 
-
-    <h1>Risultati</h1>
+<p>
+I modelli addestrati in questo studio sfruttano sia dati strutturati che informazioni non strutturate con l'obbiettivo di creare molteplici ``Stroger Learner" e combinarli attraverso metodi di Ensemble Learning per ottenere stime robuste ed accurate.
+<br>
+I modelli creati, come è possibile osservare nel grafico sottostante, hanno un accuratezza elevata. In particolare si può notare come i modelli di Stacking creati hanno un accuratezza superiore al 90% ed una precisione nelle singole categorie di rifiuto altrettanto elevata.</p>
     <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -720,7 +728,7 @@ background-position: 10px 12px;
 <figure class="highcharts-figure">
     <div id="container"></div>
     <p class="highcharts-description">
-        Descrizione
+        
     </p>
 </figure>
 <script>
@@ -798,10 +806,41 @@ Highcharts.chart('container', {
     }]
 });
 </script>
+
+<br><br>
+<p>
+Tuttavia, questo progetto, per quanto approfondito, trascura inevitabilmente alcune variabili e informazioni su cui sarebbe opportuno riflettere al fine del miglioramento dei modelli, cercando di individuare elementi correttivi. Infatti, è importante tenere presente che in questa analisi non è stato possibile analizzare i rifiuti organici per un problema intrinseco di igiene relativo a questa categoria di rifiuti. Inoltre l'ambiente creato all'interno del ``robot" di registrazione dei dati non è in grado di creare un completo e stabile isolamento. Per questa ragione i parametri potenzialmente analizzati potrebbero essere influenzati da elementi terzi (quali luce ed elettrostaticità presente nell'ambiente) e causare la distorsione delle previsioni.
+
+<br>
+Il progetto svolto ha portato a dei risultati che, nonostante i punti critici, mettono in luce le potenzialità del Data Science. In questo contesto ulteriori analisi potrebbero portare a significativi miglioramenti.
+
+<br>
+Un primo miglioramento potrebbe essere quello di aumentare le dimensioni del Validation Set creato nel Capitolo 3 così da aumentare la validità esterna della previsione.
+
+<br>
+Inoltre l'utilizzo di ResNet 152 o Inception V4 per il riconoscimento di immagini potrebbe portare ad un incremento significativo dell'accuratezza dei modelli.
+
+<br>
+In aggiunta, tramite dei processi non strettamente statistici l'analisi sarebbe più completa riuscendo a raggiungere livelli di accuratezza più elevati. Tra i processi che consentirebbero questo approfondimento si riportano:
+<ul>
+	<li> L'utilizzo del Reinforced Learning per consentire alle applicazioni di apprendere dagli errori.</li>
+	<li> Lo sfruttamento, congiuntamente ai classificatori creati, degli strumenti di Amazon Web Services per creare nuovi modelli di Ensemble Learning più accurati.</li>
+	<li> La lettura, quando presente nell'immagine, del bar code del prodotto da smaltire. </li>
+</ul>
+
+<br>
+
+A conclusione dello studio, ritengo che, questo lavoro possa essere un buon punto d'inizio per sviluppare strumenti che aiutino a migliorare lo sfruttamento delle risorse. </p>
+
+
+
+
+
+
   </div>
 </div>
 <br><br><center>
-      <button class="button" onClick="window.open('LATEX/TESI_SACCAGGI_GIACOMO.pdf');">APRI TESI (Working in progress)</button></center><br><br>
+      <button class="button" onClick="window.open('LATEX/TESI_SACCAGGI_GIACOMO.pdf');">Aprire articolo completo</button></center><br><br>
       <button class="button" onClick="window.open('https://github.com/GiacomoSaccaggi/Recycling-bin');">Scarica tutto il progetto (Working in progress)</button></center><br><br>
 
    <!-- Footer -->
