@@ -17,7 +17,7 @@
 \contentsline {chapter}{\numberline {2}Modellizzazione e addestramento}{29}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Descrizione tipologie di dati}{29}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Dati Strutturati}{35}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Gradient boosting algorithm (GBM)}{35}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.1}Gradient Boosting Machine (GBM)}{35}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Multi-Layer Perceptron (MLP)}{39}{subsection.2.2.2}% 
 \contentsline {subsection}{\numberline {2.2.3}Risultati}{45}{subsection.2.2.3}% 
 \contentsline {section}{\numberline {2.3}Dati non strutturati}{50}{section.2.3}% 
@@ -26,24 +26,25 @@
 \contentsline {subsection}{\numberline {2.3.3}Risultati}{61}{subsection.2.3.3}% 
 \contentsline {chapter}{\numberline {3}Performance e previsioni}{63}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Confronto modelli}{63}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Ensemble Learning}{65}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Modelli Stacking}{65}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Risultati}{67}{subsection.3.2.2}% 
-\contentsline {section}{\numberline {3.3}Esempi pratici di applicazioni}{72}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Bot di Telegram}{72}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Cestino}{72}{subsection.3.3.2}% 
-\contentsline {chapter}{Conclusioni}{74}{chapter*.3}% 
-\contentsline {chapter}{\numberline {A}Script di programmazione}{75}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Reperimento dei dati}{75}{section.Alph1.1}% 
-\contentsline {subsection}{\numberline {A.1.1}Web Scraping (R)}{75}{subsection.Alph1.1.1}% 
-\contentsline {subsection}{\numberline {A.1.2}Bot Telegram per salvare i dati (Python)}{79}{subsection.Alph1.1.2}% 
-\contentsline {subsection}{\numberline {A.1.3}Arduino (C++)}{80}{subsection.Alph1.1.3}% 
-\contentsline {subsection}{\numberline {A.1.4}Software per salvare i dati (VB.NET)}{84}{subsection.Alph1.1.4}% 
-\contentsline {section}{\numberline {A.2}Addestramento dei modelli}{98}{section.Alph1.2}% 
-\contentsline {subsection}{\numberline {A.2.1}Gradient boosting algorithm (Python)}{98}{subsection.Alph1.2.1}% 
-\contentsline {subsection}{\numberline {A.2.2}Multi-Layer Perceptron (Python) }{99}{subsection.Alph1.2.2}% 
-\contentsline {subsection}{\numberline {A.2.3}Residual Neural Network (Python)}{99}{subsection.Alph1.2.3}% 
-\contentsline {section}{\numberline {A.3}Applicazioni}{102}{section.Alph1.3}% 
-\contentsline {subsection}{\numberline {A.3.1}Modello di Ensemble Lening (Python)}{102}{subsection.Alph1.3.1}% 
-\contentsline {subsection}{\numberline {A.3.2}Software per differenziare (VB.NET)}{103}{subsection.Alph1.3.2}% 
-\contentsline {subsection}{\numberline {A.3.3}Bot Telegram per differenziare (Python)}{103}{subsection.Alph1.3.3}% 
+\contentsline {section}{\numberline {3.2}Ensemble Learning}{66}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Modelli Stacking}{66}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Risultati}{69}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Applicazioni}{74}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Bot di Telegram}{74}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Sistema automatico di raccolta differenziata}{77}{subsection.3.3.2}% 
+\contentsline {chapter}{Conclusioni}{79}{chapter*.3}% 
+\contentsline {chapter}{\numberline {A}Script di programmazione}{82}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.1}Reperimento dei dati}{82}{section.Alph1.1}% 
+\contentsline {subsection}{\numberline {A.1.1}Web Scraping (R)}{82}{subsection.Alph1.1.1}% 
+\contentsline {subsection}{\numberline {A.1.2}Bot Telegram per salvare i dati (Python)}{84}{subsection.Alph1.1.2}% 
+\contentsline {subsection}{\numberline {A.1.3}Arduino (C++)}{84}{subsection.Alph1.1.3}% 
+\contentsline {subsection}{\numberline {A.1.4}Software per salvare i dati (VB.NET)}{87}{subsection.Alph1.1.4}% 
+\contentsline {section}{\numberline {A.2}Addestramento dei modelli}{92}{section.Alph1.2}% 
+\contentsline {subsection}{\numberline {A.2.1}Gradient boosting algorithm (Python)}{92}{subsection.Alph1.2.1}% 
+\contentsline {subsection}{\numberline {A.2.2}Multi-Layer Perceptron (Python) }{92}{subsection.Alph1.2.2}% 
+\contentsline {subsection}{\numberline {A.2.3}Residual Neural Network (Python)}{93}{subsection.Alph1.2.3}% 
+\contentsline {section}{\numberline {A.3}Applicazioni}{94}{section.Alph1.3}% 
+\contentsline {subsection}{\numberline {A.3.1}Modello di Ensemble Lening (Python)}{94}{subsection.Alph1.3.1}% 
+\contentsline {subsection}{\numberline {A.3.2}Bot Telegram per differenziare (Python)}{94}{subsection.Alph1.3.2}% 
+\contentsline {subsection}{\numberline {A.3.3}Software per differenziare (VB.NET)}{95}{subsection.Alph1.3.3}% 
+\contentsline {chapter}{Bibliografia}{100}{appendix*.4}% 

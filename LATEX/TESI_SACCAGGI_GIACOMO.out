@@ -15,7 +15,7 @@
 \BOOKMARK [0][-]{chapter.2}{Modellizzazione e addestramento}{}% 15
 \BOOKMARK [1][-]{section.2.1}{Descrizione tipologie di dati}{chapter.2}% 16
 \BOOKMARK [1][-]{section.2.2}{Dati Strutturati}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.1}{Gradient boosting algorithm \(GBM\)}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{Gradient Boosting Machine \(GBM\)}{section.2.2}% 18
 \BOOKMARK [2][-]{subsection.2.2.2}{Multi-Layer Perceptron \(MLP\)}{section.2.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.3}{Risultati}{section.2.2}% 20
 \BOOKMARK [1][-]{section.2.3}{Dati non strutturati}{chapter.2}% 21
@@ -27,9 +27,9 @@
 \BOOKMARK [1][-]{section.3.2}{Ensemble Learning}{chapter.3}% 27
 \BOOKMARK [2][-]{subsection.3.2.1}{Modelli Stacking}{section.3.2}% 28
 \BOOKMARK [2][-]{subsection.3.2.2}{Risultati}{section.3.2}% 29
-\BOOKMARK [1][-]{section.3.3}{Esempi pratici di applicazioni}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.3}{Applicazioni}{chapter.3}% 30
 \BOOKMARK [2][-]{subsection.3.3.1}{Bot di Telegram}{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.2}{Cestino}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.2}{Sistema automatico di raccolta differenziata}{section.3.3}% 32
 \BOOKMARK [0][-]{chapter*.3}{Conclusioni}{}% 33
 \BOOKMARK [0][-]{appendix.Alph1}{Script di programmazione}{}% 34
 \BOOKMARK [1][-]{section.Alph1.1}{Reperimento dei dati}{appendix.Alph1}% 35
@@ -43,5 +43,6 @@
 \BOOKMARK [2][-]{subsection.Alph1.2.3}{Residual Neural Network \(Python\)}{section.Alph1.2}% 43
 \BOOKMARK [1][-]{section.Alph1.3}{Applicazioni}{appendix.Alph1}% 44
 \BOOKMARK [2][-]{subsection.Alph1.3.1}{Modello di Ensemble Lening \(Python\)}{section.Alph1.3}% 45
-\BOOKMARK [2][-]{subsection.Alph1.3.2}{Software per differenziare \(VB.NET\)}{section.Alph1.3}% 46
-\BOOKMARK [2][-]{subsection.Alph1.3.3}{Bot Telegram per differenziare \(Python\)}{section.Alph1.3}% 47
+\BOOKMARK [2][-]{subsection.Alph1.3.2}{Bot Telegram per differenziare \(Python\)}{section.Alph1.3}% 46
+\BOOKMARK [2][-]{subsection.Alph1.3.3}{Software per differenziare \(VB.NET\)}{section.Alph1.3}% 47
+\BOOKMARK [0][-]{appendix*.4}{Bibliografia}{}% 48

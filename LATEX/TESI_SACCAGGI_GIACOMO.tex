@@ -707,7 +707,7 @@ Lo schema di collegamento del cestino finale è visualizzabile in Figura 1.11, in
 
 In questo capitolo non si andranno ad analizzare i codici nello specifico in quanto molto lunghi e poco utili ai fini della tesi lasciando gli script commentati nell'Appendice A sezione [A.1.4] e [A.3.1], ma si spiegheranno le funzioni che il software deve svolgere.
 
-Il programma si è deciso di chiamarlo \virgolette{Recycling bin} ed è strutturato in 3 pagine.
+Il programma si è deciso di chiamarlo \virgolette{Automatic Recycling bin} ed è strutturato in 3 pagine.
 La prima pagina denominata \virgolette{Form1:Home}, grazie a due pulsanti posizionati nella parte sinistra della schermate, serve per indirizzare l'utente verso la funzione di addestramento e reperimento dei dati o la sezione di riconoscimento e analisi dei dati, che si vedrà in modo approfondito nel Capitolo 3. Si è deciso inoltre di aggiungere, nella parte di destra, delle istruzioni così da rendere più chiaro l'utilizzo del software e lo scopo del progetto.
 
 \begin{figure}[H]
@@ -922,7 +922,7 @@ Di seguito, in Tabella 2.5 e in Figura 2.5, si è svolta un'analisi descrittiva e
 
 
 \section{Dati Strutturati}
-\subsection{Gradient boosting algorithm (GBM)}
+\subsection{Gradient Boosting Machine (GBM)}
 
 
 
@@ -1186,7 +1186,7 @@ a_ix_i, & \text{se } \, x_i \le 0
 
 La ReLu viene utilizzata al posto della sua versione più generale per aggiungere la non linearità alla rete, altrimenti la rete sarebbe sempre in grado di calcolare solo una funzione lineare. 
 
-Infatti, una rete neurale feed-forward, può essere considerata come una composizione di funzioni e se tutte le funzioni risultano lineari allora anche la funzione composta sarà lineare.
+Infatti, una rete neurale feed-forward, può essere considerata come una composizione di funzioni e se tutte queste risultano lineari allora anche la funzione composta sarà lineare.
 $$\b x_0
 \longrightarrow
 \underset{\displaystyle\underset{\displaystyle\b w_1}{\uparrow}}{\boxed{f_1}}
@@ -1220,7 +1220,7 @@ Nel valutare i differenti modelli per tutto il lavoro utilizzeremo le metriche c
 \begin{figure}[H]
 	\center
 	\includegraphics[width=400px]{CONFMATRIX.png}
-	\caption{Matrice di confuione per problema di classificazione bivariato}
+	\caption{Matrice di confusione per problema di classificazione multi-class}
 \end{figure}
 
 
@@ -1508,17 +1508,29 @@ In questa parte si andrà ad analizzare la ragione per cui le reti residue hanno 
 	\caption{Spiegazione ResNet}
 \end{figure}
 
+\clearpage
 
 Se non ci fosse il salto della connessione allora $A_3$ sarebbe:
+
 $$A_3 = relu(W_2 \space A_2 + b_2)$$ 
+
+
+
+$$ $$
 
 dove $W_2$ e $b_2$ sono rispettivamente i pesi e la distorsione associati al livello $L2$. Con il salto della connessione viene aggiunto un altro termine $A_1$ di conseguenza l'equazione di $A_3$ verrà modificata come:
 
 $$A_3 = relu(W_2 \space A_2 + b_2 + A_1)$$
 
+
+$$ $$
+
 La regolarizzazione $L2$ o i metodi di riduzione del peso, forzeranno $W_2$ e $b_2$ ad avvicinarsi allo zero. Nel peggiore dei casi, se questi diventano zero, allora
 
 $$A_3 = relu(A_1)$$
+
+
+$$ $$
 
 Con l'aggiunta di blocchi residui, la complessità del modello non è aumentata, poiché la suddetta aggiunta sta solo copiando l'attivazione precedente nei livelli successivi. Le prestazioni della rete miglioreranno in quanto è possibile che questi livelli aggiuntivi imparino qualcosa di nuovo dai dati riducendo il problema di degradazione.
 
@@ -1660,46 +1672,26 @@ $$ $$
 \section{Confronto modelli}
 
 
-Mi è sembrato interessante valutare come i modelli creati nel capitolo precedente possano essere combinati.
+Durante l'implementazione dei modelli del capitolo precedente si è ritenuto interessante anche valutare come questi possano essere combinati per migliorare le previsione.
+Questo ultimo capitolo si vuole, appunto, focalizzare sull'armonizzazione al fine di aumentare l'accuratezza di previsione dei modelli con lo scopo di raggiungere due obbiettivi:
 
-queto surplus mi ha permesso di produrre un lavoro innovativo confrontano le vecchie metoologie con metodi innovativi che devono ancora dimostrare tutta la loro validità
+\begin{itemize}
+	\item Creare un'algoritmo di classificazione che possa unire gli algoritmi ResNet addestrati su immagini per implementare una applicazione che possa dalla foto del rifiuto individuare la classe corrispondente ad esso.
+	\item Costruire un metodo che possa combinare informazioni derivanti da dati strutturati e da foto per riuscire a sfruttare tutte le informazioni ricavate da questo studio, allo scopo della creazione (anche se solo in fase progettuale) di un cestino che sia in grado di riconoscere e dividere i rifiuti.
+\end{itemize}
 
+La scelta operativa, come spiegato nel Capitolo 2.1, è stata quella di creare un Validation Set che contenga le informazioni strutturate e non strutturate così da ottenere un dataset comune, necessario per la valutazione ed il confronto delle performance.
 
-(da unire con quello sopra)
-L'obbiettivo di questa parte del progetto è quello di combinare i modelli del capitolo precedente attraverso modelli creati con lo scopo di combinare le previsioni per ottenere un accuratezza più elevata. 
-
-
-
-(togliere)
-In particolare, si vuole creare un modello che possa combinare gli algoritmi ResNet addestrati su immagini per creare poi una applicazione che possa dalla foto del rifiuto individuare la classe corrispondente ad esso. inoltre, si vuole costruire un modello che possa combinare dati strutturati e foto per riuscire a sfruttare tutte le informazioni ricavate da questo studio.
-
-
-
-ci è sembrato interessante crere due modelli: (ad elenco)
-il primo ...
-il seccondo ...
-
-
-La scelta operativa è stata quella di creare un dataset che contenga le informazioni struttarte  non....
-
-(da unire sopra)
-Come spiegato nel Capitolo 2.1 per poter pensare di riuscire a combinare modelli creati su basi di dati strutturati insieme a modelli che analizzano immagini era importante creare un dataset che potesse contenere entrambe le informazioni. 
-
-
-
-
-
-L'obbiettivo è quello di valutare gli algoritmi in condizioni ambientali differenti cambiando la posizione del cestino così da tentare di valutare e correggere quanto le informazioni prese ed analizzate dal GBM e dalla MLP fossero dipendenti dall'ambiente esterno.
-
-
-Un ulteriore scelta è stata quella
-; inoltre, si è deciso per il 50\% degli oggetti di registrarli nel cestino ma di inserire le foto fatte con il bot cosi da valutare come le ResNet si comportassero in ambienti differenti. 
-
-
-fatte queste premesse ho iniziato a valutare le performance dei modelli su questi nuovi dati. Una volta valutate le prestazioni sarà obbiettivo delle sezioni seguenti trovare un modo per poter mischiare questi risultati per ottenere un accuratezza maggire.
-
+L'obbiettivo è quello di valutare la reale validità degli algoritmi proposti, in tal senso per non agevolare la previsione a nessun metodo addestrato si è deciso di valutarli in condizioni ambientali differenti cambiando la posizione del cestino così da tentare di valutare e correggere quanto le informazioni prese ed analizzate dal GBM e dalla MLP fossero dipendenti dall'ambiente esterno.
 Sul dataset strutturato sono state eseguite le stesse operazioni di preprocessing attuate nel Capitolo 2.3 sul dataset originale.
 
+Un ulteriore scelta è stata quella di inserire in sequenza casuale foto relative all'oggetto catturate dal cestino o foto fatte in ambienti esterni così da valutare come le ResNet si comportassero in ambienti differenti. 
+
+
+
+Una volta valutate le prestazioni dei singoli metodi sarà l'obbiettivo delle sezioni seguenti fondere questi modelli per ottenere un accuratezza maggiore.
+
+$$ $$
 
 \begin{table}[h!]
 	\begin{center}
@@ -1724,7 +1716,7 @@ Sul dataset strutturato sono state eseguite le stesse operazioni di preprocessin
 	\end{center}
 \end{table}
 
-
+\clearpage
 
 \begin{table}[h!]
 	\begin{center}
@@ -1750,25 +1742,27 @@ Sul dataset strutturato sono state eseguite le stesse operazioni di preprocessin
 \end{table}
 
 
-Come si può notare dai risultati sul nuovo Validation Set c'è un abbassamento dell'accuratezza globale dovuta al cambio di ambiente. Per quanto riguarda i dati strutturati si può osservare in Tabella 3.1 come la MLP non riesca a prevedere in modo accurato, infatti abbiamo un abbassamento dell'accuratezza di 32 punti percentuale, anche se non in modo così ampio, anche il Gradient Boosting Algorithm non reagisce in modo flessibile al cambiamento dell'ambiente infatti l'accuratezza cala fino a 0.71.
+Dai risultati sul nuovo Validation Set si può notare come ci sia un abbassamento dell'accuratezza globale dovuta al cambio di ambiente. Focalizzando l'attenzione sui modello creati sui dati strutturati si può osservare, in Tabella 3.1, come la MLP non riesca a prevedere in modo accurato. Questo problema di overfitting che porta ad un abbassamento dell'accuratezza di 32 punti percentuale ha portato all'eliminazione di questa previsione per evitare di inficiare sugli altri modelli inserendo possibili caratteri distorsivi. Anche se non in modo così ampio, anche il Gradient Boosting Algorithm non reagisce in modo flessibile al cambiamento dell'ambiente infatti l'accuratezza cala fino a 0.71.
 
-Le ResNet addestrate sui dati non strutturati reagiscono in modo differente. Come era preventivabile il Modello addestrato sulle foto raccolte dal WEB ha un abbassamento dell'accuratezza di previsione importante dovuto alla poca specificità delle foto; mentre la ResNet addestrata sulle foto fatte ad hoc per il progetto reagisce in modo molto accurato anche oltre le aspettative. Dalla performance di questa ultima rete si può intuire quanto queste tipologie di modelli siano potenti anche con una quantità più ridotte di dati.
+Le ResNet addestrate sui dati non strutturati reagiscono in modo differente. Come era preventivabile il Modello addestrato sulle foto raccolte dal WEB ha un abbassamento dell'accuratezza di previsione importante dovuto alla poca specificità delle foto; mentre la ResNet addestrata sulle foto fatte ad hoc per il progetto reagisce in modo molto accurato anche oltre le aspettative. Dalla performance di questa ultima rete si può intuire quanto queste tipologie di architetture siano potenti anche con una quantità più ridotte di dati.
 
 \section{Ensemble Learning}
 
 
 \subsection{Modelli Stacking}
 
-Ho cercato di migliorare la previsione applicando dei metodi di ensemble.
-I metodi di ensemble vengono comunemente utilizzati per migliorare la precisione predittiva combinando le previsioni di più modelli di apprendimento automatico. Quando questi metodi furono ideati, l'idea era quella di combinare i cosiddetti predittori ``deboli" (Breiman Leo, ``Bagging Predictors"; 1996). Tuttavia, un approccio più moderno è quello di creare un insieme di una collezione ben scelta di modelli forti ma diversi (Van der Laan, Polley e Hubbard; 2007).
+I metodi di Ensemble Learning vengono comunemente utilizzati per migliorare la precisione predittiva combinando le previsioni di più modelli di apprendimento automatico. Quando questi metodi furono ideati a metà degli anni '90 del secolo scorso, l'idea era quella di combinare i cosiddetti predittori ``deboli" (Breiman Leo; 1996)~\cite{chiave16}. Tuttavia, un approccio più moderno è quello di creare un insieme di una collezione ben scelta di modelli forti ma diversi (Van der Laan, Polley e Hubbard; 2007)~\cite{chiave17}.
 
 
-Con tutte le differenze del caso, la costruzione di potenti modelli di ensemble ha molti parallelismi con la creazione di team di persone esperte in diversi settori (nel mondo degli affari, della scienza, della politica, dello sport, ecc.). Nel cooperare per un progetto ogni membro del team fornisce un contributo significativo e le debolezze e le distorsioni individuali vengono compensate dai punti di forza degli altri membri, così è per i modelli di Ensemble che sfruttano Stronger Learner.
+Con tutte le differenze del caso, la costruzione di potenti modelli di Ensemble Learning ha molti parallelismi con la creazione di team di persone esperte in diversi settori (nel mondo degli affari, della scienza, della politica, dello sport, ecc.). Nel cooperare per un progetto ogni membro del team fornisce un contributo significativo e le debolezze e le distorsioni individuali vengono compensate dai punti di forza degli altri membri, così è per i modelli di Ensemble Learning che sfruttano Stronger Learner.
 
-Il tipo più semplice di ensemble è la media non ponderata delle previsioni dei modelli che formano una serie di strumenti di indagine.  Nella costruzione di un modello di ensembl con una media non ponderata, ogni modello assume lo stesso peso.
-Più in generale, si può pensare di utilizzare le medie ponderate così da poter conferire più peso a quei modelli  migliori. Un approccio più performante potrebbe essere quello di stimare i pesi usando un altro livello di stima attraverso un algoritmo di classificazione. Questo approccio è chiamato stacking dei modelli.
+La tipologia più semplice per fondere molteplici metodi consiste nella media non ponderata delle previsioni dei modelli che formano una serie di strumenti di indagine. Nella costruzione di un modello di Ensemble Learning con una media non ponderata, ogni modello assume lo stesso peso.
 
-Lo stacking dei modelli è un metodo di ensemble efficiente in cui le previsioni, generate utilizzando  algoritmi di machine learning, vengono utilizzate come input in un modello di apprendimento di secondo livello. Questo algoritmo di secondo livello viene addestrato per combinare in modo ottimale le previsioni formando una nuova serie di previsioni. Ad esempio, quando la regressione lineare viene utilizzata come modellazione di secondo livello, il modelllo stima questi pesi minimizzando gli errori quadrati. 
+Più in generale, si può pensare di utilizzare le medie ponderate così da poter conferire più peso a quei modelli migliori. Quando le informazioni sul fenomeno oggetto di analisi sono molto abbondanti si può scegliere di assegnare direttamente e soggettivamente i pesi ai modelli. Un approccio più performante potrebbe essere quello di stimare i pesi usando un altro livello di stima attraverso un algoritmo di classificazione. Quest'ultimo approccio proposto è chiamato Stacking dei modelli.
+
+Lo Stacking dei modelli~\cite{chiave18} è un metodo di Ensemble Learning efficiente in cui le previsioni, generate utilizzando algoritmi di Machine Learning, vengono utilizzate come input in un modello di apprendimento di secondo livello. Questo algoritmo di secondo livello viene addestrato per combinare in modo ottimale le previsioni formando una nuova serie di previsioni. 
+
+Si parla di regressione Stacking quando si utilizza la regressione lineare come algoritmo di modellazione di secondo livello. In questo contesto i pesi vengono trovati minimizzando gli errori quadrati tra le previsioni di primo livello e i valori obbiettivo. 
 
 
 
@@ -1776,74 +1770,102 @@ Lo stacking dei modelli è un metodo di ensemble efficiente in cui le previsioni,
 Tuttavia, la modellazione del secondo livello non è limitata ai soli modelli lineari; la relazione tra i predittori può essere più complessa, aprendo le porte all'impiego di altri algoritmi di apprendimento automatico.
 
 
-L'overfitting è un problema particolarmente importante nello stacking dei modelli, perché vengono combinati tanti predittori che prevedono tutti lo stesso target questo può essere parzialmente causato dalla collinearità tra i predittori.
-Una possibile soluzione a questo problema è quella di generare delle serie diversificate di modelli utilizzando vari metodi (come alberi decisionali, reti neurali e/o altri metodi) oppure utilizzare diversi tipi di dati così da cercare di inserire nel modello finale informazioni nuove non presenti nei modelli precedenti.
 
-L'applicazione di modelli sovrapposti ai problemi dei Big Data può produrre una maggiore accuratezza e robustezza delle previsioni rispetto ai singoli modelli. L'approccio dello stacking dei modelli sposta l'obbiettivo dalla modellizzazione e dalla ricerca del modello migliore a quello di trovare una raccolta di modelli complementariamente validi.
-Naturalmente, questo metodo comporta costi computazionali aggiuntivi sia perché è necessario addestrare un gran numero di modelli sia perché spesso risulta necessario utilizzare la convalida incrociata per evitare un eccesso di adattamento. 
-
-L'algoritmo per creare un modello a più livelli con il metodo stacking è costituito da tre fasi:
+L'algoritmo per creare un modello a più livelli con il metodo Stacking si può generalizzare a qualsiasi metodo di apprendimento automatico dividendo il suo processo di costruzione in tre fasi:
 
 
 \begin{itemize}
-	\item Impostare l'ensemble:
+	\item Impostare l'Ensemble Learning:
 	\begin{itemize}
 		\item Specificare un elenco di $L$ Base Learner (con un insieme specifico di parametri del modello).
 		\item Specificare un meta-algoritmo di apprendimento.
 	\end{itemize}
-	\item Creare l'ensemble:
+	\item Creare l'Ensemble Learning:
 	\begin{itemize}
 	\item Addestrare ciascuno degli $L$ Base Learner sul training set $Y=F(X)$ e trovare delle previsioni $Z$ di primo livelllo.
-	\item Eseguire il training del meta-algoritmo di apprendimento sui dati di livello 1 $Y=F(Z) \mbox{ con } Z=F(X)$. Il ``modello di ensemble", quindi, sarà costituito dagli $L$ modelli di apprendimento di base e il modello di stacking che combina i modelli precedenti.
+	\item Eseguire il training del meta-algoritmo di apprendimento sui dati di livello 1 $Y=F(Z) \mbox{ con } Z=F(X)$. Il ``modello di Ensemble Learning", quindi, sarà costituito dagli $L$ modelli di apprendimento di base e il modello di Stacking che combina i modelli precedenti.
 	\end{itemize}
 	\item Prevedere nuovi dati:
 	\begin{itemize}
 		\item Per generare previsioni dell'insieme, si generano innanzitutto le previsioni dai Base Learner.
-		\item Si inseriscono tali previsioni nello modello di Ensemble per generare la previsione dell'insieme.
+		\item Si inseriscono tali previsioni nello modello di Ensemble Learning per generare la previsione dell'insieme.
 	\end{itemize}
 \end{itemize}
 
+In alcuni ambiti con molte informazione circa la variabile di studio spesso viene utilizzato un modello di Stacking a più di due livelli, in questi casi occorre estendere la metodologia proposta reiterandola per il numero dei livelli.
 
-\subsection{Risultati}
-
-Il meta-algoritmo scelto in questa parte del progetto è il K-nearest neighbors (KNN), questo può essere utilizzato sia per problemi predittivi di classificazione che di regressione. Tuttavia, è comunemente utilizzato nei problemi di classificazione per il suo approccio semplice che gli permette di non fare assunzioni circa la struttura delle variabili.
-
-
-
-L'intuizione alla base dell'algoritmo KNN è quella di calcolare la distanza di un nuovo punto da tutti gli altri punti nel training e selezionare quindi i punti K più vicini al mio obbiettivo. Infine l'algoritmo assegna il punto alla classe a cui appartiene la maggior parte dei punti compresi nell'intervallo dei $K$ più vicini.
-
-Quindi i parametri di tuning del modello risultano essere la misura di distanza adottata e il numero dei $K$ punti da selezionare per classificare.
-\begin{itemize}
-	\item Le misure di distanza possono essere di qualsiasi tipo anche se solitamente si utilizzano quella Euclidea, di Manhattan o di Minkowski.
-	\item Il parametro $K$ può essere qualsiasi numero intero. Questo parametro può essere scelto a priori in modo arbitrario oppure attraverso tecniche di validazione come Cross Validation.
-\end{itemize}
- 
-Ho verificato la validità di questo modello in un semplice esempio. 
-
-Si supponga di disporre di un set di dati con due variabili, che quando viene tracciato, è simile a quello in Figura 3.1. Lo scopo è quello di classificare un nuovo punto rappresentato da ``$X$" in classe ``$Verde$" o ``$Rosso$". Supponiamo di fissare il valore di K uguale a 3. L'algoritmo KNN inizia calcolando la distanza del punto X da tutti i punti e, come mostrato in Figura 3.1 nell'immagine di sinistra, trova i $K=3$ punti più vicini con la distanza minima rispetto al punto $X$.
+Per comprendere come questi modelli possano essere sfruttati si propone come esempio il modello vincitore della KDD Cup 2015 creato da Jeong-Yoon Lee. In questa competizione i dati sono stati forniti da due piattaforme online di apprendimento XuetangX e Chinese MOOC. L'obbiettivo dell'analisi consisteva nel cercare di prevedere l'abbandono del corso durante i primi 10 giorni dall'iscrizione. L'approccio vincente ha utilizzato un modello di Ensemble Learning a tre stadi.
 
 
 
 \begin{figure}[H]
 	\center
-	\includegraphics[width=300px]{KNN.jpg}
+	\includegraphics[width=\textwidth]{stackedapproach.png}
+	\caption{Jeong-Yoon Lee - KDD Cup 2015}
+\end{figure}
+
+La Figura 3.1 mostra che un set diversificato di 64 modelli singoli sono stati utilizzati per compilare la libreria di modelli. Questi modelli vengono sottoposti a training usando vari algoritmi di apprendimento automatico. Le caselle verdi rappresentano i modelli di Bosting (GBM) che probabilmente variano nell'uso di diverse impostazioni di iperparametri e/o set di funzionalità, le caselle rosa rappresentano delle reti neurali (NN) e le caselle arancioni rappresentano i modelli Factorization Machines (FM)~\cite{chiave19}. 
+
+Nella fase 1, le stime di questi 64 modelli vengono usate come input per eseguire il training di 15 nuovi modelli, sempre usando vari algoritmi di apprendimento automatico. Nella fase 2, le stime di questi 15 modelli vengono utilizzate come input per eseguire il training di due modelli utilizzando il Gradient Boosting e la regressione lineare. Nella fase 3 le previsioni dei due modelli dalla fase 2 vengono utilizzate come input in un modello di regressione Stacking per formare la previsione finale.
+
+L'overfitting è un problema particolarmente importante nello Stacking dei modelli, perché vengono combinati tanti predittori che stimano tutti lo stesso target. 
+Una possibile soluzione a questo problema è quella di generare delle serie diversificate di modelli utilizzando vari metodi con una logica alla base differente (come alberi decisionali, reti neurali e/o altri metodi). Un'altra possibile soluzione consiste nell'utilizzare diversi tipi di dati così da cercare di inserire nel modello finale informazioni nuove non presenti nei modelli precedenti.
+
+L'applicazione di modelli sovrapposti ai problemi dei Big Data può produrre una maggiore accuratezza e robustezza delle previsioni rispetto ai singoli modelli. L'approccio dello Stacking dei modelli sposta l'obbiettivo dalla modellizzazione e dalla ricerca del modello migliore a quello di trovare una raccolta di modelli complementariamente validi.
+Naturalmente, questo metodo comporta costi computazionali aggiuntivi sia perché è necessario addestrare un numero elevato di modelli sia perché spesso risulta necessario utilizzare la convalida incrociata per evitare un eccesso di adattamento. 
+
+
+\subsection{Risultati}
+
+Il meta-algoritmo scelto in questa parte del progetto è il K-nearest neighbors (KNN)~\cite{chiave20}, questo può essere utilizzato sia per problemi predittivi di classificazione (binaria e multi-class) che di regressione. Tuttavia, è comunemente utilizzato nei problemi di classificazione per il suo approccio semplice che gli permette di non fare assunzioni circa la struttura delle variabili.
+
+
+
+L'intuizione alla base dell'algoritmo KNN è quella di calcolare la distanza di un nuovo punto da tutti gli altri punti nel training e selezionare quindi i punti K più vicini al punto obbiettivo. Infine l'algoritmo assegna alla nuova rilevazione la classe a cui appartiene la maggior parte dei punti compresi nell'intervallo dei $K$ più vicini.
+
+Quindi i parametri di tuning del modello risultano essere la misura di distanza adottata e il numero dei $K$ punti da selezionare per classificare.
+
+
+\begin{itemize}
+	\item Le misure di distanza possono essere di qualsiasi tipo anche se solitamente si utilizzano quella Euclidea, di Manhattan o di Minkowski con $p>2$.
+	\item Il parametro $K$ deve essere un numero intero positivo. Questo valore può essere scelto a priori in modo arbitrario oppure attraverso tecniche di validazione come Cross Validation.
+\end{itemize}
+ 
+$$ $$
+ 
+Per verificare la validità di questo modello si esegue un semplice esempio nel quale si suppone di disporre di un set di dati con due variabili che, se tracciato, è simile a quello in Figura 3.2. Lo scopo è quello di classificare un nuovo punto rappresentato da ``$X$" in classe ``$Verde$" o ``$Rosso$". Si ipotizza di fissare il valore di K uguale a 3.
+L'algoritmo KNN inizia calcolando la distanza del punto X da tutti i punti e, come mostrato in Figura 3.2 nell'immagine di sinistra, trova i $K=3$ punti più vicini con distanza minima rispetto al punto $X$.
+
+
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{KNN.jpg}
 	\caption{Esempio K-nearest neighbors (KNN)}
 \end{figure}
 
-Il passaggio finale dell'algoritmo KNN consiste nell'assegnare un nuovo punto alla classe a cui appartiene la maggior parte dei $K=3$ punti più vicini. Dalla figura precedente possiamo vedere che due dei tre punti più vicini appartengono alla classe ``$Verde$" mentre uno appartiene alla classe ``$Rosso$". Pertanto il nuovo punto verrà classificato come ``$Verde$". Questo procedimento viene reiterato per ogni punto, come mostrato in Figura 3.1 nell'immagine di destra, così da riuscire a classificare operando una divisione del piano.
-
-Per costruire il modello si è diviso il set in train e test data. Successivamente si è utilizzata una k-fold cross validation con $k=5$ per stimare il parametro $K$ dell'algoritmo sul training set che poi è stato utilizzato per stimare i valori di test. Come misura di distanza si è utilizzata la ``distanza di Minkowski" con $p=2$, la quale per una serie di punti monodimensionali $p_x= \{p_{x,1}, ... ,p_{x,n}\} $ rispetto ad un punto $q_x$ risulta essere:
-
-
-
-
-$$ \bigg( \sum_{i=1}^{n} |p_{x,i} - q_x |^p\bigg)^{\frac{1}{p}} $$
-
-
-
-
+Il passaggio finale dell'algoritmo KNN consiste nell'assegnare al nuovo punto $X$ la classe a cui appartiene la maggior parte dei $K=3$ punti più vicini. Dalla figura precedente possiamo vedere che due dei tre punti più vicini appartengono alla classe ``$Verde$" mentre uno appartiene alla classe ``$Rosso$". Pertanto $X$ verrà classificato come ``$Verde$". 
+Il procedimento appena enunciato viene reiterato per ogni valore dello spazio dei punti, come mostrato in Figura 3.2 nell'immagine di destra, così da riuscire a classificare operando una divisione del piano.
 
 \clearpage
+
+Per costruire il modello si è diviso il set in train e test data. Successivamente si è utilizzata una k-fold cross validation con $k=5$ per stimare il parametro $K$ dell'algoritmo sul training set che poi è stato utilizzato per stimare i valori di test. Come misura di distanza si è utilizzatala ``distanza di Euclidea" la quale deriva dalla ``distanza di Minkowski" con $p=2$. Per una serie di punti n-dimensionali $P = \{\underline p_{1}, ... ,\underline p_{m}\} $ rispetto ad un punto $\underline q$, questa distanza risulta essere:
+
+
+
+$$\mbox{Distanza di Minkowski}_j = \bigg( \sum_{i=1}^{n} |p_{i,j} - q_i |^p\bigg)^{\frac{1}{p}} \space \space \mbox{ con } j=1,...,m$$
+
+
+$$ $$
+
+$$\mbox{Distanza Euclidea}_j = \sqrt{ \sum_{i=1}^{n} (p_{i,j} - q_x )^2} \space \space \mbox{ con } j=1,...,m $$
+
+
+
+$$ $$ 
+Il \textbf{primo modello} creato utilizza come modelli di primo livello le ResNet create nel capitolo precedente le quali vengono combinate dal meta algoritmo appena spiegato.
+$$ $$
+
 \textbf{Modello: Ensemble Learning tra ResNet}
 
 Script per l'implementazione nell'Appendice A sezione [A.3.1]
@@ -1866,9 +1888,7 @@ Script per l'implementazione nell'Appendice A sezione [A.3.1]
 	\end{center}
 \end{table}
 
-
-$$ $$ 
-$$ $$
+\clearpage
 
 \begin{table}[h!]
 	\begin{center}
@@ -1891,9 +1911,16 @@ $$ $$
 	\end{center}
 \end{table}
 
-\clearpage
+Come si può notare l'accuratezza migliora notevolmente con l'utilizzo del modello di Stacking. Le due reti neurali convoluzionali riescono ad essere armonizzate dal K-nearest neighbors riuscendo a raggiungere un accuratezza superiore al 90\%. 
 
-\textbf{Modello: Ensemble Learning su dati strutturati e dati non strutturati}
+
+
+$$ $$ 
+Il \textbf{secondo modello} utilizza come informazione aggiuntiva rispetto a quello appena descritto le previsioni del modello GBM costruito sui dati strutturati.
+$$ $$
+
+
+\textbf{Modello: Ensemble Learning tra ResNet e GBM}
 
 
 Script per l'implementazione nell'Appendice A sezione [A.3.1]
@@ -1916,8 +1943,7 @@ Script per l'implementazione nell'Appendice A sezione [A.3.1]
 	\end{center}
 \end{table}
 
-$$ $$ 
-$$ $$
+\clearpage
 
 \begin{table}[h!]
 	\begin{center}
@@ -1941,11 +1967,17 @@ $$ $$
 \end{table}
 
 
+$$ $$
+L'inserimento nel modello di Ensemble Learning delle informazioni strutturate rende le previsioni più precise consentendo di raggiungere un accuratezza del 95\%. C'è un miglioramento globale anche per quanto riguarda la ``Precision" e il ``Recall" come si può notare dalle medie delle misure ``macro avg" e ``weighted avg".
 
+$$ $$
+I modelli addestrati in questo capitolo attraverso metodi di Stacking hanno il vantaggio avere delle stime più robuste e più accurate rispetto a quelle del capitolo precedente. Il K-nearest neighbors riesce, quindi, ad essere un ottima scelta per la costruzione di modelli di secondo livello. 
+
+La natura differente dei modelli e la flessibilità del meta-algoritmo scelto permette al modello di essere ragionevolmente più generalizzabile fuori dal test set. I problemi legati all'overfit, per quanto possibile in un problema di previsione, non aumentano rispetto ai singoli modelli in quanto le due architetture utilizzano immagini di natura differente inoltre, per evitare problemi di adattamento, il GBM utilizza informazioni non ricavabili in alcun modo dai modelli precedenti. 
 
 \clearpage
 
-\section{Esempi pratici di applicazioni}
+\section{Applicazioni}
 
 
 
@@ -1953,45 +1985,134 @@ $$ $$
 
 
 
-La prima applicazione che si è pensato di implementare constiste in un Chatot per la famosa applicazione di messaggistica, Telegram. L'idea dietro questa applicazione era quella di costruire una chat nella quale si potevano inviare delle foto di oggetti da buttare in pattumiera e nella chat di Telegram veniva retituito indietro la classe corrispondente all'oggetto insieme alla sua probabilità.
+La prima applicazione che si è presa in esame è l'implementare di un Chatbot. Il software che si è utilizzato come piattaforma è l'applicazione di messaggistica, Telegram. La realizzazione consiste in un programma che è in grado di riceve in input delle foto e di restituire come output la categoria di rifiuto corrispondente dell'oggetto presente nell'immagine. Per implementare questa idea è stato necessario disporre un server che fosse in grado di ricevere la foto e, utilizzando il primo algoritmo di Ensemble Learning creato nella sezione precedente, fosse in grado di analizzarla e restituire nella chat la categoria di rifiuto predetta.
 
-Per implementare questa idea è stato necessario disporre un server che ricevesse la foto e, utilizzando gli algoritmi creati in precedenza, fosse in grado di analizzarla e restituire nella chat la categoria di rifiuto predetta.
-
-Per progammare questo bot, come per quello relativo al Capitolo 1.4, si è utilizzata la libreria di Python ``Telepot" grazie alla quale si possono inviare e riceve (GET e POST request nel linguaggio PHP) richieste al server direttamente dalla chat. Nello specifico abbiamo utilizzato questo pacchetto per riconoscere il contenuto del messaggio, se esso fosse un immagine allora il server doveva salvarla per poi reimportarla trasformandola in dimensione 32 x 32 pixel, ed una vota epurata dalle diffeerenti medie di training veniva analizzata erestituite le probabilità una volta restituite le probabilità queste sono inserite nel modello di ensemble, nello specifico quello che combina le due resnET che rstituiva la classe prevista. una volta prevista questa classe viene reinviata all'utente. 
-
-
-Quindi lo schema di implementazione risulta:
-
-
-
-Schema con codici
-
-
-
-
-
-
-\subsection{Cestino}
-
-spiegare idea
-
-funzionamento 
-
-problema con il motore
-
-tempi
-
-
-
-
-Svolta solo in fase progettuale per un problema causato dal funzionamento di un motore
-
-
-Nella terza pagina indicizzata \virgolette{Form3} bisogna inizializzarla come visto per la precedente e poi una volta inserito l'oggetto cliccare sul pulsante riconosci per attivare il cestino al riconoscimento. L'output della previsione verrà inviato al cestino e scritto nella TextBox posta sopra il pulsante.
 \begin{figure}[H]
 	\center
-	\includegraphics[width=300px]{form3.png}
-	\caption{Form3}
+	\includegraphics[width=150px]{bot_riconoscimento.jpg}
+	\caption{Bot di Telegram}
+\end{figure}
+
+Nella programmazione di questo Bot, come per quello relativo al Capitolo 1.4, si è utilizzata la libreria di Python ``Telepot" grazie alla quale si possono inviare e riceve (GET e POST request nel linguaggio PHP) richieste al server direttamente dalla chat. 
+
+Il primo step del lavoro è stato quello di salvare i modelli preaddestrati in formato ``pickle" e ``hdf5" così da poterli importare rapidamente per l'analisi. Le ResNet sono state entrambe addestrate sottraendo la media dei rispettivi training set così da avvantaggiare la previsione sui caratteri distintivi. La media di più immagini contiene tutti i caratteri in comune presenti nelle foto, ovvero ciò che comunemente viene definito ``sfondo". Le medie trovate dopo essere state salvate in fase di addestramento vengono utilizzate per ogni previsione sottraendo alla matrice dei pixel della nuova immagine tali medie.
+
+Le nuove immagini da analizzare vengono importate operando un ``resize" per trasformarle in una matrice 32x32 pixel. Al fine di programmare la classificazione è necessario, dunque, strutturare attraverso una funzione $previsione()$ i due livelli di Stacking:
+
+
+\begin{itemize}
+	\item Primo livello: 
+	
+	Utilizzo dei due modelli ResNet per classificare la nuova immagine. Tramite questi vengono stabiliti dei pesi che devono essere trasformati nella medesima forma di come sono state inserite nel modello di Ensemble Learning.
+	
+	\item Secondo livello: 
+	
+	Utilizzo dell'algoritmo KNN per la costruzione della stima finale tramite i pesi trovati nel primo livello.
+\end{itemize}
+
+
+
+\vspace{0.6cm}
+
+\caption{Script di programmazione 3.1: Funzione di previsione}
+\tiny
+\begin{lstlisting}[language=Python]
+
+def previsione(img_path):
+	img_data = []
+	image = cv2.imread(img_path)
+	
+	# standard imm
+	resized_img = cv2.resize(image, (32, 32), interpolation=cv2.INTER_AREA)
+	img_data.append(resized_img)
+	img_data=np.array(img_data)
+	img_data = img_data.astype('float32') / 255
+	img_data_cestino = img_data - cestino_mean
+	img_data_WS = img_data - ws_mean
+	
+	# Prediction
+	## resnet1
+	# categories=['Carta', 'Indifferenziato', 'Latta', 'Legno', 'Metalli', 'Plastica', 'Polistirolo', 'Tetra_Pak', 'Umido', 'Vetro']
+	pred2 = resnetWS.predict(img_data_WS)
+	for t in range(len(pred2[0])):
+	pred2[0][t]=round(pred2[0][t],3)*1000
+	pred = list(pred2[0])
+	## resnet2
+	# categories=['carta','indifferenziata',  'plastica', 'vetro']
+	pred1 = resnetCestino.predict(img_data_cestino)
+	for t in range(len(pred1[0])):
+	pred1[0][t]=round(pred1[0][t],3)*1000
+	pred.append(list(pred1[0])[0])
+	pred.append(list(pred1[0])[1])
+	pred.append(list(pred1[0])[2])
+	pred.append(list(pred1[0])[3])
+	X = pd.DataFrame(columns=colonne)
+	X.loc[0]=pred
+	predictions = knn_gscv.predict(X)
+	return predictions
+
+\end{lstlisting}
+\normalsize
+
+La classe corrispondente al rifiuto viene poi restituita al mittente della foto, identificato da $chat\_id$, tramite la funzione $.sendMessage()$.
+
+
+\vspace{0.6cm}
+
+ \caption{Script di programmazione 3.2: Funzione di rispondi}
+\tiny
+\begin{lstlisting}[language=Python]
+
+def rispondi(msg):
+	content_type, chat_type, chat_id = telepot.glance(msg)
+	if content_type == 'photo':
+		bot.download_file(msg['photo'][1]['file_id'], 'image.png')
+		risultato = previsione('image.png')
+		bot.sendMessage(chat_id, str(risultato[0]))
+\end{lstlisting}
+\normalsize
+
+
+
+
+\clearpage
+\subsection{Sistema automatico di raccolta differenziata}
+
+La seconda applicazione che si è presa in esame consiste in un cestino in grado di fare la raccolta differenziata in automatico. Ai fini della lettura e della comprensione del progetto descritto è utile considerare che in questa sezione si andrà a sviluppare la parte statistica di previsione e la parte softwaristica; mentre la parte di robotica verrà implementata solo in fase progettuale.
+
+Nel Capitolo 1.5 si è costruito un cestino in grado di registrare i dati sui rifiuti. Utilizzando la struttura del cestino, già spiegata in precedenza, si è implementata una terza pagina del software, denominato \virgolette{Automatic Recycling bin}, che automatizza la fase di riconoscimento dei rifiuti e divisione nei differenti scomparti.
+
+La terza pagina del programma, indicizzata come \virgolette{Form3: Riconoscimento}, occorre che sia inizializzata collegando la fotocamera e la porta seriale al software. Cliccando sul pulsante \virgolette{Button1: Riconosci}, dopo aver inserito l'oggetto nell'apposito scompartimento, il cestino sarà in grado, attraverso le funzioni programmate appositamente, di prevedere la categoria che corrisponde al rifiuto. L'output della previsione verrà inviato al programma e inserito nella TextBox posta sopra il pulsante.
+
+Il programma è stato creato in VB.net, le previsioni vengono stimate in Python e il cestino è stato programmato in C++ quindi era importante riuscire a creare un processo con il quale questi tre linguaggi potessero comunicare tra loro. 
+
+Tra le possibili opzioni si è deciso di installare all'interno dell'applicazione una versione ``Portable" di Python con la quale si esegue lo script di previsione all'interno del codice di VB.net, richiamando l'interprete attraverso l'utilizzo del terminale di Windows.
+
+Gli script di programmazione del software sono presenti nell'Appendice A.3.3. Di seguito, si elencano gli step di implementazione della funzione inserita all'interno del pulsante \virgolette{Button1: Riconosci}:
+
+\begin{itemize}
+	\item [1.] Registrazione dei dati strutturati;
+	\item [2.] Fotografia dell'oggetto inserito all'interno del cestino;
+	\item [3.] Script ``analizza.py". Attraverso un processo in background viene lanciato lo script dal terminale inserendo come argomenti i parametri registrati dal software:
+	\begin{itemize}
+		\item [a.] Calcolo dei modelli di primo livello;
+		\item [b.] Utilizzo del secondo modello di Ensemble Learning per il calcolo delle previsioni finali;
+		\item [c.] Previsione finale salvata in un documento di testo all'interno della directory dell'applicazione.
+	\end{itemize}
+	\item [4.] Notifica all'utente del processo in background tramite una Progress Bar;
+	\item [5.] Lettura del file creato con la previsione al punto 3.c.
+	\item [6.] Eliminazione automatica del file
+	\item [7.] Invio all'utente del risultato della previsione tramite una TextBox posizionata al centro della finestra;
+	\item [8.] Scrittura sulla porta seriale di un codice identificativo, differente in base alla previsione, che permette di attivare una funzione all'interno dell'Arduino che istruisce il cestino su quanto deve ruotare e in quale scompartimento deve posizionare il rifiuto.
+\end{itemize}
+
+
+
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=300px]{form3nuova.png}
+	\caption{Form3: Riconoscimento}
 \end{figure}
 
 
@@ -2006,23 +2127,51 @@ Nella terza pagina indicizzata \virgolette{Form3} bisogna inizializzarla come vi
 \addcontentsline{toc}{chapter}{Conclusioni} \markboth{Conclusioni}{} 
 
 
+La finalità del presente studio è stata l'utilizzo della classificazione statistica come chiave di lettura per analizzare il problema della raccolta differenziata con lo scopo di valutare quali applicazioni possano essere implementate con l’utilizzo dei modelli previsionali. A tal fine, è stata condotta un'indagine quantitativa sfruttando diversi metodi di raccolta (Figura 1). Le differenti modalità di reperimento dei dati hanno portato ad un risultato più accurato e completo nella fase di stima dei modelli. Successivamente sfruttando diversi algoritmi di Machine Learning si è stati in grado di progettare due applicazioni utili per la raccolta differenziata.
 
 
-- pregi del lavoro buoni risultati dei modelli utilizzo di modelli nuovi
 
-- punti critici (umido) (robotica- ambiente non completamente isolato e non completamente stabile, problema con il motore)
+\begin{figure}[H]
+	\center
+	\includegraphics[width=280px]{progetto.png}
+	$$ $$
+	Figura 1: Struttura del lavoro
+\end{figure}
 
-- possibili miglioramenti (qui soffermarsi un po')
 
--- aumentare test set ensemble
+I modelli addestrati in questo studio sfruttano sia dati strutturati che informazioni non strutturate con l'obbiettivo di creare molteplici ``Stroger Learner" e combinarli attraverso metodi di Ensemble Learning per ottenere stime robuste ed accurate.
 
--- con resnet 34 o + o inception 3 o 4 miglioramento dei modelli
+I modelli creati, come è possibile osservare in Figura 2, hanno un accuratezza elevata. In particolare si può notare come i modelli di Stacking creati hanno un accuratezza superiore al 90\% ed una precisione nelle singole categorie di rifiuto altrettanto elevata.
 
--- Reinforced learning (apprendere dagli errori)
 
--- Amazon Web Services
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{accuratezza.png}
+	$$ $$
+	Figura 2: Risultati dei modelli
+\end{figure}
 
--- Lettura bar code
+Tuttavia, questo progetto, per quanto approfondito, trascura inevitabilmente alcune variabili e informazioni su cui sarebbe opportuno riflettere al fine del miglioramento dei modelli, cercando di individuare elementi correttivi. Infatti, è importante tenere presente che in questa analisi non è stato possibile analizzare i rifiuti organici per un problema intrinseco di igiene relativo a questa categoria di rifiuti. Inoltre l'ambiente creato all'interno del ``robot" di registrazione dei dati non è in grado di creare un completo e stabile isolamento. Per questa ragione i parametri potenzialmente analizzati potrebbero essere influenzati da elementi terzi (quali luce ed elettrostaticità presente nell'ambiente) e causare la distorsione delle previsioni.
+
+
+Il progetto svolto ha portato a dei risultati che, nonostante i punti critici, mettono in luce le potenzialità del Data Science. In questo contesto ulteriori analisi potrebbero portare a significativi miglioramenti.
+
+Un primo miglioramento potrebbe essere quello di aumentare le dimensioni del Validation Set creato nel Capitolo 3 così da aumentare la validità esterna della previsione.
+
+Inoltre l'utilizzo di ResNet 152 o Inception V4 per il riconoscimento di immagini potrebbe portare ad un incremento significativo dell'accuratezza dei modelli.
+
+In aggiunta, tramite dei processi non strettamente statistici l'analisi sarebbe più completa riuscendo a raggiungere livelli di accuratezza più elevati. Tra i processi che consentirebbero questo approfondimento si riportano:
+\begin{itemize}
+	\item L'utilizzo del Reinforced Learning per consentire alle applicazioni di apprendere dagli errori.
+	\item Lo sfruttamento, congiuntamente ai classificatori creati, degli strumenti di Amazon Web Services per creare nuovi modelli di Ensemble Learning più accurati.
+	\item La lettura, quando presente nell'immagine, del bar code del prodotto da smaltire. 
+\end{itemize}	
+
+
+A conclusione dello studio, ritengo che, questo lavoro possa essere un buon punto d'inizio per sviluppare strumenti che aiutino a migliorare lo sfruttamento delle risorse. 
+
+
+
 
 \baselineskip 16pt
 
@@ -2053,7 +2202,7 @@ Nella terza pagina indicizzata \virgolette{Form3} bisogna inizializzarla come vi
 
 \subsection{Web Scraping (R)}
 \tiny
-\begin{lstlisting}[language=R]
+\begin{lstlisting}[basicstyle=\tiny,language=R]
 library(xml2)
 library(rvest)
 library(stringr, warn.conflicts = F)
@@ -2096,6 +2245,7 @@ webscraing_img <-function(img){
 		for (t in 1:length(html_nodes(page,xpath = '//img'))) {
 		txt<-c(txt,xml_attrs(html_nodes(page, xpath = "//img")[[t]])[["src"]])
 		}})
+		
 		# 1.2
 		try({page<-read_html(paste0("https://www.google.com/search?source=&q=" ,gsub(" ","+",img[i]),"+jpg&tbas=0&tbm=isch&tbs=ic:specific,isc:teal"))
 		for (t in 1:length(html_nodes(page,xpath = '//img'))) {
@@ -2148,24 +2298,17 @@ webscraing_img <-function(img){
 	immaginidascaricare<-txt[d]
 	return(immaginidascaricare)
 }
-
-
-
-
-img<-c("nome1","nome2") #creare un vettore di nomi per scaricare le immagini inerenti ad un argomento
-
-
+img<-c("nome1","nome2") #array di nomi per scaricare le immagini inerenti ad un argomento
 immaginidascaricare<-webscraing_img(img)
-
 for(i in 1:length(immaginidascaricare)){
-download.file(immaginidascaricare[i],destfile=paste0("#percorso del file/nomefile",i,".jpg"),method='curl')
+	download.file(immaginidascaricare[i],destfile=paste0("#percorso del file/nomefile",i,".jpg"),method='curl')
 }
 \end{lstlisting}
 \normalsize
 
 \subsection{Bot Telegram per salvare i dati (Python)}
 \tiny
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
 import telepot
 from datetime import datetime
 import time
@@ -2181,7 +2324,9 @@ def rispondi(msg):
 
 
 bot =telepot.Bot('###---TOKEN---###')
+
 bot.message_loop(rispondi)
+
 
 
 
@@ -2194,20 +2339,15 @@ while 1:
 \normalsize
 \subsection{Arduino (C++)}
 \tiny
-\begin{lstlisting}[language=C++]
+\begin{lstlisting}[basicstyle=\tiny,language=C++]
 #include <NewPing.h>
 #include <Servo.h>
 #include "HX711.h"
-
 // HX711.DOUT  - pin #A4
 // HX711.PD_SCK - pin #A5
-
 HX711 scale(A4, A5);    // parameter "gain" is ommited; the default value 128 is used by the library
-
-
-
 NewPing sonar1(10, 9, 200);
-NewPing sonar2(12, 11, 200);
+NewPing sonar2(11, 12, 200);
 int magnetic, md,  luce1, luce2, distanza1 ;
 const int s0 = 3;  
 const int s1 = 4;  
@@ -2215,6 +2355,7 @@ const int s2 =7;
 const int s3 = 5;  
 const int out = 6; 
 const int motorpin = 52;
+const int motorpinDC = 50;
 Servo motoreservo;   
 int frequency = 0;
 int color=0;
@@ -2225,9 +2366,7 @@ void setup() {
 	pinMode(A2,INPUT);
 	pinMode(A3,INPUT);
 	pinMode(A0,INPUT);
-	
 	Serial.begin(9600);
-	
 	pinMode(s0, OUTPUT);  
 	pinMode(s1, OUTPUT);  
 	pinMode(s2, OUTPUT);  
@@ -2236,9 +2375,7 @@ void setup() {
 	motoreservo.attach(motorpin);
 	digitalWrite(s0, HIGH);  
 	digitalWrite(s1, LOW); 
-	
-	
-	
+	pinMode(motorpinDC, OUTPUT);  
 	// set HX711
 	scale.set_scale(2280.f);                    
 	scale.tare();              
@@ -2246,43 +2383,86 @@ void setup() {
 
 void loop() {
 	// put your main code here, to run repeatedly:
-	
-	
-	
-	
+	digitalWrite(motorpinDC,LOW);
 	magnetic=analogRead(A0);
 	luce1=analogRead(A2);
 	luce2=analogRead(A3);
-	unsigned int distanza1 = sonar1.ping();
-	distanza1=distanza1 / US_ROUNDTRIP_CM;
-	
-	unsigned int distanza2 = sonar2.ping();
-	distanza2=distanza2 / US_ROUNDTRIP_CM;
-	
-	Serial.print(luce1);
-	Serial.print(",");
-	Serial.print(luce2);
-	Serial.print(",");
-	Serial.print(distanza1);
-	Serial.print(",");
-	Serial.print(distanza2);
-	Serial.print(",");
-	color = readColor();
-	Serial.print(scale.get_units(10)*28.3495231, 1);
-	Serial.println("");
-	
-	
-	
-	
+	unsigned int distanza1a = sonar1.ping();
+	distanza1a=distanza1a / US_ROUNDTRIP_CM;
+	unsigned int distanza1b = sonar1.ping();
+	distanza1b=distanza1b / US_ROUNDTRIP_CM;
+	unsigned int distanza1c = sonar1.ping();
+	distanza1c=distanza1c / US_ROUNDTRIP_CM;
+	unsigned int distanza1d = sonar1.ping();
+	distanza1d=distanza1d / US_ROUNDTRIP_CM;
+	unsigned int distanza1e = sonar1.ping();
+	distanza1e=distanza1e / US_ROUNDTRIP_CM;
+	unsigned int distanza1f = sonar1.ping();
+	distanza1f=distanza1f / US_ROUNDTRIP_CM;
+	unsigned int distanza1g = sonar1.ping();
+	distanza1g=distanza1g / US_ROUNDTRIP_CM;
+	int distanza1 = (distanza1a+distanza1b+distanza1c+distanza1d+distanza1e+distanza1f+distanza1g)/7;
+	int vardistanza1 = ((distanza1-distanza1a)^2+(distanza1-distanza1b)^2+ (distanza1-distanza1c)^2+(distanza1-distanza1d)^2+ (distanza1-distanza1e)^2+(distanza1-distanza1f)^2+ (distanza1-distanza1g)^2)/7;
+	digitalWrite(motorpinDC,LOW);
+	magnetic=analogRead(A0);
+	luce2=analogRead(A2);
+	luce2=analogRead(A3);
+	unsigned int distanza2a = sonar2.ping();
+	distanza2a=distanza2a / US_ROUNDTRIP_CM;
+	unsigned int distanza2b = sonar2.ping();
+	distanza2b=distanza2b / US_ROUNDTRIP_CM;
+	unsigned int distanza2c = sonar2.ping();
+	distanza2c=distanza2c / US_ROUNDTRIP_CM;
+	unsigned int distanza2d = sonar2.ping();
+	distanza2d=distanza2d / US_ROUNDTRIP_CM;
+	unsigned int distanza2e = sonar2.ping();
+	distanza2e=distanza2e / US_ROUNDTRIP_CM;
+	unsigned int distanza2f = sonar2.ping();
+	distanza2f=distanza2f / US_ROUNDTRIP_CM;
+	unsigned int distanza2g = sonar2.ping();
+	distanza2g=distanza2g / US_ROUNDTRIP_CM;
+	int distanza2 = (distanza2a+distanza2b+distanza2c+distanza2d+distanza2e+distanza2f+distanza2g)/7;
+	int vardistanza2 = ((distanza2-distanza2a)^2+(distanza2-distanza2b)^2+ (distanza2-distanza2c)^2+(distanza2-distanza2d)^2+ (distanza2-distanza2e)^2+(distanza2-distanza2f)^2+ (distanza2-distanza2g)^2)/7;
+
 	color=0;
 	scale.power_down();          
 	delay(5000);
 	scale.power_up();
 	
-	
 	char a;
 	a = Serial.read ();
 	switch (a) {
+		case '0': // prendere info
+			digitalWrite(motorpinDC,LOW);
+			magnetic=analogRead(A0);
+			luce1=analogRead(A2);
+			luce2=analogRead(A3);
+			distanza1 = sonar1.ping();
+			distanza1=distanza1 / US_ROUNDTRIP_CM;
+			distanza2 = sonar2.ping();
+			distanza2=distanza2 / US_ROUNDTRIP_CM;
+			color=0;
+			scale.power_down();          
+			delay(5000);
+			scale.power_up();
+			Serial.print(scale.get_units(10)*28.3495231, 1);
+			Serial.print(",");
+			Serial.print(luce1);
+			Serial.print(",");
+			Serial.print(luce2);
+			Serial.print(",");
+			Serial.print(vardistanza1);
+			Serial.print(",");
+			Serial.print(distanza1);
+			Serial.print(",");
+			Serial.print(vardistanza2);
+			Serial.print(",");
+			Serial.print(distanza2);
+			Serial.print(",");
+			color = readColor();
+			Serial.println("");        
+			delay(1000);
+			break;
 		case '1': // tira su
 			motoreservo.write(80);
 			Serial.println("SU");
@@ -2297,59 +2477,72 @@ void loop() {
 			motoreservo.write(70);
 			Serial.println("Ricalcola");
 			break;
+		case '4': // ruota cestino di 90 gradi
+			digitalWrite(motorpinDC,HIGH);
+			delay(1000);
+			digitalWrite(motorpinDC,LOW);
+			Serial.println("sposta");
+			break;
+		case '5': // ruota cestino di 180 gradi
+			digitalWrite(motorpinDC, HIGH);
+			delay(2000);
+			digitalWrite(motorpinDC, LOW);
+			Serial.println("sposta");
+			break;
+		case '6': // ruota cestino di 270 gradi
+			digitalWrite(motorpinDC, HIGH);
+			delay(3700);
+			digitalWrite(motorpinDC, LOW);
+			Serial.println("sposta");
+			break;
+		case 's':
+			// set HX711
+			scale.set_scale(2280.f);                    
+			scale.tare();    
+			break;
 		default : // In tutti gli altri casi visualizzo un messaggio
 			break;
 	}
-	
-
 }
-
 
 
 
 //Read-Color Function
 int readColor() {
-	
-	//Setting red filtered photodiodes to be read
+	//Rosso
 	digitalWrite(s2, LOW);
 	digitalWrite(s3, LOW);
 	
-	//Reading the output frequency
+	//Lettura della frequenza degli output
 	frequency = pulseIn(out, LOW);
 	int R = frequency;
 	
-	//Printing the value on the serial monitor
-	Serial.print(frequency);  //printing rosso color frequency
+	//scrivo sul monitor seriale i diversi valori
+	Serial.print(frequency);  //frequenza del colore rosso
 	Serial.print(",");
 	
-	
-	//Setting Green filtered photodiodes to be read
+	//Verde della frequenza degli output
 	digitalWrite(s2, HIGH);
 	digitalWrite(s3, HIGH);
 	
-	//Reading the output frequency
-	frequency = pulseIn(out, LOW);
-	int G = frequency;
+	//lettura
+	frequency = pulseIn(out, LOW); 
 	
-	//Printing the value on the serial monitor
-	Serial.print(frequency);  
-	//printing verde color frequency
+	//scrivo sul monitor seriale i diversi valori
+	Serial.print(frequency);  //frequenza del colore rosso
 	Serial.print(",");
 	
-	
-	//Setting Blue filtered photodiodes to be read
+	//Blu
 	digitalWrite(s2, LOW);
 	digitalWrite(s3, HIGH);
 	
-	//Reading the output frequency
+	//lettura della frequenza degli output
 	frequency = pulseIn(out, LOW);
 	int B = frequency;
 	
-	//Printing the value on the serial monitor
-	Serial.print(frequency);  //printing blu color frequency
+	//scrivo sul monitor seriale i diversi valori
+	Serial.print(frequency);   //frequenza del colore rosso
 	Serial.print(",");
-	
-	
 	
 	if(R<260 & R>230 & G<860 & G>800){
 		color = 1; // Rosso
@@ -2362,17 +2555,20 @@ int readColor() {
 	}
 	return color;  
 }
-
 \end{lstlisting}
 \normalsize
 
 \subsection{Software per salvare i dati (VB.NET)}
 
-\textbf{Form1: Funzione}
+\textbf{Form1}
 \tiny
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\tiny]
 
 Public Class Form1
+	
+	Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+		Me.WindowState = FormWindowState.Maximized
+	End Sub
 	
 	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 		Form2.Show()
@@ -2381,85 +2577,34 @@ Public Class Form1
 	Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 		Form3.Show()
 	End Sub
+	
+	Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+		Me.Close()
+	End Sub
+	
+	Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+		Dim exeapth As String = Application.StartupPath
+	Process.Start(exeapth)
+	
+	End Sub
+	
+	Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+		Dim exeapth As String = Application.StartupPath
+		Process.Start(exeapth)
+	End Sub
+	
+	Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+		Dim exeapth As String = Application.StartupPath
+		Process.Start(exeapth)
+	End Sub
 End Class
 \end{lstlisting}
 \normalsize
 
-\textbf{Form1: Grafica}
-\tiny
-\begin{lstlisting}
-
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
-	Inherits System.Windows.Forms.Form
-	
-	'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
-	<System.Diagnostics.DebuggerNonUserCode()> _
-	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-		Try
-			If disposing AndAlso components IsNot Nothing Then
-				components.Dispose()
-			End If
-		Finally
-			MyBase.Dispose(disposing)
-		End Try
-	End Sub
-	
-	'Richiesto da Progettazione Windows Form
-	Private components As System.ComponentModel.IContainer
-	
-	'NOTA: la procedura che segue è richiesta da Progettazione Windows Form
-	'Può essere modificata in Progettazione Windows Form.  
-	'Non modificarla mediante l'editor del codice.
-	<System.Diagnostics.DebuggerStepThrough()> _
-	Private Sub InitializeComponent()
-		Me.Button1 = New System.Windows.Forms.Button()
-		Me.Button2 = New System.Windows.Forms.Button()
-		Me.SuspendLayout()
-		'
-		'Button1
-		'
-		Me.Button1.Location = New System.Drawing.Point(1, 1)
-		Me.Button1.Name = "Button1"
-		Me.Button1.Size = New System.Drawing.Size(456, 297)
-		Me.Button1.TabIndex = 0
-		Me.Button1.Text = "Addestramento"
-		Me.Button1.UseVisualStyleBackColor = True
-		'
-		'Button2
-		'
-		Me.Button2.Location = New System.Drawing.Point(530, 1)
-		Me.Button2.Name = "Button2"
-		Me.Button2.Size = New System.Drawing.Size(456, 297)
-		Me.Button2.TabIndex = 1
-		Me.Button2.Text = "Riconoscimento"
-		Me.Button2.UseVisualStyleBackColor = True
-		'
-		'Form1
-		'
-		Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
-		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(996, 312)
-		Me.Controls.Add(Me.Button2)
-		Me.Controls.Add(Me.Button1)
-		Me.Name = "Form1"
-		Me.Text = "Form1"
-		Me.ResumeLayout(False)
-		
-	End Sub
-	
-	Friend WithEvents Button1 As Button
-	Friend WithEvents Button2 As Button
-End Class
-
-\end{lstlisting}
-\normalsize
-
+\clearpage
 \textbf{Form2}
 \tiny
-\begin{lstlisting}
-
-
+\begin{lstlisting}[basicstyle=\tiny]
 Imports AForge
 Imports AForge.Video
 Imports AForge.Video.DirectShow
@@ -2468,17 +2613,7 @@ Imports System.IO.Ports
 Imports System.Threading
 Imports System.Data
 Imports VB = Microsoft.VisualBasic
-
-
-
-
-
-
-
-
 Public Class Form2
-	
-	
 	Private Sub wait(ByVal Seconds As Double, Optional ByRef BreakCondition As Boolean = False)
 		Dim l_WaitUntil As Date
 		l_WaitUntil = Now.AddSeconds(Seconds)
@@ -2486,56 +2621,38 @@ Public Class Form2
 			If BreakCondition Then Exit Do
 		Loop
 	End Sub
-	
-	
 	Dim CAMERA As VideoCaptureDevice
 	Dim bmp As Bitmap
-	
-	
 	Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 		Dim cameras As VideoCaptureDeviceForm = New VideoCaptureDeviceForm
 		If cameras.ShowDialog() = Windows.Forms.DialogResult.OK Then
 			CAMERA = cameras.VideoDevice
 			AddHandler CAMERA.NewFrame, New NewFrameEventHandler(AddressOf Captured)
 			CAMERA.Start()
-			
 		End If
 	End Sub
-	
 	Private Sub Captured(sender As Object, eventArgs As NewFrameEventArgs)
-		
 		bmp = DirectCast(eventArgs.Frame.Clone(), Bitmap)
 		PictureBox1.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
 	End Sub
-	
 	Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
 		PictureBox2.Image = PictureBox1.Image
 		Dim timeStamp As DateTime = DateTime.Now
-		' Dim exePath As String = Application.StartupPath()
 		Dim path As String = "PATH_prova" + timeStamp.ToString(" MMM ddd d HH_mm yyyy") + ".jpg"
 		PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
 	End Sub
-	
 	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-	'1
-		
 		Button1.Enabled = False
 		Button2.Enabled = False
 		Button3.Enabled = False
 		Button6.Enabled = False
-		
 		Dim testo As String
 		Dim dataArr() As String
-		
 		Dim h As Integer = 0
 		Dim m As Integer = 0
-		
 		Dim index As Integer = 0
-		
 		For i As Integer = 1 To 10
-			
 			PictureBox2.Image = PictureBox1.Image
-			
 			testo = "carta," + SerialPort1.ReadExisting
 			dataArr = testo.Split(",")
 			SerialPort1.Write("0")
@@ -2563,38 +2680,24 @@ Public Class Form2
 			SerialPort1.Write("3")
 			wait(10)
 		Next
-		
 		Button1.Enabled = True
 		Button2.Enabled = True
 		Button3.Enabled = True
 		Button6.Enabled = True
-		
 		MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
-		
-		
-	
 	End Sub
-	
 	Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-	'1
-		
 		Button1.Enabled = False
 		Button2.Enabled = False
 		Button3.Enabled = False
 		Button6.Enabled = False
-		
 		Dim testo As String
 		Dim dataArr() As String
-		
 		Dim h As Integer = 0
 		Dim m As Integer = 0
-		
 		Dim index As Integer = 0
-		
 		For i As Integer = 1 To 10
-			
 			PictureBox2.Image = PictureBox1.Image
-			
 			testo = "plastica," + SerialPort1.ReadExisting
 			dataArr = testo.Split(",")
 			SerialPort1.Write("0")
@@ -2622,36 +2725,24 @@ Public Class Form2
 			SerialPort1.Write("3")
 			wait(10)
 		Next
-		
 		Button1.Enabled = True
 		Button2.Enabled = True
 		Button3.Enabled = True
 		Button6.Enabled = True
-		
 		MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
-		
 	End Sub
-	
 	Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-	'1
-		
 		Button1.Enabled = False
 		Button2.Enabled = False
 		Button3.Enabled = False
 		Button6.Enabled = False
-		
 		Dim testo As String
 		Dim dataArr() As String
-		
 		Dim h As Integer = 0
 		Dim m As Integer = 0
-		
 		Dim index As Integer = 0
-		
 		For i As Integer = 1 To 10
-			
 			PictureBox2.Image = PictureBox1.Image
-			
 			testo = "vetro," + SerialPort1.ReadExisting
 			dataArr = testo.Split(",")
 			SerialPort1.Write("0")
@@ -2679,38 +2770,24 @@ Public Class Form2
 			SerialPort1.Write("3")
 			wait(10)
 		Next
-		
 		Button1.Enabled = True
 		Button2.Enabled = True
 		Button3.Enabled = True
 		Button6.Enabled = True
-		
 		MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
-		
-		
-	
 	End Sub
-	
 	Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-	'1
-		
 		Button1.Enabled = False
 		Button2.Enabled = False
 		Button3.Enabled = False
 		Button6.Enabled = False
-		
 		Dim testo As String
 		Dim dataArr() As String
-		
 		Dim h As Integer = 0
 		Dim m As Integer = 0
-		
 		Dim index As Integer = 0
-		
 		For i As Integer = 1 To 10
-			
 			PictureBox2.Image = PictureBox1.Image
-			
 			testo = "indifferenziata," + SerialPort1.ReadExisting
 			dataArr = testo.Split(",")
 			SerialPort1.Write("0")
@@ -2738,18 +2815,12 @@ Public Class Form2
 			SerialPort1.Write("3")
 			wait(10)
 		Next
-		
 		Button1.Enabled = True
 		Button2.Enabled = True
 		Button3.Enabled = True
 		Button6.Enabled = True
-		
-		MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")
-		
-	
+		MessageBox.Show("Fatto, i record registrati sono " & h.ToString & " su " & m & " tentativi")	
 	End Sub
-	
-	
 	Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 		Me.WindowState = FormWindowState.Maximized
 		Me.CenterToParent()
@@ -2761,14 +2832,8 @@ Public Class Form2
 		Button10.BringToFront()
 		Button11.Enabled = False
 		Button11.SendToBack()
-		
 		Dim exePath As String = Application.StartupPath()
-		
 		Dim fname As String = exePath + "\DATI.csv"
-		
-		
-		
-		
 		Dim dt As New DataTable
 		DataGridView1.ColumnCount = 11
 		DataGridView1.Columns(0).Name = "Type"
@@ -2782,11 +2847,6 @@ Public Class Form2
 		DataGridView1.Columns(8).Name = "rosso"
 		DataGridView1.Columns(9).Name = "verde"
 		DataGridView1.Columns(10).Name = "blu"
-		
-		
-		
-		
-		
 		Using MyReader As New Microsoft.VisualBasic.
 			FileIO.TextFieldParser(fname)
 			MyReader.TextFieldType = FileIO.FieldType.Delimited
@@ -2795,7 +2855,6 @@ Public Class Form2
 				While Not MyReader.EndOfData
 					Try
 						currentRow = MyReader.ReadFields()
-						
 						DataGridView1.Rows.Add(currentRow)
 					Catch ex As Microsoft.VisualBasic.
 						FileIO.MalformedLineException
@@ -2804,9 +2863,7 @@ Public Class Form2
 					End Try
 				End While
 		End Using
-		
 	End Sub
-	
 	Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
 		ComboBox1.Items.Clear()
 		Dim myPort As Array
@@ -2824,93 +2881,57 @@ Public Class Form2
 			ComboBox1.Items.Clear()
 			Call Form2_Load(Me, e)
 		End Try
-		
 		Button10.Enabled = True
 		Button10.BringToFront()
 		ComboBox1.DroppedDown = True
-	
 	End Sub
-	
 	Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-		
 		Button10.Enabled = False
 		Button10.SendToBack()
-		
 		SerialPort1.BaudRate = 9600
 		SerialPort1.PortName = ComboBox1.SelectedItem
 		SerialPort1.Open()
-		' per capiare il testo (serial.println)
-		' Dim testo As Single = SerialPort1.ReadExisting
-		' Dim testo1 As String = testo.ToString
-		
-		
 		Button11.Enabled = True
 		Button11.BringToFront()
-		
 		Button1.Enabled = True
 		Button2.Enabled = True
 		Button3.Enabled = True
 		Button6.Enabled = True
 	End Sub
-	
 	Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-		
 		Button11.Enabled = False
 		Button11.SendToBack()
-		
 		SerialPort1.Close()
-		
-		
-		
-		
 		Button10.Enabled = True
 		Button10.BringToFront()
-		
 		Button1.Enabled = False
 		Button2.Enabled = False
 		Button3.Enabled = False
 		Button6.Enabled = False
-		
 	End Sub
-	
-	
 	Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-		
-		'create empty string
 		Dim thecsvfile As String = String.Empty
-		'get the column headers
 		For Each column As DataGridViewColumn In DataGridView1.Columns
 			thecsvfile = thecsvfile & column.HeaderText & ","
 		Next
-		'trim the last comma
 		thecsvfile = thecsvfile.TrimEnd(",")
-		'Add the line to the output
 		thecsvfile = thecsvfile & vbCr & vbLf
-		'get the rows
 		For Each row As DataGridViewRow In DataGridView1.Rows
-			'get the cells
 			For Each cell As DataGridViewCell In row.Cells
 				thecsvfile = thecsvfile & cell.FormattedValue.replace(",", "") & ","
 			Next
-			'trim the last comma
 			thecsvfile = thecsvfile.TrimEnd(",")
-			'Add the line to the output
 			thecsvfile = thecsvfile & vbCr & vbLf
 		Next
-		'write the file
 		thecsvfile = thecsvfile.Substring(0, thecsvfile.Length - 2)
-		
 		Dim exePath As String = Application.StartupPath()
 		Dim fileName As String = exePath + "\DATI.csv"
-		
 		My.Computer.FileSystem.WriteAllText(exePath + "\DATI.csv", thecsvfile, False)
 		MessageBox.Show("Il file è stato salvato!")
 	End Sub
-	
 	Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 		Me.Close()
 	End Sub
-	
 	Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 		SerialPort1.Write("s")
 	End Sub
@@ -2923,7 +2944,7 @@ End Class
 \subsection{Gradient boosting algorithm (Python)}
 
 \tiny
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
 
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn import metrics
@@ -2945,7 +2966,7 @@ print(classification_report(y_test, predictions))
 \subsection{Multi-Layer Perceptron (Python) }
 	
 \tiny
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
 
 from sklearn.neural_network import MLPClassifier
 from sklearn import metrics
@@ -2963,10 +2984,10 @@ print("Classification Report")
 print(classification_report(y_test, predictions))
 \end{lstlisting}
 \normalsize
-
+\clearpage
 \subsection{Residual Neural Network (Python)}
 \tiny
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
 
 
 def resnet_layer(inputs,
@@ -2983,9 +3004,6 @@ def resnet_layer(inputs,
 				padding='same',
 				kernel_initializer='he_normal',
 				kernel_regularizer=l2(1e-4))
-		
-		
-		
 		x = inputs
 		if conv_first:
 			x = conv(x)
@@ -3004,12 +3022,10 @@ def resnet_layer(inputs,
 
 
 
-
-def resnet(input_shape, depth, num_classes=10): #per l'addestramento della resnet su cestino e chatbot abbiamo messo 4
+def resnet(input_shape, depth, num_classes=10): #per l'addestramento della resnet su cestino/chatbot abbiamo messo 4
 	# Definiamo il modello.
 	num_filters = 16
 	num_res_blocks = int((depth - 2) / 6)
-	
 	inputs = Input(shape=input_shape)
 	x = resnet_layer(inputs=inputs)
 	# blocco dei residui
@@ -3033,22 +3049,18 @@ def resnet(input_shape, depth, num_classes=10): #per l'addestramento della resne
 							strides=strides,
 							activation=None,
 							batch_normalization=False)
-			
 			x = keras.layers.add([x, y])
 			x = Activation('relu')(x)
 		num_filters *= 2
-	
 	# aggiungiamo classifier
 	x = AveragePooling2D(pool_size=8)(x)
 	y = Flatten()(x)
 	outputs = Dense(num_classes,
 					activation='softmax',
 					kernel_initializer='he_normal')(y)
-	
 	# restituisce il modello costruito.
 	model = Model(inputs=inputs, outputs=outputs)
 	return model
-
 \end{lstlisting}
 \normalsize
 
@@ -3058,7 +3070,7 @@ def resnet(input_shape, depth, num_classes=10): #per l'addestramento della resne
 \subsection{Modello di Ensemble Lening (Python)}
 
 \tiny
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
 
 import pandas as pd
 df = pd.read_excel('DIRECTORY_PATH\\df_ensamble.xlsx')
@@ -3092,7 +3104,6 @@ knn_gscv.best_score_
 
 knn_gscv.best_estimator_
 
-
 knn_gscv.cv_results_
 
 
@@ -3101,62 +3112,390 @@ knn_gscv.cv_results_
 
 
 
-\subsection{Software per differenziare (VB.NET)}
-
-\textbf{Form3}
-\tiny
-\begin{lstlisting}
-num(0).
-num(s(X)) :- num(X).
-\end{lstlisting}
-\normalsize
-
 
 \subsection{Bot Telegram per differenziare (Python)}
 
 \tiny
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
+# Importare i pacchetti
+from keras.models import load_model
+import pickle
+import numpy as np
+import pandas as pd
+import cv2
 import telepot
-from datetime import datetime
 import time
 
-# caricare i modelli
 
+# Importare i modelli
+resnetCestino = load_model('CNN_ResNet_epoch35cestino.hdf5')
+classify_filename = 'CNN_ResNet_epoch45_WS.pkl'
+classify_model_pkl = open(classify_filename, 'rb')
+resnetWS = pickle.load(classify_model_pkl)
+classify_filename = 'Ensemble_telegram.pkl'
+classify_model_pkl = open(classify_filename, 'rb')
+knn_gscv = pickle.load(classify_model_pkl)
 
+# Importo media
+cestino_mean = np.load('x_train_mean_cestino.npy')
+ws_mean = np.load('x_train_mean_WS.npy')
+colonne=['resne2_carta', 'resne2_indifferenziata', 'resne2_plastica','resne2_vetro', 'resne1_Carta', 'resne1_ Indifferenziato','resne1_ Latta', 'resne1_ Legno', 'resne1_ Metalli', 'resne1_ Plastica','resne1_ Polistirolo', 'resne1_ Tetra_Pak', 'resne1_ Umido','resne1_ Vetro']
 
-
-
-# impostare la funzione per fare ensemble dei modelli e per prevedere
-
-
-
-
-# impostare la funzione per rispondere alla foto
+def previsione(img_path):
+	img_data = []
+	image = cv2.imread(img_path)
+	# standard imm
+	resized_img = cv2.resize(image, (32, 32), interpolation=cv2.INTER_AREA)
+	img_data.append(resized_img)
+	img_data=np.array(img_data)
+	img_data = img_data.astype('float32') / 255
+	img_data_cestino = img_data - cestino_mean
+	img_data_WS = img_data - ws_mean
+	# Prediction
+	## resnet1
+	# categories=['Carta', 'Indifferenziato', 'Latta', 'Legno', 'Metalli', 'Plastica', 'Polistirolo', 'Tetra_Pak', 'Umido', 'Vetro']
+	pred2 = resnetWS.predict(img_data_WS)
+	for t in range(len(pred2[0])):
+	pred2[0][t]=round(pred2[0][t],3)*1000
+	pred = list(pred2[0])
+	## resnet2
+	# categories=['carta','indifferenziata',  'plastica', 'vetro']
+	pred1 = resnetCestino.predict(img_data_cestino)
+	for t in range(len(pred1[0])):
+	pred1[0][t]=round(pred1[0][t],3)*1000
+	pred.append(list(pred1[0])[0])
+	pred.append(list(pred1[0])[1])
+	pred.append(list(pred1[0])[2])
+	pred.append(list(pred1[0])[3])
+	X = pd.DataFrame(columns=colonne)
+	X.loc[0]=pred
+	predictions = knn_gscv.predict(X)
+	return predictions;
 
 def rispondi(msg):
 	content_type, chat_type, chat_id = telepot.glance(msg)
 	if content_type == 'photo':
-		bot.download_file(msg['photo'][1]['file_id'], 'dati/image'+ str(datetime.now())[0:19] +'.png')
-		
-		#qui in mezzo analizzare
-		
-		bot.sendMessage(chat_id, 'Thanks for send me the photo! See you soon!')
-		
-	
-	
-	bot =telepot.Bot('###---TOKEN---###')
-	bot.message_loop(rispondi)
-	
+		bot.download_file(msg['photo'][1]['file_id'], 'image.png')
+		risultato = previsione('image.png')
+		bot.sendMessage(chat_id, str(risultato[0]))
+
+bot = telepot.Bot('###---TOKEN---###')
+bot.getMe()
 
 
-print 'I am listening ...'
-
+bot.message_loop(rispondi)
+print('I am listening ...')
 while 1:
-time.sleep(10)
+	time.sleep(10)
+
 \end{lstlisting}
 \normalsize
 
 
+\subsection{Software per differenziare (VB.NET)}
+
+\textbf{Form3}
+\tiny
+\begin{lstlisting}[basicstyle=\tiny]
+Imports AForge
+Imports AForge.Video
+Imports AForge.Video.DirectShow
+Imports System.IO
+Imports System.IO.Ports
+Imports System.Threading
+Imports System.Data
+Imports VB = Microsoft.VisualBasic
+
+Public Class Form3
+	Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+		Me.WindowState = FormWindowState.Maximized
+	End Sub
+	Private Sub wait(ByVal Seconds As Double, Optional ByRef BreakCondition As Boolean = False)
+		Dim l_WaitUntil As Date
+		l_WaitUntil = Now.AddSeconds(Seconds)
+		Do Until Now > l_WaitUntil
+			If BreakCondition Then Exit Do
+		Loop
+	End Sub
+	Dim CAMERA As VideoCaptureDevice
+	Dim bmp As Bitmap
+	Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+		Dim cameras As VideoCaptureDeviceForm = New VideoCaptureDeviceForm
+		If cameras.ShowDialog() = Windows.Forms.DialogResult.OK Then
+			CAMERA = cameras.VideoDevice
+			AddHandler CAMERA.NewFrame, New NewFrameEventHandler(AddressOf Captured)
+			CAMERA.Start()
+		End If
+	End Sub
+	Private Sub Captured(sender As Object, eventArgs As NewFrameEventArgs)
+		bmp = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+		PictureBox1.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+	End Sub
+	
+	Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+		PictureBox2.Image = PictureBox1.Image
+		Dim timeStamp As DateTime = DateTime.Now
+		' Dim exePath As String = Application.StartupPath()
+		Dim path As String = "C:\Users\gieck\Desktop\img" + timeStamp.ToString(" MMM ddd d HH_mm yyyy") + ".jpg"
+		PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+	End Sub
+	Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+		ComboBox1.Items.Clear()
+		Dim myPort As Array
+		Dim i As Integer
+		myPort = IO.Ports.SerialPort.GetPortNames()
+		ComboBox1.Items.AddRange(myPort)
+		i = ComboBox1.Items.Count
+		i = i - i
+		Try
+			ComboBox1.SelectedIndex = i
+		Catch ex As Exception
+			Dim result As DialogResult
+			result = MessageBox.Show("Com port not detected", "Warning !!!", MessageBoxButtons.OK)
+			ComboBox1.Text = ""
+			ComboBox1.Items.Clear()
+			Call Form3_Load(Me, e)
+		End Try
+		Button10.Enabled = True
+		Button10.BringToFront()
+		ComboBox1.DroppedDown = True
+		
+	End Sub
+	
+	Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+		
+		Button10.Enabled = False
+		Button10.SendToBack()
+		SerialPort1.BaudRate = 9600
+		SerialPort1.PortName = ComboBox1.SelectedItem
+		SerialPort1.Open()
+		Button11.Enabled = True
+		Button11.BringToFront()
+		Button1.Enabled = True
+	End Sub
+	
+	Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+		
+		Button11.Enabled = False
+		Button11.SendToBack()
+		SerialPort1.Close()
+		Button10.Enabled = True
+		Button10.BringToFront()
+		Button1.Enabled = False
+		
+	End Sub
+	Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+		Dim testo As String
+		Dim dataArr() As String
+		Dim h As Integer = 0
+		Dim m As Integer = 0
+		Dim index As Integer = 0
+		PictureBox2.Image = PictureBox1.Image
+		testo = SerialPort1.ReadExisting
+		dataArr = testo.Split(",")
+		SerialPort1.Write("0")
+		wait(14)
+		For t As Integer = 1 To 1000
+			testo =  + SerialPort1.ReadExisting
+			dataArr = testo.Split(",")
+			If dataArr.Length = 10 Then
+				Exit For
+			End If
+		Next
+		
+		Dim exePath As String = Application.StartupPath()
+		Dim path As String = exePath + "\image.jpg"
+		PictureBox2.Image.Save(path, Imaging.ImageFormat.Jpeg)
+		
+		Dim arg As String = " " & ControlChars.Quote & exePath & ControlChars.Quote
+		
+		For Each tb As String In dataArr
+			arg = arg & " " & ControlChars.Quote & tb & ControlChars.Quote
+		Next
+		
+		Dim Command As String = ControlChars.Quote & exePath & "\send\python\App\Python\python.exe" & ControlChars.Quote & " " & ControlChars.Quote & exePath & "\send\analizza.py" & ControlChars.Quote & arg
+		Dim ProcID = Shell(Command, vbHide)
+		
+		Dim pr As Process = Process.GetProcessById(ProcID)
+		Dim ticks As Integer = 0
+		Dim test As String = exePath & "\send\test.txt"
+		ProgressBar1.Visible = True
+		Do
+			If File.Exists(test) Then
+				ProgressBar1.Visible = False
+				pr.Kill() ' or pr.CloseMainWindow()
+				Exit Do
+			Else
+			
+			End If
+			ticks += 10
+			ProgressBar1.Value = ticks
+			If ticks = 100 Then
+				ticks = 0
+			End If
+			Threading.Thread.Sleep(500)
+		Loop
+		Dim risultato As String
+		risultato = My.Computer.FileSystem.ReadAllText(exePath & "\send\test.txt")
+		My.Computer.FileSystem.DeleteFile(exePath & "\send\test.txt")
+		TextBox1.Text = risultato
+		MessageBox.Show("Cestino in movimento!")
+		My.Computer.FileSystem.DeleteFile(exePath & "\send\test.txt")
+		If risultato = "plastica" Then
+			SerialPort1.Write("1")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("2")
+		End If
+		If risultato = "carta" Then
+			SerialPort1.Write("4")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("1")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("2")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("6")
+		End If
+		If risultato = "vetro" Then
+			SerialPort1.Write("5")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("1")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("2")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("5")
+		End If
+		If risultato = "indifferenziata" Then
+			SerialPort1.Write("6")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("1")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("2")
+			Threading.Thread.Sleep(500)
+			SerialPort1.Write("4")
+		End If
+		Button1.Enabled = True
+		MessageBox.Show("Finito!")
+	End Sub
+End Class
+\end{lstlisting}
+\normalsize
+
+$$ $$
+
+\textbf{analizza.py}
+\tiny
+\begin{lstlisting}[basicstyle=\tiny,language=Python]
+try:
+	
+	import os
+	import sys
+	
+	def install_and_import(package):
+		import importlib
+		try:
+			importlib.import_module(package)
+		except ImportError:
+			import pip
+			pip.main(['install', package])
+		finally:
+			globals()[package] = importlib.import_module(package)
+	
+	
+	install_and_import('keras')
+	install_and_import('pickle')
+	install_and_import('numpy')
+	install_and_import('pandas')
+	install_and_import('cv2')
+	
+	from keras.models import load_model
+	import pickle
+	import numpy as np
+	import pandas as pd
+	import cv2
+	
+	# Importare i modelli
+	resnetCestino = load_model('CNN_ResNet_epoch35cestino.hdf5')
+	classify_filename = 'CNN_ResNet_epoch45_WS.pkl'
+	classify_model_pkl = open(classify_filename, 'rb')
+	resnetWS = pickle.load(classify_model_pkl)
+	classify_filename = 'Ensemble_telegram.pkl'
+	classify_model_pkl = open(classify_filename, 'rb')
+	knn_gscv = pickle.load(classify_model_pkl)
+	classify_filename = 'GBM_model_cestino.pkl'
+	classify_model_pkl = open(classify_filename, 'rb')
+	gbm = pickle.load(classify_model_pkl)
+	
+	# Importo media
+	cestino_mean = np.load('x_train_mean_cestino.npy')
+	ws_mean = np.load('x_train_mean_WS.npy')
+	colonne = ['resne2_carta', 'resne2_indifferenziata', 'resne2_plastica',
+	'resne2_vetro', 'resne1_Carta', 'resne1_ Indifferenziato',
+	'resne1_ Latta', 'resne1_ Legno', 'resne1_ Metalli', 'resne1_ Plastica',
+	'resne1_ Polistirolo', 'resne1_ Tetra_Pak', 'resne1_ Umido',
+	'resne1_ Vetro', 'GBM_carta', 'GBM_indifferenziata', 'GBM_plastica',
+	'GBM_vetro']
+	img_data = []
+	image = cv2.imread('image.png')
+	# standard imm
+	resized_img = cv2.resize(image, (32, 32), interpolation=cv2.INTER_AREA)
+	img_data.append(resized_img)
+	img_data = np.array(img_data)
+	img_data = img_data.astype('float32') / 255
+	img_data_cestino = img_data - cestino_mean
+	img_data_WS = img_data - ws_mean
+	# read arg value
+	val=[]
+	for i in range(len(sys.argv)):
+		val.append(sys.argv[i])
+	val=np.array(val, dtype=np.float32)
+	peso=val[2]
+	lum=(val[3]+val[4])/2
+	ultrasuoni=val[5]
+	colore=(val[7]+val[8]+val[9])/3
+	df=pd.DataFrame(columns=['Peso', 'ultrasuoni1', 'colore', 'luminosità'])
+	df.loc[0]=[peso,ultrasuoni,colore,lum]
+	# Prediction
+	## resnet1
+	# categories=['Carta', 'Indifferenziato', 'Latta', 'Legno', 'Metalli', 'Plastica', 'Polistirolo', 'Tetra_Pak', 'Umido', 'Vetro']
+	pred2 = resnetWS.predict(img_data_WS)
+	for t in range(len(pred2[0])):
+		pred2[0][t] = round(pred2[0][t], 3) * 1000
+	pred = list(pred2[0])
+	## resnet2
+	# categories=['carta','indifferenziata',  'plastica', 'vetro']
+	pred1 = resnetCestino.predict(img_data_cestino)
+	for t in range(len(pred1[0])):
+		pred1[0][t] = round(pred1[0][t], 3) * 1000
+	pred.append(list(pred1[0])[0])
+	pred.append(list(pred1[0])[1])
+	pred.append(list(pred1[0])[2])
+	pred.append(list(pred1[0])[3])
+	## GBM
+	pred0 = gbm.predict_proba(df)
+	for t in range(len(pred0[0])):
+		pred.append(list(round(pred0[0][t], 3) * 1000)
+	X = pd.DataFrame(columns=colonne)
+	X.loc[0] = pred
+	predictions = knn_gscv.predict(X)
+	
+	
+	
+	my_file = open(sys.argv[1] + "/send/test.txt", "w+")
+	my_file.write(str(predictions[0]))
+	my_file.close()
+
+except:
+	os.system('cmd /k "Msg * "Errore""')
+	my_file = open(sys.argv[1] + "/send/test.txt", "w+")
+	my_file.write("C'è stato un errrore inaspettato")
+	my_file.close()
+
+
+
+
+
+\end{lstlisting}
+\normalsize
 %%% OBBLIGATORIA:
 
 %% \bibliographystyle{plain}
@@ -3169,6 +3508,11 @@ time.sleep(10)
 %% 	Economia circolare: il riciclo del legno vale 1,4 miliardi e 6mila posti di lavoro - Giovanna Mancini 
 	
 \begin{thebibliography}{50}
+	
+	
+\addcontentsline{toc}{chapter}{Bibliografia} \markboth{Bibliografia}{} 
+	
+	
 \bibitem{chiave1} Duccio Bianchi (2019), L’Economia Circolare in Italia: la filiera del riciclo asse portante di un’economia senza rifiuti, Edizioni Ambiente.
 \bibitem{chiave2} Mancini Giovanna (2019), Economia circolare: il riciclo del legno vale 1,4 miliardi e 6mila posti di lavoro, Il Sole 24 Ore.
 \bibitem{chiave3} Simon Munzert - Christian Rubba - Peter Meibner - Dominic Nyhuis (2014), Automated Data Collection with R: A Practical Guide to Web Scraping and Text Mining, John Wiley \& Sons Inc.
@@ -3179,16 +3523,19 @@ time.sleep(10)
 \bibitem{chiave8} Adelchi Azzalini - Bruno Scarpa (2004), Analisi dei dati e Data Mining, Springer.
 \bibitem{chiave9} Yoav Freund - Robert E. Schapire (1999), A Short Introduction to Boosting, Journal of Japanese Society for Artificial Intelligence. 
 \bibitem{chiave10} Kaiming He - Xiangyu Zhang - Shaoqing Ren - Jian Sun (2015), Deep Residual Learning for Image Recognition, Microsoft Research.
-\bibitem{chiave10} Christian Szegedy - Vincent Vanhoucke - Sergey Ioffe - Jonathon Shlens - Zbigniew Wojna (2015), Rethinking the Inception Architecture for Computer Vision, Google inc. - University College London.
+\bibitem{chiave10a} Christian Szegedy - Vincent Vanhoucke - Sergey Ioffe - Jonathon Shlens - Zbigniew Wojna (2015), Rethinking the Inception Architecture for Computer Vision, Google inc. - University College London.
 \bibitem{chiave11} Kaiming He - Xiangyu Zhang - Shaoqing Ren - Jian Sun (2016), Identity Mappings in Deep Residual Networks, Microsoft Research.
 \bibitem{chiave12} Sergey Zagoruyko - Nikos Komodakis (2017), Wide Residual Networks, Université Paris-Est.
 \bibitem{chiave13} Saining Xie - Ross Girshick - Piotr Dollàr - Zhuowen Tu - Kaiming He (2017), Aggregated Residual Transformations for Deep Neural Networks, UC San Diego - Facebook AI Research.
 \bibitem{chiave14} Furong Huang - Jordan T. Ash - John Langford - Robert E. Schapire (2018), Learning Deep ResNet Blocks Sequentially using Boosting Theory, University of Maryland - Princeton University - Microsoft Research.
 \bibitem{chiave15} Kazuki Osawa - Yohei Tsuji - Yuichiro Uen - Akira Naruse - Rio Yokota - Satoshi Matsuoka (2019), Large-Scale Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature for Deep Convolutional Neural Networks, Tokyo Institute of Technology - NVIDIA - RIKEN.
-\bibitem{chiave16} Gareth James - Daniela Witten - Trevor Hastie - Robert Tibshirani (2017), An Introduction to Statistical Learning, Springr.
-\bibitem{chiave17} Willi Richert - Luis Pedro Coelho (2013), Building Machine Learning Systems with Python, Packt Publishing.
-\bibitem{chiave18} Ethem Alpaydın (2010), Introduction to Machine Learning, Massachusetts Institute of Technology.
-\bibitem{chiave19} Shai Shalev-Shwartz - Shai Ben-David (2014), Understanding Machine Learning: From Theory to Algorithms,  Cambridge University Press.
+\bibitem{chiave16} Leo Breiman (1996), Bagging Predictors, University of California - Berkeley.
+\bibitem{chiave17}  Mark J. van der Laan - Eric C. Polley - Alan E. Hubbard (2007), Super Learner, University of California - Berkeley.
+\bibitem{chiave18} Gareth James - Daniela Witten - Trevor Hastie - Robert Tibshirani (2017), An Introduction to Statistical Learning, Springr.
+\bibitem{chiave19} Steffen Rendle (2010), Factorization Machines, Osaka University.
+\bibitem{chiave20} Willi Richert - Luis Pedro Coelho (2013), Building Machine Learning Systems with Python, Packt Publishing.
+\bibitem{chiave21} Ethem Alpaydın (2010), Introduction to Machine Learning, Massachusetts Institute of Technology.
+\bibitem{chiave21} Shai Shalev-Shwartz - Shai Ben-David (2014), Understanding Machine Learning: From Theory to Algorithms,  Cambridge University Press.
 
 \end{thebibliography}
 

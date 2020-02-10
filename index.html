@@ -126,7 +126,46 @@ background-position: 10px 12px;
   color: white;
   padding: 15px 32px;
   }
-  </style>
+
+  .highcharts-figure, .highcharts-data-table table {
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+#container {
+    height: 400px;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+</style>
 
 
 
@@ -616,14 +655,14 @@ background-position: 10px 12px;
 },
 {
   "key":4, "pos":"-80 -57", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
-  "text":"ResNet",
+  "text":"ResNet1",
   "description": "descrizione",
   "caption":"title",
   "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
 },
 {
-  "key":5, "pos":"-80 170", "icon":"cnn", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
-  "text":"CNN",
+  "key":5, "pos":"-80 170", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "text":"Resnet2",
   "description": "descrizione",
   "caption":"title",
   "imgsrc":"https://www.extremetech.com/wp-content/uploads/2015/10/neural-networks-3.jpg"
@@ -636,7 +675,7 @@ background-position: 10px 12px;
   "imgsrc":"https://zdnet4.cbsistatic.com/hub/i/r/2018/08/07/828a6f3b-a1b8-4030-9a41-2907daada863/resize/370xauto/0a6fbd6c37fed9bc4d2ee15667255a14/ml-recorded-future.png"
 },
 {
-  "key":10, "pos":"-80 400", "icon":"cnn", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
+  "key":10, "pos":"-80 400", "icon":"ML", "iconWidth": 40, "iconHeight": 60, "portHeight": 20,
   "text":"MLP",
   "description": "descrizione",
   "caption":"title",
@@ -666,11 +705,99 @@ background-position: 10px 12px;
 {"from":4, "to":8 },
 {"from":5, "to":8 },
 {"from":4, "to":9, "fromSpot":"rightsingle", "color":"orange"  },
-{"from":5, "to":9, "fromSpot":"rightsingle", "color":"orange" },
-{"from":10, "to":9, "fromSpot":"rightsingle", "color":"orange" },
+{"from":5, "to":9, "fromSpot":"rightsingle", "color":"orange" }, 
 {"from":7, "to":9, "fromSpot":"rightsingle", "color":"orange" }
  ]}
     </textarea>
+
+
+    <h1>Risultati</h1>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+        Descrizione
+    </p>
+</figure>
+<script>
+
+Highcharts.chart('container', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'La raccolta differenziata, un problema di classificazione statistica'
+    },
+    subtitle: {
+        text: 'Accuratezza dei modelli proposti'
+    },
+    xAxis: {
+        categories: ['Carta', 'Indiffereziata', 'Plastica', 'Vetro', 'Accuratezza'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        max: 150,
+        title: {
+            text: 'Accuracy %',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ' % precision'
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 110,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'GBM',
+        data: [98, 92, 96, 97, 96]
+    }, {
+        name: 'MLP',
+        data: [83, 75, 87, 96, 84]
+    }, {
+        name: 'ResNet1',
+        data: [99, 94, 78, 82, 85]
+    }, {
+        name: 'ResNet2',
+        data: [100, 43, 92, 99, 79]
+    }, {
+        name: 'Ensemble1',
+        data: [71, 100, 100, 100, 92]
+    }, {
+        name: 'Ensemble2',
+        data: [100, 100, 89, 100, 95]
+    }]
+});
+</script>
   </div>
 </div>
 <br><br><center>
