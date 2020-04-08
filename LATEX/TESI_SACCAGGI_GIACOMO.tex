@@ -1695,7 +1695,7 @@ $$ $$
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{Dati non strutturati}
+		\caption{Dati strutturati}
 		\label{tab:totstruct}
 		\vspace{0.5cm}
 		
@@ -1792,7 +1792,7 @@ L'algoritmo per creare un modello a più livelli con il metodo Stacking si può ge
 	\end{itemize}
 \end{itemize}
 
-In alcuni ambiti con molte informazione circa la variabile di studio spesso viene utilizzato un modello di Stacking a più di due livelli, in questi casi occorre estendere la metodologia proposta reiterandola per il numero dei livelli.
+In alcuni ambiti con molte informazioni circa la variabile di studio spesso viene utilizzato un modello di Stacking a più di due livelli, in questi casi occorre estendere la metodologia proposta reiterandola per il numero dei livelli.
 
 Per comprendere come questi modelli possano essere sfruttati si propone come esempio il modello vincitore della KDD Cup 2015 creato da Jeong-Yoon Lee. In questa competizione i dati sono stati forniti da due piattaforme online di apprendimento XuetangX e Chinese MOOC. L'obbiettivo dell'analisi consisteva nel cercare di prevedere l'abbandono del corso durante i primi 10 giorni dall'iscrizione. L'approccio vincente ha utilizzato un modello di Ensemble Learning a tre stadi.
 
@@ -1821,7 +1821,7 @@ Il meta-algoritmo scelto in questa parte del progetto è il K-nearest neighbors (
 
 
 
-L'intuizione alla base dell'algoritmo KNN è quella di calcolare la distanza di un nuovo punto da tutti gli altri punti nel training e selezionare quindi i punti K più vicini al punto obbiettivo. Infine l'algoritmo assegna alla nuova rilevazione la classe a cui appartiene la maggior parte dei punti compresi nell'intervallo dei $K$ più vicini.
+L'intuizione alla base dell'algoritmo KNN è quella di calcolare la distanza di un nuovo punto da tutti gli altri punti nel training e selezionare quindi i punti $K$ più vicini al punto obbiettivo. Infine l'algoritmo assegna alla nuova rilevazione la classe a cui appartiene la maggior parte dei punti compresi nell'intervallo dei $K$ più vicini.
 
 Quindi i parametri di tuning del modello risultano essere la misura di distanza adottata e il numero dei $K$ punti da selezionare per classificare.
 
@@ -1833,8 +1833,8 @@ Quindi i parametri di tuning del modello risultano essere la misura di distanza 
  
 $$ $$
  
-Per verificare la validità di questo modello si esegue un semplice esempio nel quale si suppone di disporre di un set di dati con due variabili che, se tracciato, è simile a quello in Figura 3.2. Lo scopo è quello di classificare un nuovo punto rappresentato da ``$X$" in classe ``$Verde$" o ``$Rosso$". Si ipotizza di fissare il valore di K uguale a 3.
-L'algoritmo KNN inizia calcolando la distanza del punto X da tutti i punti e, come mostrato in Figura 3.2 nell'immagine di sinistra, trova i $K=3$ punti più vicini con distanza minima rispetto al punto $X$.
+Per verificare la validità di questo modello si esegue un semplice esempio nel quale si suppone di disporre di un set di dati con due variabili che, se tracciato, è simile a quello in Figura 3.2. Lo scopo è quello di classificare un nuovo punto rappresentato da ``$X$" in classe ``$Verde$" o ``$Rosso$". Si ipotizza di fissare il valore di $K$ uguale a 3.
+L'algoritmo KNN inizia calcolando la distanza del punto X da tutti i punti e, come mostrato in Figura 3.2 nell'immagine di sinistra, trova i $K=3$ punti più vicini con distanza minima rispetto al punto X.
 
 
 
@@ -1873,7 +1873,7 @@ Script per l'implementazione nell'Appendice A sezione [A.3.1]
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{Confusion matrixt}
+		\caption{Confusion matrix relativa al modello di Ensemble Learning tra ResNet}
 		\label{tab:EL1a}
 		\vspace{0.5cm}
 		
@@ -1892,7 +1892,7 @@ Script per l'implementazione nell'Appendice A sezione [A.3.1]
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{Classification Report}
+		\caption{Classification Report relativo al modello di Ensemble Learning tra ResNet}
 		\label{tab:EL1b}
 		\vspace{0.5cm}
 		
@@ -1928,7 +1928,7 @@ Script per l'implementazione nell'Appendice A sezione [A.3.1]
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{Confusion matrixt}
+		\caption{Confusion matrix relativa al modello di Ensemble Learning tra ResNet e GBM}
 		\label{tab:EL2a}
 		\vspace{0.5cm}
 		
@@ -1947,7 +1947,7 @@ Script per l'implementazione nell'Appendice A sezione [A.3.1]
 
 \begin{table}[h!]
 	\begin{center}
-		\caption{Classification Report}
+		\caption{Classification Report relativo al modello di Ensemble Learning tra ResNet e GBM}
 		\label{tab:EL2b}
 		\vspace{0.5cm}
 		
